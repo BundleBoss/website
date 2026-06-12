@@ -15,7 +15,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/site.css">
+<link rel="stylesheet" href="/site.css?v=2">
 </head>
 <body>
 
@@ -76,9 +76,7 @@
 
 <section class="wrap" style="text-align:center">
   <div class="bob-stage" id="bob">
-    <img src="/brand/bob-wave.png" alt="BundleBob, the BundleBoss mascot, waving hello" width="560" height="560">
-    <span class="bob-pupil" style="left:41.25%;top:27.5%"></span>
-    <span class="bob-pupil" style="left:53.25%;top:27.5%"></span>
+    <img src="/brand/bob-hello.png?v=2" alt="BundleBob, the BundleBoss mascot, waving hello" width="560" height="560">
   </div>
   <h2 class="section-title">Honest, simple pricing</h2>
   <p class="section-sub">A genuinely useful free plugin. One Pro tier for the Builder. No surprises.</p>
@@ -86,21 +84,46 @@
 </section>
 
 <script>
+// Eye-tracking is a pure enhancement: the page ships Bob with painted
+// eyes, and only once the blank-eyes art AND the pupil styles are
+// confirmed present do we swap him for the tracking version.
 (function () {
   var stage = document.getElementById('bob');
   if (!stage) return;
-  var pupils = stage.querySelectorAll('.bob-pupil');
-  document.addEventListener('mousemove', function (e) {
-    var r = stage.getBoundingClientRect();
-    var cx = r.left + r.width / 2, cy = r.top + r.height * 0.36;
-    var dx = e.clientX - cx, dy = e.clientY - cy;
-    var d = Math.sqrt(dx * dx + dy * dy) || 1;
-    var reach = Math.min(d / 40, 1) * 5; /* up to 5px toward the cursor */
-    var tx = (dx / d) * reach, ty = (dy / d) * reach;
-    for (var i = 0; i < pupils.length; i++) {
-      pupils[i].style.transform = 'translate(' + tx + 'px,' + ty + 'px)';
-    }
-  });
+  var img = stage.querySelector('img');
+
+  var probe = document.createElement('span');
+  probe.className = 'bob-pupil';
+  stage.appendChild(probe);
+  var styled = getComputedStyle(probe).position === 'absolute';
+  stage.removeChild(probe);
+  if (!styled) return; // stale/missing CSS: keep painted-eyes Bob
+
+  var blank = new Image();
+  blank.onload = function () {
+    img.src = blank.src;
+    var pupils = [];
+    [41.25, 53.25].forEach(function (left) {
+      var p = document.createElement('span');
+      p.className = 'bob-pupil';
+      p.style.left = left + '%';
+      p.style.top = '27.5%';
+      stage.appendChild(p);
+      pupils.push(p);
+    });
+    document.addEventListener('mousemove', function (e) {
+      var r = stage.getBoundingClientRect();
+      var cx = r.left + r.width / 2, cy = r.top + r.height * 0.36;
+      var dx = e.clientX - cx, dy = e.clientY - cy;
+      var d = Math.sqrt(dx * dx + dy * dy) || 1;
+      var reach = Math.min(d / 40, 1) * 5; /* up to 5px toward the cursor */
+      var tx = (dx / d) * reach, ty = (dy / d) * reach;
+      for (var i = 0; i < pupils.length; i++) {
+        pupils[i].style.transform = 'translate(' + tx + 'px,' + ty + 'px)';
+      }
+    });
+  };
+  blank.src = '/brand/bob-wave.png';
 })();
 </script>
 
