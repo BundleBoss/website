@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -15,120 +15,81 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --ink: #151029;
-    --ink2: #1d1535;
-    --text: #efedf5;
-    --muted: #b9b3cc;
-    --coral: #fd4730;
-    --coral2: #ff8a5e;
-    --magenta: #c2188f;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html, body { height: 100%; }
-  body {
-    font-family: 'Inter', -apple-system, "Segoe UI", sans-serif;
-    background: radial-gradient(1200px 800px at 70% -10%, #2a1a4d 0%, var(--ink) 55%) fixed, var(--ink);
-    color: var(--text);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 24px;
-  }
-  main { max-width: 660px; }
-  .mark {
-    display: inline-flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 36px;
-  }
-  .mark img { width: 64px; height: 64px; }
-  .mark-name {
-    font-size: 30px;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-  }
-  .mark-name span { color: var(--coral); }
-  h1 {
-    font-size: clamp(28px, 5.5vw, 46px);
-    font-weight: 800;
-    letter-spacing: -0.03em;
-    line-height: 1.12;
-    margin-bottom: 18px;
-  }
-  h1 em {
-    font-style: normal;
-    background: linear-gradient(90deg, var(--coral), var(--coral2));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-  p.lede {
-    font-size: 17px;
-    line-height: 1.65;
-    color: var(--muted);
-    margin: 0 auto 36px;
-    max-width: 540px;
-    font-weight: 500;
-  }
-  .badge {
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--coral2);
-    border: 1px solid rgba(255, 138, 94, 0.35);
-    border-radius: 100px;
-    padding: 7px 16px;
-    margin-bottom: 22px;
-  }
-  .contact {
-    font-size: 15px;
-    color: var(--muted);
-    font-weight: 500;
-  }
-  .contact a {
-    color: var(--text);
-    text-decoration: none;
-    border-bottom: 1px solid rgba(239, 237, 245, 0.25);
-    padding-bottom: 1px;
-    transition: border-color 0.15s, color 0.15s;
-  }
-  .contact a:hover { color: var(--coral2); border-color: var(--coral2); }
-  footer {
-    margin-top: 56px;
-    font-size: 12.5px;
-    color: #6f6889;
-    font-weight: 500;
-  }
-</style>
+<link rel="stylesheet" href="/site.css">
 </head>
 <body>
-<main>
-  <div class="mark">
-    <img src="/brand/bundleboss-mark.png" alt="BundleBoss">
-    <div class="mark-name">Bundle<span>Boss</span></div>
-  </div>
 
+<header class="site-header">
+  <a class="site-logo" href="/">
+    <img src="/brand/bundleboss-mark.png" alt="">
+    <span>Bundle<b>Boss</b></span>
+  </a>
+  <nav class="site-nav">
+    <a href="/" class="active">Home</a>
+    <a href="/pricing.html">Pricing</a>
+    <a href="mailto:support@getbundleboss.com">Support</a>
+  </nav>
+</header>
+
+<div class="hero wrap">
   <div><span class="badge">Coming soon</span></div>
-
   <h1>Bundle anything.<br><em>You're in charge.</em></h1>
-
   <p class="lede">
     Sell ready-made packs or let customers build their own, piece by piece.
     You set the rules. BundleBoss keeps every build valid, priced to the
-    penny and ready for checkout. If it comes in parts, you can sell it
-    as one.
+    penny and ready for checkout.
   </p>
+  <a class="btn btn-primary" href="mailto:support@getbundleboss.com?subject=Early%20access">Get early access</a>
+  <a class="btn btn-ghost" href="/pricing.html">See pricing</a>
+</div>
 
-  <p class="contact">
-    Want in early? Say hello at <a href="mailto:support@getbundleboss.com">support@getbundleboss.com</a>
-  </p>
+<section class="wrap">
+  <h2 class="section-title">If it comes in parts, you can sell it as one</h2>
+  <p class="section-sub">PC builders, gift boxes, ski packages, coffee kits. One engine, any kind of store.</p>
+  <div class="cards">
+    <div class="card">
+      <h3>Fixed bundles, done properly</h3>
+      <p>Pick the products, set the quantities, choose the discount. Customers personalise every single unit: a three t-shirt pack can be three different sizes and colours.</p>
+    </div>
+    <div class="card">
+      <h3>Build-your-own<span class="pro-tag">Pro</span></h3>
+      <p>Choice slots turn a bundle into a configurator. Customers pick each component from pools you define, with live pricing the whole way.</p>
+    </div>
+    <div class="card">
+      <h3>Rules that protect every sale<span class="pro-tag">Pro</span></h3>
+      <p>"If the processor is AMD, the motherboard must be too." Compatibility and quantity rules run on your existing tags and categories, enforced on the server, not just in the browser.</p>
+    </div>
+    <div class="card">
+      <h3>Shareable builds<span class="pro-tag">Pro</span></h3>
+      <p>A finished build copies to a link anyone can open and buy. Nothing is stored on your server and links never expire.</p>
+    </div>
+    <div class="card">
+      <h3>Stock you can trust</h3>
+      <p>Component stock is checked while configuring, at add to cart and again at checkout. Orders ship with a pick list your warehouse will actually thank you for.</p>
+    </div>
+    <div class="card">
+      <h3>Your data stays yours</h3>
+      <p>No tracking, no external calls, free export of every bundle. Uninstalling never deletes your work unless you ask it to.</p>
+    </div>
+  </div>
+</section>
 
-  <footer>&copy; 2026 BundleBoss</footer>
-</main>
+<section class="wrap" style="text-align:center">
+  <h2 class="section-title">Honest, simple pricing</h2>
+  <p class="section-sub">A genuinely useful free plugin. One Pro tier for the Builder. No surprises.</p>
+  <a class="btn btn-primary" href="/pricing.html">See plans</a>
+</section>
+
+<footer class="site-footer">
+  <div class="links">
+    <a href="/pricing.html">Pricing</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+    <a href="/refunds.html">Refunds</a>
+    <a href="mailto:support@getbundleboss.com">Support</a>
+  </div>
+  &copy; 2026 BundleBoss &middot; operated by Stefanos Konstantinou, United Kingdom
+</footer>
+
 </body>
 </html>
