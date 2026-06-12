@@ -1,0 +1,24 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- BundleBoss mark — single colour (ink) for stamps, embossing, low-colour contexts. -->
+  <g fill="#151029">
+    <polygon points="36,104 100,136 100,148 36,116"/>
+    <polygon points="164,104 100,136 100,148 164,116"/>
+    <polygon points="30,110 100,145 100,167 30,132"/>
+    <polygon points="170,110 100,145 100,167 170,132"/>
+    <polygon points="30,110 36,104 100,136 100,145"/>
+    <polygon points="170,110 164,104 100,136 100,145"/>
+    <polygon points="30,67 100,102 100,130 30,95"/>
+    <polygon points="170,67 100,102 100,130 170,95"/>
+    <polygon points="30,67 44,60 100,88 100,102"/>
+    <polygon points="170,67 156,60 100,88 100,102"/>
+    <polygon points="44,60 100,32 100,46 58,67"/>
+    <polygon points="156,60 100,32 100,46 142,67"/>
+    <polygon points="30,48 44,41 44,60 30,67"/>
+    <polygon points="30,48 16,41 16,60 30,67"/>
+    <polygon points="30,48 16,41 30,34 44,41"/>
+    <polygon points="170,48 156,41 156,60 170,67"/>
+    <polygon points="170,48 184,41 184,60 170,67"/>
+    <polygon points="170,48 184,41 170,34 156,41"/>
+    <polygon points="100,14 117,22 117,40 100,48 83,40 83,22"/>
+  </g>
+</svg>

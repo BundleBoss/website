@@ -3,22 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BundleBoss — Product bundles &amp; configurators for WooCommerce</title>
-<meta name="description" content="BundleBoss: flexible product bundles, PC-builder-style configurators, compatibility rules and shareable builds for WooCommerce. Coming soon.">
+<title>BundleBoss — Product bundles &amp; build-your-own for WooCommerce</title>
+<meta name="description" content="BundleBoss: flexible product bundles, PC-builder-style configurators, compatibility rules and shareable builds for WooCommerce. Bundle anything. You're in charge.">
+<link rel="icon" type="image/svg+xml" href="/brand/bundleboss-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/brand/favicon-16.png">
+<link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
+<meta property="og:title" content="BundleBoss — Bundle anything. You're in charge.">
+<meta property="og:description" content="Product bundles & build-your-own configurators for WooCommerce. Coming soon.">
+<meta property="og:image" content="https://getbundleboss.com/brand/og-image.png">
+<meta property="og:url" content="https://getbundleboss.com">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0f1420;
-    --bg2: #161d2e;
-    --text: #e8eaf0;
-    --muted: #8b93a7;
-    --accent: #7c3aed;
-    --accent2: #a78bfa;
+    --ink: #151029;
+    --ink2: #1d1535;
+    --text: #efedf5;
+    --muted: #b9b3cc;
+    --coral: #ff5a36;
+    --coral2: #ff8a5e;
+    --magenta: #c2188f;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body { height: 100%; }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: radial-gradient(1200px 800px at 70% -10%, #221a3d 0%, var(--bg) 55%) fixed, var(--bg);
+    font-family: 'Inter', -apple-system, "Segoe UI", sans-serif;
+    background: radial-gradient(1200px 800px at 70% -10%, #2a1a4d 0%, var(--ink) 55%) fixed, var(--ink);
     color: var(--text);
     display: flex;
     align-items: center;
@@ -26,37 +38,30 @@
     text-align: center;
     padding: 24px;
   }
-  main { max-width: 640px; }
+  main { max-width: 660px; }
   .mark {
     display: inline-flex;
     align-items: center;
-    gap: 14px;
+    gap: 16px;
     margin-bottom: 36px;
   }
-  .mark-icon {
-    width: 52px; height: 52px;
-    border-radius: 14px;
-    background: linear-gradient(135deg, var(--accent) 0%, #5b21b6 100%);
-    display: flex; align-items: center; justify-content: center;
-    box-shadow: 0 8px 30px rgba(124, 58, 237, 0.35);
-  }
-  .mark-icon svg { width: 28px; height: 28px; }
+  .mark img { width: 64px; height: 64px; }
   .mark-name {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 800;
     letter-spacing: -0.02em;
   }
-  .mark-name span { color: var(--accent2); }
+  .mark-name span { color: var(--coral); }
   h1 {
-    font-size: clamp(28px, 5.5vw, 44px);
+    font-size: clamp(28px, 5.5vw, 46px);
     font-weight: 800;
     letter-spacing: -0.03em;
-    line-height: 1.15;
+    line-height: 1.12;
     margin-bottom: 18px;
   }
   h1 em {
     font-style: normal;
-    background: linear-gradient(90deg, var(--accent2), #c4b5fd);
+    background: linear-gradient(90deg, var(--coral), var(--coral2));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -66,7 +71,8 @@
     line-height: 1.65;
     color: var(--muted);
     margin: 0 auto 36px;
-    max-width: 520px;
+    max-width: 540px;
+    font-weight: 500;
   }
   .badge {
     display: inline-block;
@@ -74,8 +80,8 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    color: var(--accent2);
-    border: 1px solid rgba(167, 139, 250, 0.35);
+    color: var(--coral2);
+    border: 1px solid rgba(255, 138, 94, 0.35);
     border-radius: 100px;
     padding: 7px 16px;
     margin-bottom: 22px;
@@ -83,42 +89,39 @@
   .contact {
     font-size: 15px;
     color: var(--muted);
+    font-weight: 500;
   }
   .contact a {
     color: var(--text);
     text-decoration: none;
-    border-bottom: 1px solid rgba(232, 234, 240, 0.25);
+    border-bottom: 1px solid rgba(239, 237, 245, 0.25);
     padding-bottom: 1px;
     transition: border-color 0.15s, color 0.15s;
   }
-  .contact a:hover { color: var(--accent2); border-color: var(--accent2); }
+  .contact a:hover { color: var(--coral2); border-color: var(--coral2); }
   footer {
     margin-top: 56px;
     font-size: 12.5px;
-    color: #5a6177;
+    color: #6f6889;
+    font-weight: 500;
   }
 </style>
 </head>
 <body>
 <main>
   <div class="mark">
-    <div class="mark-icon" aria-hidden="true">
-      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M21 8l-9-5-9 5 9 5 9-5z"/>
-        <path d="M3 8v8l9 5 9-5V8"/>
-        <path d="M12 13v8"/>
-      </svg>
-    </div>
+    <img src="/brand/bundleboss-mark.svg" alt="BundleBoss">
     <div class="mark-name">Bundle<span>Boss</span></div>
   </div>
 
   <div><span class="badge">Coming soon</span></div>
 
-  <h1>Product bundles &amp; <em>build-your-own</em> configurators for WooCommerce</h1>
+  <h1>Bundle anything.<br><em>You're in charge.</em></h1>
 
   <p class="lede">
-    Fixed bundles, PC-builder-style choice slots, compatibility rules,
-    quantity logic and shareable builds — one plugin, any kind of store.
+    Product bundles &amp; build-your-own configurators for WooCommerce —
+    fixed packs, PC-builder-style choice slots, compatibility rules,
+    quantity logic and shareable builds. One plugin, any kind of store.
   </p>
 
   <p class="contact">
