@@ -230,6 +230,13 @@ a.bob-link:hover { text-decoration: none; }
   .bob-speech { transform: translateX(-50%); left: 50%; top: -34px; }
 }
 
+.support-address {
+  font-size: clamp(18px, 3.4vw, 26px); font-weight: 800; letter-spacing: -0.01em;
+  color: var(--text); margin-top: 6px; word-break: break-all;
+}
+.bob-chapter button.btn { cursor: pointer; background: none; font-family: inherit; border: 1px solid var(--line); }
+.bob-chapter button.btn:hover { border-color: var(--muted); }
+
 /* small Bob cameo on content pages */
 .bob-inline {
   display: block; width: 132px; height: 132px; margin: 0 auto 14px;

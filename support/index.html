@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support | BundleBoss</title>
+<meta name="description" content="Get help with BundleBoss. You write, a human answers, usually within a day.">
+<link rel="icon" type="image/png" sizes="32x32" href="/brand/favicon-32.png">
+<link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css?v=9">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="site-logo" href="/">
+    <img src="/brand/bundleboss-mark.png" alt="">
+    <span>Bundle<b>Boss</b></span>
+  </a>
+  <nav class="site-nav">
+    <a href="/">Home</a>
+    <a href="/pricing/">Pricing</a>
+    <a href="/bob/">Bob</a>
+    <a href="/support/" class="active">Support</a>
+  </nav>
+</header>
+
+<div class="hero wrap" style="padding-bottom:24px">
+  <img class="bob-inline" style="width:170px;height:170px" src="/brand/bob-welcome.png" alt="BundleBob with open arms" width="560" height="560">
+  <h1>How can <em>we help?</em></h1>
+  <p class="lede">You write, a human answers. Usually within a day, often much faster.</p>
+</div>
+
+<section class="wrap narrow">
+  <div class="bob-story" style="padding-bottom:40px">
+
+    <div class="bob-chapter" style="grid-template-columns:1fr">
+      <div style="text-align:center">
+        <h2>Email us</h2>
+        <p class="support-address" id="support-address">support@getbundleboss.com</p>
+        <p style="margin-top:14px">
+          <a class="btn btn-primary" href="mailto:support@getbundleboss.com">Open in your mail app</a>
+          <button type="button" class="btn btn-ghost" id="copy-address">Copy the address</button>
+        </p>
+        <p style="margin-top:12px">No ticket numbers, no chatbots, no runaround.
+        The person who reads it is the person who builds the plugin.</p>
+      </div>
+    </div>
+
+    <div class="bob-chapter">
+      <img src="/brand/bob-checklist.png" alt="BundleBob with his checklist" width="560" height="560">
+      <div>
+        <h2>Five lines that save a day</h2>
+        <p>If something is broken, include your WordPress and WooCommerce
+        versions, which bundle and layout you were using, what you
+        expected, and what happened instead. A screenshot is worth all
+        five. With that, most answers come back in one reply.</p>
+      </div>
+    </div>
+
+    <div class="bob-chapter">
+      <img src="/brand/bob-thinking.png" alt="BundleBob thinking" width="560" height="560">
+      <div>
+        <h2>Quick answers first</h2>
+        <p>Pricing, the free trial, refunds and what the free version
+        includes are all covered in the
+        <a href="/pricing/#faq">common questions</a>. The
+        <a href="/refunds.html">refund policy</a> is a two-minute read
+        and there are no hoops in it.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function () {
+  var btn = document.getElementById('copy-address');
+  if (!btn || !navigator.clipboard) { return; }
+  btn.addEventListener('click', function () {
+    navigator.clipboard.writeText('support@getbundleboss.com').then(function () {
+      var old = btn.textContent;
+      btn.textContent = 'Copied ✓';
+      setTimeout(function () { btn.textContent = old; }, 1600);
+    }).catch(function () {
+      btn.textContent = 'support@getbundleboss.com';
+    });
+  });
+})();
+</script>
+
+<footer class="site-footer">
+  <div class="links">
+    <a href="/pricing/">Pricing</a>
+    <a href="/bob/">Bob</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+    <a href="/refunds.html">Refunds</a>
+    <a href="/support/">Support</a>
+  </div>
+  &copy; 2026 BundleBoss &middot; operated by Stefanos Konstantinou, United Kingdom
+</footer>
+
+</body>
+</html>
