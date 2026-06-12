@@ -9,7 +9,7 @@
 <link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/site.css?v=3">
+<link rel="stylesheet" href="/site.css?v=4">
 </head>
 <body>
 
@@ -88,7 +88,14 @@
   </div>
 </section>
 
+<div class="plan-bar" id="plan-bar" hidden>
+  <span class="plan-bar-summary" id="plan-summary"></span>
+  <a class="btn btn-primary" id="plan-cta" href="mailto:support@getbundleboss.com">Email us for early access</a>
+  <button type="button" class="btn btn-ghost" id="plan-copy">Copy our email</button>
+</div>
+
 <section class="wrap narrow prose" style="padding-top:20px">
+  <img class="bob-inline" src="/brand/bob-thinking.png" alt="" width="560" height="560">
   <h2>Fair questions</h2>
   <p><strong>Why pay when there are cheaper bundle plugins?</strong><br>
   The cheap ones do fixed bundles. So does our free plugin. Pro is for the Builder: configurators with rules that stop customers buying combinations that do not work. The only comparable product costs $149 a year and has not shipped a meaningful feature in years.</p>
@@ -102,6 +109,68 @@
   <p><strong>Is the free version crippled?</strong><br>
   No. It does what the official $79-a-year fixed-bundle extension does, free, forever. Pro adds the Builder, not the basics.</p>
 </section>
+
+<script>
+// Selecting a plan shouldn't ambush anyone with their mail client.
+// With JS available, tier cards become select-able and the only mailto
+// lives behind one clearly-labelled button in the action bar.
+// Without JS the cards keep their direct links.
+(function () {
+  var tiers = Array.prototype.slice.call(document.querySelectorAll('.tier'));
+  var bar = document.getElementById('plan-bar');
+  if (!tiers.length || !bar) return;
+
+  document.querySelector('.tiers').classList.add('js-select');
+  var summary = document.getElementById('plan-summary');
+  var cta = document.getElementById('plan-cta');
+  var copy = document.getElementById('plan-copy');
+
+  tiers.forEach(function (tier) {
+    var name = tier.querySelector('h3').textContent.trim();
+    var btn = tier.querySelector('.btn');
+    tier.setAttribute('role', 'radio');
+    tier.setAttribute('aria-checked', 'false');
+    tier.setAttribute('tabindex', '0');
+    btn.textContent = 'Select ' + name;
+    btn.removeAttribute('href');
+
+    function select() {
+      tiers.forEach(function (t) {
+        t.classList.remove('selected');
+        t.setAttribute('aria-checked', 'false');
+      });
+      tier.classList.add('selected');
+      tier.setAttribute('aria-checked', 'true');
+
+      var price = tier.querySelector('.price').textContent.trim();
+      var per = tier.querySelector('.per').textContent.trim();
+      summary.textContent = name + ' — ' + price + ' (' + per + ')';
+      if (name === 'Free') {
+        cta.textContent = 'Email us — get notified at launch';
+        cta.href = 'mailto:support@getbundleboss.com?subject=' + encodeURIComponent('Tell me when it launches');
+      } else {
+        cta.textContent = 'Email us for early access';
+        cta.href = 'mailto:support@getbundleboss.com?subject=' + encodeURIComponent('Early access — ' + name);
+      }
+      bar.hidden = false;
+      requestAnimationFrame(function () { bar.classList.add('open'); });
+    }
+
+    tier.addEventListener('click', select);
+    tier.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); select(); }
+    });
+  });
+
+  copy.addEventListener('click', function () {
+    navigator.clipboard.writeText('support@getbundleboss.com').then(function () {
+      var old = copy.textContent;
+      copy.textContent = 'Copied ✓';
+      setTimeout(function () { copy.textContent = old; }, 1600);
+    });
+  });
+})();
+</script>
 
 <footer class="site-footer">
   <div class="links">

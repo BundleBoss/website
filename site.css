@@ -117,6 +117,39 @@ p.section-sub { text-align: center; color: var(--muted); margin-bottom: 40px; }
 .tier li.no::before { content: "\2013"; color: var(--faint); }
 .tier .btn { text-align: center; }
 
+/* plan selection (JS-enhanced pricing) */
+.tiers.js-select .tier { cursor: pointer; }
+.tiers.js-select .tier .btn::after { display: none; }
+.tiers.js-select .tier .btn { pointer-events: none; }
+.tier.selected { border-color: var(--coral); }
+.tier.selected::after {
+  content: "\2713 Selected"; position: absolute; top: 14px; right: 14px;
+  font-size: 11px; font-weight: 700; color: var(--coral2);
+}
+.plan-bar {
+  position: fixed; bottom: 18px; left: 50%;
+  transform: translateX(-50%) translateY(140%);
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  max-width: calc(100vw - 28px);
+  background: var(--surface); border: 1px solid var(--coral);
+  border-radius: 14px; padding: 12px 18px; z-index: 60;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.5);
+  opacity: 0; transition: transform 240ms ease, opacity 240ms ease;
+}
+.plan-bar.open { transform: translateX(-50%) translateY(0); opacity: 1; }
+.plan-bar-summary { font-weight: 700; font-size: 15px; }
+.plan-bar .btn { padding: 10px 18px; font-size: 14px; margin: 0; }
+.plan-bar button.btn { cursor: pointer; background: none; font-family: inherit; }
+@media (max-width: 560px) {
+  .plan-bar { justify-content: center; text-align: center; }
+}
+
+/* small Bob cameo on content pages */
+.bob-inline {
+  display: block; width: 132px; height: 132px; margin: 0 auto 14px;
+  filter: drop-shadow(0 10px 22px rgba(253, 71, 48, 0.22));
+}
+
 /* prose pages (policies) */
 .prose { padding: 40px 0 80px; }
 .prose h1 { font-size: 34px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 6px; }
