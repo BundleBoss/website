@@ -9,7 +9,7 @@
 <link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/site.css?v=4">
+<link rel="stylesheet" href="/site.css?v=5">
 </head>
 <body>
 
@@ -86,6 +86,7 @@
       <a class="btn btn-ghost" style="margin-left:0" href="mailto:support@getbundleboss.com?subject=Early%20access%20Agency">Get early access</a>
     </div>
   </div>
+  <p class="currency-note">Prices in USD. At checkout you pay in your own currency.</p>
 </section>
 
 <div class="plan-bar" id="plan-bar" hidden>
@@ -96,18 +97,26 @@
 
 <section class="wrap narrow prose" style="padding-top:20px">
   <img class="bob-inline" src="/brand/bob-thinking.png" alt="" width="560" height="560">
-  <h2>Fair questions</h2>
+  <h2>Common questions</h2>
   <p><strong>Why pay when there are cheaper bundle plugins?</strong><br>
-  The cheap ones do fixed bundles. So does our free plugin. Pro is for the Builder: configurators with rules that stop customers buying combinations that do not work. The only comparable product costs $149 a year and has not shipped a meaningful feature in years.</p>
+  The cheap ones do fixed bundles. So does our free plugin. Pro is for
+  the Builder: configurators with rules that stop customers buying
+  combinations that do not work. The closest thing to it is
+  WooCommerce's own Composite Products at £112 (about $150) a year —
+  and its own reviewers say it has not shipped a meaningful feature in
+  years.</p>
   <p><strong>How does this compare to the official extensions?</strong><br>
-  To get both halves of what BundleBoss does, WooCommerce.com charges
-  for two separate products: Product Bundles plus Composite Products,
-  over $200 a year together. BundleBoss Solo gives you both halves,
-  designed to work as one, for $99.</p>
+  To get both halves of what BundleBoss does you would buy two separate
+  WooCommerce.com extensions: Product Bundles (£60 a year) plus
+  Composite Products (£112 a year) — £172 together, around $215.
+  BundleBoss Solo gives you both halves, designed to work as one,
+  for $99.</p>
   <p><strong>What happens if I cancel?</strong><br>
   The plugin keeps working, your bundles stay intact, you stop receiving updates and support. Your data is never held hostage.</p>
   <p><strong>Is the free version crippled?</strong><br>
-  No. It does what the official $79-a-year fixed-bundle extension does, free, forever. Pro adds the Builder, not the basics.</p>
+  No. It covers what the official fixed-bundle extension charges
+  £60 a year for — free, forever. Pro adds the Builder, not the
+  basics.</p>
 </section>
 
 <script>
@@ -167,6 +176,9 @@
       var old = copy.textContent;
       copy.textContent = 'Copied ✓';
       setTimeout(function () { copy.textContent = old; }, 1600);
+    }).catch(function () {
+      // Clipboard blocked: just show the address so it can be copied by hand.
+      copy.textContent = 'support@getbundleboss.com';
     });
   });
 })();

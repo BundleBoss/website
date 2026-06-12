@@ -117,6 +117,10 @@ p.section-sub { text-align: center; color: var(--muted); margin-bottom: 40px; }
 .tier li.no::before { content: "\2013"; color: var(--faint); }
 .tier .btn { text-align: center; }
 
+.currency-note {
+  text-align: center; color: var(--faint); font-size: 13px; margin-top: 18px;
+}
+
 /* plan selection (JS-enhanced pricing) */
 .tiers.js-select .tier { cursor: pointer; }
 .tiers.js-select .tier .btn::after { display: none; }
