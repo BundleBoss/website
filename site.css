@@ -148,6 +148,46 @@ p.section-sub { text-align: center; color: var(--muted); margin-bottom: 40px; }
   .plan-bar { justify-content: center; text-align: center; }
 }
 
+/* FAQ accordion (native details/summary — works with no JS) */
+.faq { display: grid; gap: 12px; }
+.faq-item {
+  background: var(--ink2); border: 1px solid var(--line);
+  border-radius: 14px;
+  transition: border-color 160ms ease;
+}
+.faq-item:hover { border-color: var(--faint); }
+.faq-item[open] { border-color: var(--coral); }
+.faq-item summary {
+  cursor: pointer; list-style: none;
+  display: flex; justify-content: space-between; align-items: center; gap: 14px;
+  padding: 17px 20px;
+  font-weight: 700; font-size: 15.5px; color: var(--text);
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+"; flex-shrink: 0;
+  font-size: 24px; font-weight: 400; line-height: 1; color: var(--coral2);
+  transition: transform 200ms ease;
+}
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item summary:focus-visible {
+  outline: 2px solid var(--coral2); outline-offset: -2px; border-radius: 14px;
+}
+.faq-item p {
+  padding: 0 44px 18px 20px; margin: 0;
+  color: var(--muted); font-size: 15px;
+}
+.faq-item a { color: var(--coral2); }
+/* smooth expand where the browser can animate height:auto */
+@supports (interpolate-size: allow-keywords) {
+  .faq { interpolate-size: allow-keywords; }
+  .faq-item::details-content {
+    height: 0; overflow: clip;
+    transition: height 240ms ease, content-visibility 240ms allow-discrete;
+  }
+  .faq-item[open]::details-content { height: auto; }
+}
+
 /* small Bob cameo on content pages */
 .bob-inline {
   display: block; width: 132px; height: 132px; margin: 0 auto 14px;
