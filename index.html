@@ -75,11 +75,34 @@
 </section>
 
 <section class="wrap" style="text-align:center">
-  <div class="bob-badge"><img src="/brand/bob-hello.png" alt="BundleBob, the BundleBoss mascot, waving hello" width="560" height="560"></div>
+  <div class="bob-stage" id="bob">
+    <img src="/brand/bob-wave.png" alt="BundleBob, the BundleBoss mascot, waving hello" width="560" height="560">
+    <span class="bob-pupil" style="left:41.25%;top:27.5%"></span>
+    <span class="bob-pupil" style="left:53.25%;top:27.5%"></span>
+  </div>
   <h2 class="section-title">Honest, simple pricing</h2>
   <p class="section-sub">A genuinely useful free plugin. One Pro tier for the Builder. No surprises.</p>
   <a class="btn btn-primary" href="/pricing/">See plans</a>
 </section>
+
+<script>
+(function () {
+  var stage = document.getElementById('bob');
+  if (!stage) return;
+  var pupils = stage.querySelectorAll('.bob-pupil');
+  document.addEventListener('mousemove', function (e) {
+    var r = stage.getBoundingClientRect();
+    var cx = r.left + r.width / 2, cy = r.top + r.height * 0.36;
+    var dx = e.clientX - cx, dy = e.clientY - cy;
+    var d = Math.sqrt(dx * dx + dy * dy) || 1;
+    var reach = Math.min(d / 40, 1) * 5; /* up to 5px toward the cursor */
+    var tx = (dx / d) * reach, ty = (dy / d) * reach;
+    for (var i = 0; i < pupils.length; i++) {
+      pupils[i].style.transform = 'translate(' + tx + 'px,' + ty + 'px)';
+    }
+  });
+})();
+</script>
 
 <footer class="site-footer">
   <div class="links">

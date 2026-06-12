@@ -114,16 +114,21 @@ p.section-sub { text-align: center; color: var(--muted); margin-bottom: 40px; }
 .prose strong { color: var(--text); }
 
 /* BundleBob */
-.bob-badge {
-  width: 168px; height: 168px; border-radius: 50%;
-  background: #fdfdfe; overflow: hidden;
-  margin: 0 auto 26px;
-  border: 1px solid var(--line);
-  box-shadow: 0 12px 36px rgba(253, 71, 48, 0.18);
+.bob-stage {
+  position: relative; width: 230px; height: 230px;
+  margin: 0 auto 18px;
   animation: bob-float 3.6s ease-in-out infinite;
+  filter: drop-shadow(0 16px 32px rgba(253, 71, 48, 0.28));
 }
-.bob-badge img { width: 100%; height: 100%; display: block; }
-.bob-badge:hover { animation: bob-wave 0.9s ease-in-out; }
+.bob-stage img { width: 100%; height: 100%; display: block; }
+.bob-stage:hover { animation: bob-wave 0.9s ease-in-out; }
+.bob-pupil {
+  position: absolute; width: 8.5%; height: 11%;
+  border-radius: 50%; background: #18122b;
+  /* the glint */
+  background-image: radial-gradient(circle at 32% 28%, #fff 0 22%, transparent 26%);
+  transition: transform 90ms linear;
+}
 @keyframes bob-float {
   0%, 100% { transform: translateY(0); }
   50%      { transform: translateY(-10px); }
@@ -134,8 +139,8 @@ p.section-sub { text-align: center; color: var(--muted); margin-bottom: 40px; }
   60%      { transform: rotate(5deg); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .bob-badge { animation: none; }
-  .bob-badge:hover { animation: none; }
+  .bob-stage { animation: none; }
+  .bob-stage:hover { animation: none; }
 }
 
 /* footer */
