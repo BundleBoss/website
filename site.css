@@ -1,4 +1,4 @@
-/* BundleBoss site — shared styles. Ink/coral/plum identity, Inter. */
+/* BundleBoss site: shared styles. Ink/coral/plum identity, Inter. */
 :root {
   --ink: #151029;
   --ink2: #1d1535;
@@ -86,6 +86,11 @@ p.section-sub { text-align: center; color: var(--muted); margin-bottom: 40px; }
 }
 
 /* pricing */
+.currency-toggle { display: inline-flex; gap: 4px; border: 1px solid var(--line); border-radius: 999px; padding: 4px; }
+.currency-toggle button { border: 0; background: none; padding: 7px 16px; border-radius: 999px; font: inherit; font-weight: 700; cursor: pointer; color: var(--muted); }
+.currency-toggle button:hover { color: var(--text); }
+.currency-toggle button.active { background: var(--coral); color: #fff; }
+
 .tiers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; align-items: stretch; }
 .tier {
   background: var(--ink2); border: 1px solid var(--line);
@@ -148,7 +153,7 @@ p.section-sub { text-align: center; color: var(--muted); margin-bottom: 40px; }
   .plan-bar { justify-content: center; text-align: center; }
 }
 
-/* FAQ accordion (native details/summary — works with no JS) */
+/* FAQ accordion (native details/summary, works with no JS) */
 .faq { display: grid; gap: 12px; }
 .faq-item {
   background: var(--ink2); border: 1px solid var(--line);
@@ -220,7 +225,7 @@ a.bob-link:hover { text-decoration: none; }
 .bob-chapter img { width: 190px; height: 190px; filter: drop-shadow(0 10px 22px rgba(253, 71, 48, 0.2)); }
 .bob-chapter h2 { font-size: 21px; font-weight: 800; letter-spacing: -0.01em; margin-bottom: 8px; }
 .bob-chapter p { color: var(--muted); font-size: 15.5px; }
-/* prose links only — buttons keep their own colours */
+/* prose links only; buttons keep their own colours */
 .bob-chapter a:not(.btn) { color: var(--coral2); }
 .bob-chapter .btn-primary { color: #fff; }
 .bob-chapter .btn-ghost { color: var(--text); margin-left: 0; margin-right: 10px; }

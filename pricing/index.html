@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pricing | BundleBoss</title>
-<meta name="description" content="A genuinely useful free plugin, and one Pro tier for the Builder. $99 a year for a single site, 14-day free trial, 30-day refunds.">
+<meta name="description" content="A genuinely useful free plugin, and one Pro tier for the Builder. £79 a year for a single site, 14-day free trial, 30-day refunds.">
 <link rel="icon" type="image/png" sizes="32x32" href="/brand/favicon-32.png">
 <link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,11 +33,18 @@
 </div>
 
 <section class="wrap" style="padding-top:10px">
+  <div class="currency-toggle-row" style="text-align:center;margin-bottom:24px">
+    <div class="currency-toggle" role="group" aria-label="Currency">
+      <button type="button" data-cur="gbp" class="active" aria-pressed="true">£ GBP</button>
+      <button type="button" data-cur="usd" aria-pressed="false">$ USD</button>
+      <button type="button" data-cur="eur" aria-pressed="false">€ EUR</button>
+    </div>
+  </div>
   <div class="tiers">
     <div class="tier">
       <h3>Free</h3>
-      <div class="price">$0</div>
-      <div class="per">forever, on wordpress.org</div>
+      <div class="price" data-gbp="£0" data-usd="$0" data-eur="€0"><span class="amt">£0</span></div>
+      <div class="per">on wordpress.org</div>
       <ul>
         <li>Fixed bundles with per-unit choices</li>
         <li>Discount or fixed-price modes</li>
@@ -51,13 +58,16 @@
     </div>
     <div class="tier featured">
       <h3>Solo</h3>
-      <div class="price">$99<small>/year</small></div>
+      <div class="price" data-gbp="£79" data-usd="$99" data-eur="€89"><span class="amt">£79</span><small>/year</small></div>
       <div class="per">1 site</div>
       <ul>
         <li>Everything in Free</li>
         <li>Build-your-own choice slots</li>
+        <li>Per-item personalisation (names, options, fees)</li>
+        <li>Logo and file upload on items</li>
         <li>Compatibility and quantity rules</li>
         <li>Shareable build links</li>
+        <li>Hero slots and deal badges</li>
         <li>Step-by-step layout</li>
         <li>Migrate from Composite Products</li>
         <li>Priority support</li>
@@ -66,7 +76,7 @@
     </div>
     <div class="tier">
       <h3>Studio</h3>
-      <div class="price">$199<small>/year</small></div>
+      <div class="price" data-gbp="£149" data-usd="$199" data-eur="€179"><span class="amt">£149</span><small>/year</small></div>
       <div class="per">5 sites</div>
       <ul>
         <li>Everything in Solo</li>
@@ -77,7 +87,7 @@
     </div>
     <div class="tier">
       <h3>Agency</h3>
-      <div class="price">$399<small>/year</small></div>
+      <div class="price" data-gbp="£299" data-usd="$399" data-eur="€349"><span class="amt">£299</span><small>/year</small></div>
       <div class="per">25 sites</div>
       <ul>
         <li>Everything in Solo</li>
@@ -87,7 +97,7 @@
       <a class="btn btn-ghost" style="margin-left:0" href="mailto:support@getbundleboss.com?subject=Early%20access%20Agency">Get early access</a>
     </div>
   </div>
-  <p class="currency-note">Prices in USD. At checkout you can pay in USD, GBP or EUR.</p>
+  <p class="currency-note">Switch currency above. You can pay in GBP, USD or EUR at checkout.</p>
 </section>
 
 <div class="plan-bar" id="plan-bar" hidden>
@@ -105,14 +115,17 @@
       <p>The cheap ones do fixed bundles. So does our free plugin. Pro
       is for the Builder: configurators with rules that stop customers
       buying combinations that do not work. The closest thing to it is
-      WooCommerce's own Composite Products at £112 (about $150) a year, and its own reviewers say it has not shipped a meaningful feature in years.</p>
+      WooCommerce's own Composite Products at £112 a year, and its own reviewers say it has not shipped a meaningful feature in years.</p>
     </details>
     <details class="faq-item">
       <summary>How does this compare to the official extensions?</summary>
-      <p>To get both halves of what BundleBoss does you would buy two
-      separate WooCommerce.com extensions: Product Bundles (£60 a year)
-      plus Composite Products (£112 a year). That is £172 together, around $230. BundleBoss Solo gives you both halves, designed to work as
-      one, for $99.</p>
+      <p>To match what BundleBoss Pro does using official
+      WooCommerce.com extensions you would buy three: Product Bundles
+      (£60 a year), Composite Products (£112) for build-your-own, and
+      Product Add-Ons (£49) for personalisation. That is about £220 a
+      year, across three plugins stitched together. BundleBoss Solo
+      gives you all of it, designed to work as one, for
+      <span data-gbp="£79" data-usd="$99" data-eur="€89">£79</span>.</p>
     </details>
     <details class="faq-item">
       <summary>How does the free trial work?</summary>
@@ -133,10 +146,10 @@
       return.</p>
     </details>
     <details class="faq-item">
-      <summary>Is the free version crippled?</summary>
-      <p>No. It covers what the official fixed-bundle extension charges
-      £60 a year for. Free, forever. Pro adds the Builder, not the
-      basics.</p>
+      <summary>Is the free version limited?</summary>
+      <p>No. It covers everything the official fixed-bundle extension
+      charges £60 a year for, free on wordpress.org. Pro adds the
+      Builder, not the basics.</p>
     </details>
     <details class="faq-item">
       <summary>Will it work with my theme?</summary>
@@ -147,6 +160,37 @@
     </details>
   </div>
 </section>
+
+<script>
+// Currency toggle: swap the displayed amounts. No geo, no IP, no tracking.
+// Handles both the tier cards (which keep their "/year") and any inline
+// price in the copy that carries data-gbp/usd/eur, so nothing contradicts
+// the cards when you switch.
+(function () {
+  var toggle = document.querySelector('.currency-toggle');
+  if (!toggle) return;
+  var fields = document.querySelectorAll('[data-gbp]');
+  function set(cur) {
+    fields.forEach(function (el) {
+      var amt = el.getAttribute('data-' + cur);
+      if (!amt) return;
+      var span = el.querySelector('.amt');
+      if (span) { span.textContent = amt; } // tier card: leave the /year
+      else { el.textContent = amt; }         // inline figure in the copy
+    });
+    toggle.querySelectorAll('button').forEach(function (b) {
+      var on = b.getAttribute('data-cur') === cur;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+  }
+  toggle.addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-cur]');
+    if (b) { set(b.getAttribute('data-cur')); }
+  });
+  set('gbp');
+})();
+</script>
 
 <script>
 // Selecting a plan shouldn't ambush anyone with their mail client.
