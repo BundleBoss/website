@@ -13,6 +13,8 @@ There are two separate choices, both at the top of the **Bundle Items** tab:
 
 They are independent, so you can mix them, for example a List page with a Quantity grid inside one item.
 
+<div class="callout tip"><span class="callout-label">See them</span><p>Prefer to look before you choose? <a href="/docs/layout-gallery/">Layouts in pictures</a> shows every option with a screenshot and the exact setting that produces it.</p></div>
+
 ## Page layout
 
 ### List (default)
