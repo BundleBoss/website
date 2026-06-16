@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} | BundleBoss docs</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<link rel="icon" type="image/png" sizes="32x32" href="/brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/brand/favicon-16.png">
+<link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
+<meta property="og:title" content="{{ page.title }} | BundleBoss docs">
+<meta property="og:description" content="{{ page.description | default: site.description }}">
+<meta property="og:image" content="https://getbundleboss.com/brand/og-image.png">
+<meta property="og:url" content="https://getbundleboss.com{{ page.url }}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css?v=10">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="site-logo" href="/">
+    <img src="/brand/bundleboss-mark.png" alt="">
+    <span>Bundle<b>Boss</b></span>
+  </a>
+  <nav class="site-nav">
+    <a href="/">Home</a>
+    <a href="/docs/" class="active">Docs</a>
+    <a href="/pricing/">Pricing</a>
+    <a href="/bob/">Bob</a>
+    <a href="/support/">Support</a>
+  </nav>
+</header>
+
+<div class="docs-shell wrap">
+
+  <aside class="docs-sidebar">
+    <details class="docs-nav" open>
+      <summary>Browse the docs</summary>
+      <nav aria-label="Documentation">
+        {% for sec in site.data.docs %}
+        <p class="docs-sec">{{ sec.section }}</p>
+        <ul>
+          {% for item in sec.items %}
+          <li><a href="{{ item.url }}"{% if page.url == item.url %} class="active" aria-current="page"{% endif %}>{{ item.title }}{% if item.pro %} <span class="pro-dot" title="Pro feature">Pro</span>{% endif %}</a></li>
+          {% endfor %}
+        </ul>
+        {% endfor %}
+      </nav>
+    </details>
+  </aside>
+
+  <main class="docs-content prose">
+    <nav class="docs-crumb" aria-label="Breadcrumb">
+      <a href="/docs/">Docs</a>{% unless page.url == "/docs/" %} <span>/</span> {{ page.title }}{% endunless %}
+    </nav>
+    <h1>{{ page.title }}</h1>
+    {% if page.lede %}<p class="docs-lede">{{ page.lede }}</p>{% endif %}
+    {{ content }}
+
+    <hr class="docs-end">
+    <p class="docs-foot-help">Still stuck? <a href="/support/">Email a human</a>. The person who reads it is the person who builds the plugin.</p>
+  </main>
+
+</div>
+
+<footer class="site-footer">
+  <div class="links">
+    <a href="/docs/">Docs</a>
+    <a href="/pricing/">Pricing</a>
+    <a href="/bob/">Bob</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+    <a href="/refunds.html">Refunds</a>
+    <a href="/support/">Support</a>
+  </div>
+  &copy; 2026 BundleBoss &middot; operated by Stefanos Konstantinou, United Kingdom
+</footer>
+
+<script>
+// The sidebar is a plain list on desktop and a collapsible menu on phones.
+// Start it collapsed on narrow screens; pure enhancement, fine without JS.
+(function () {
+  var nav = document.querySelector('.docs-nav');
+  if (nav && window.matchMedia('(max-width: 880px)').matches) {
+    nav.removeAttribute('open');
+  }
+})();
+</script>
+
+</body>
+</html>

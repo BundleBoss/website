@@ -1,0 +1,59 @@
+# Sidebar / table of contents for the docs. One source feeds the layout's
+# sidebar and the hub's card grid. `pro: true` paints a small Pro pill.
+- section: Get started
+  items:
+    - title: Overview
+      url: /docs/
+    - title: Install &amp; your first bundle
+      url: /docs/getting-started/
+
+- section: Build your bundle
+  items:
+    - title: Bundle items &amp; quantities
+      url: /docs/bundle-items/
+    - title: Optional items
+      url: /docs/optional-items/
+    - title: Pricing &amp; discounts
+      url: /docs/pricing/
+    - title: Colour swatches
+      url: /docs/swatches/
+    - title: Layouts &amp; which to use
+      url: /docs/layouts/
+
+- section: Power features
+  items:
+    - title: Choice slots
+      url: /docs/choice-slots/
+      pro: true
+    - title: Compatibility &amp; quantity rules
+      url: /docs/rules/
+      pro: true
+    - title: Quantity grid (size runs)
+      url: /docs/quantity-grid/
+      pro: true
+    - title: Per-item personalisation
+      url: /docs/personalisation/
+      pro: true
+    - title: Shareable build links
+      url: /docs/share-links/
+      pro: true
+
+- section: Selling &amp; fulfilment
+  items:
+    - title: Cart, checkout &amp; orders
+      url: /docs/cart-checkout-orders/
+    - title: Stock &amp; fulfilment
+      url: /docs/stock-fulfilment/
+    - title: Promotions
+      url: /docs/promotions/
+
+- section: Manage &amp; extend
+  items:
+    - title: Import, export &amp; migrate
+      url: /docs/import-export/
+    - title: Multilingual (WPML / Polylang)
+      url: /docs/multilingual/
+    - title: Developer reference
+      url: /docs/developers/
+    - title: Troubleshooting
+      url: /docs/troubleshooting/

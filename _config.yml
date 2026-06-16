@@ -1,0 +1,27 @@
+# BundleBoss site — Jekyll config.
+# The marketing pages are plain static HTML (no front matter, so Jekyll copies
+# them through untouched). Only the /docs/ Markdown files are rendered, wrapped
+# in the themed "docs" layout. This is what lets the wiki be written in Markdown
+# and still come out looking exactly like the rest of getbundleboss.com.
+title: BundleBoss
+description: Guides and how-tos for BundleBoss, the configurable bundle plugin for WooCommerce.
+url: https://getbundleboss.com
+
+# Clean URLs: docs/getting-started.md -> /docs/getting-started/
+permalink: pretty
+
+# Keep build output lean and predictable.
+exclude:
+  - README.md
+  - Makefile
+  - LICENSE
+  - .gitignore
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+# Markdown engine. Plain kramdown (GitHub Pages' default engine) handles
+# everything the docs use: pipe tables, fenced code blocks and raw HTML blocks.
+markdown: kramdown
+kramdown:
+  hard_wrap: false
