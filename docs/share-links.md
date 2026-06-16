@@ -10,7 +10,7 @@ lede: A finished build copies to a link anyone can open and buy. Nothing is stor
 
 ## How it works
 
-Once a customer completes a build, a **Share this bundle** button appears under the total. It copies a link that carries the whole build in the URL itself (a `?bb_build=` token); **nothing is saved on your server**, so there is no database of links to manage and no privacy footprint.
+Once a customer completes a build, a **Share this bundle** button appears under the total. It copies a link that carries the whole build inside the link itself; **nothing is saved on your server**, so there is no list of links to manage and no privacy worries.
 
 Opening the link **restores the exact build**: every chosen product, quantity, variation pick and skipped optional item, re-validated against your live catalogue at the moment it is opened.
 

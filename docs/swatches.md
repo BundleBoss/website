@@ -31,7 +31,7 @@ A swatch column in the terms list shows which colours are set.
 
 If a colour has **no swatch set**, BundleBoss works it out from the **name**. It knows around ninety-five common colours and falls back to the base word for compounds, so "Royal Blue" and "Heather Grey" still resolve. This runs in both the configurator and the [quantity grid](/docs/quantity-grid/).
 
-This matters most for **custom (product-level) attributes**, the kind imported catalogues often use. They have no attribute term to attach a colour to, so the name is the only source, and it means those products show real colour dots with no setup at all. A name BundleBoss cannot recognise falls back to a tidy text chip rather than a blank circle.
+This matters most for **custom attributes** (ones typed straight onto a single product, the kind imported catalogues often use). They have no shared colour setting to attach a swatch to, so the name is the only source, and it means those products show real colour dots with no setup at all. A name BundleBoss cannot recognise falls back to a tidy text chip rather than a blank circle.
 
 <div class="callout tip"><span class="callout-label">Tip</span><p>You only need to set swatch colours by hand for shades the name cannot describe, like a specific brand colour. Everyday colours fill themselves in.</p></div>
 

@@ -14,7 +14,7 @@ Everything here lives on the tools page at **WooCommerce &rarr; BundleBoss**.
 
 ## Import
 
-**Import** reads an export back in. Existing bundles are matched **by slug** and updated; new ones are created. Products are resolved by **SKU first, then slug**, then an id that still has a matching name, so it works across sites. Missing `product_tag` and `product_cat` terms are created.
+**Import** reads an export back in. Existing bundles are matched by their web address (slug) and updated; new ones are created. Products are matched by **SKU first**, then by name, so it works across sites where the internal IDs differ. Any tags or categories the bundles use that are missing on the new site are created for you.
 
 Anything that cannot be matched is **listed, never guessed**. If an item could not be imported, any rules that depended on it are dropped and reported rather than wired up wrongly. Product images do not travel in the file.
 

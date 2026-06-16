@@ -13,7 +13,7 @@ lede: The usual suspects, and how to put them right.
 | "From &pound;X" shows an old price | A component price changed but the bundle was not re-saved | Re-save the bundle, or re-save the component product |
 | A bundle does not appear in the shop | The product is not Published | Publish the bundle product |
 | The Bundle Items panel is blank | WooCommerce is older than 8.0 | Update WooCommerce |
-| A variable item shows "this combination is unavailable" | Custom attribute values are out of sync | Update to the latest BundleBoss; recent versions match custom (product-level) attributes automatically |
+| A variable item shows "this combination is unavailable" | An older version with custom attributes | Update to the latest BundleBoss; recent versions match custom attributes automatically |
 | Options do not update after picking a product | A JavaScript error on the edit screen | Check the browser console; make sure jQuery and Select2 load on the product edit page |
 | The cart shows a stale price after editing | Browser caching | Hard-refresh (Ctrl+Shift+R) and retry |
 | The "Restrict options" colour list looks empty | An older build with many options | Update BundleBoss; recent versions fix the admin option list width |

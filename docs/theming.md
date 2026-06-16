@@ -23,6 +23,13 @@ Go to **Appearance &rarr; Customize &rarr; Additional CSS** and paste this, swap
 
 Click **Publish**. That single change is usually all most shops need: it recolours the buttons, the chosen options and the progress highlights in one go. The Customizer previews it live, so you can try a colour before you save, and remove it any time to go back to the default.
 
+## Finding your colour
+
+The `#c2188f` part is a **hex code**, the standard way to write a colour for the web. There are two easy ways to get the one you want:
+
+- **Use a plain colour name.** You can skip codes altogether and write a name instead, for example `--bb-accent: teal;` or `--bb-accent: navy;`. Most everyday colours work this way.
+- **Use your exact brand colour.** Your logo files or brand guidelines usually list its hex code. If you do not have it to hand, any free [colour picker](https://www.google.com/search?q=color+picker) will give you one: pick your colour and copy the `#` value it shows.
+
 ## The colours you can set
 
 You can fine-tune any of these the same way. The accent is the big one; the rest are there if you want a fuller match.
