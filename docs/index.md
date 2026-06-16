@@ -8,8 +8,11 @@ lede: Sell ready-made packs or let customers build their own, piece by piece. Th
 
 New here? Start with **[Install &amp; your first bundle](/docs/getting-started/)**, then dip into whatever you need. Anything marked <span class="pro-pill">Pro</span> is part of the Builder; everything else ships in the free plugin.
 
+Got an idea for a feature, or something you wish BundleBoss did? We build from what shop owners tell us. See **[What's new &amp; coming](/docs/whats-new/)** and send us a note.
+
 <div class="docs-cards">
   <a class="docs-card" href="/docs/getting-started/"><h3>Install &amp; your first bundle</h3><p>From an empty product to a published bundle in eight steps.</p></a>
+  <a class="docs-card" href="/docs/whats-new/"><h3>What's new &amp; coming</h3><p>What we are building next, and how to tell us what you need. We read every message.</p></a>
   <a class="docs-card" href="/docs/bundle-items/"><h3>Bundle items &amp; quantities</h3><p>Add slots, set fixed or adjustable quantities, restrict which variations are offered.</p></a>
   <a class="docs-card" href="/docs/pricing/"><h3>Pricing &amp; discounts</h3><p>Percentage or fixed pricing, quantity tiers, and a bundle stock cap.</p></a>
   <a class="docs-card" href="/docs/swatches/"><h3>Colour swatches</h3><p>Show colour circles instead of text, set once or filled in from the colour name.</p></a>

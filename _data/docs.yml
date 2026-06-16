@@ -6,6 +6,8 @@
       url: /docs/
     - title: Install &amp; your first bundle
       url: /docs/getting-started/
+    - title: What's new &amp; coming
+      url: /docs/whats-new/
 
 - section: Build your bundle
   items:
