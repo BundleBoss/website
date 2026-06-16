@@ -61,3 +61,15 @@
       url: /docs/multilingual/
     - title: Troubleshooting
       url: /docs/troubleshooting/
+
+- section: Coming soon
+  items:
+    - title: Gift mode
+      url: /docs/gift-mode/
+      pro: true
+    - title: Build a box (mix and match)
+      url: /docs/build-a-box/
+      pro: true
+    - title: Frequently bought together
+      url: /docs/fbt/
+      pro: true
