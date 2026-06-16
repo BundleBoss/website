@@ -13,6 +13,15 @@ Two settings shape how a bundle looks, and they work independently:
 
 Both live at the top of the **Bundle Items** tab. Below is each option, the setting that produces it, and how it looks (shown with a real hoodie that has colours and sizes). For when to pick which, see [Layouts &amp; which to use](/docs/layouts/).
 
+## Where you set these
+
+When you edit a bundle, the controls sit at the top of the **Bundle Items** tab: pick the page **Layout** on the right, and **Multiple items** (how a repeated item is shown) on the left. Every option below is just one choice in these dropdowns.
+
+<figure>
+  <img src="/docs/img/gallery-admin-controls.png" alt="The Layout and Multiple items dropdowns at the top of the Bundle Items tab in the admin">
+  <figcaption>The admin controls. The "To get this" note under each example tells you which option to choose here.</figcaption>
+</figure>
+
 ## Page layout
 
 ### List
