@@ -3,7 +3,7 @@ layout: docs
 title: Compatibility & quantity rules
 description: Make one choice slot control another using the tags, categories and attributes already on your products. Enforced on the server.
 permalink: /docs/rules/
-lede: Rules keep every build valid: only offer the parts that fit what the customer already chose.
+lede: "Rules keep every build valid: only offer the parts that fit what the customer already chose."
 ---
 
 <div class="callout pro"><span class="callout-label">Pro feature</span><p>Rules work on [choice slots](/docs/choice-slots/) and are part of the Builder.</p></div>

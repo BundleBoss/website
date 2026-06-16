@@ -3,7 +3,7 @@ layout: docs
 title: Quantity grid (size runs)
 description: Let customers buy a bulk run split across variations, like five small and five large, by typing into one grid instead of configuring each unit.
 permalink: /docs/quantity-grid/
-lede: For bulk orders split across sizes and colours: tap a colour, type how many of each size. One grid instead of ten unit rows.
+lede: "For bulk orders split across sizes and colours: tap a colour, type how many of each size. One grid instead of ten unit rows."
 ---
 
 <div class="callout pro"><span class="callout-label">Pro feature</span><p>The Quantity grid is a Pro display option for a multi-quantity variable item. The free plugin can buy a bulk run of identical items with "All the same"; the grid is for a run that is <em>mixed</em> across variations.</p></div>

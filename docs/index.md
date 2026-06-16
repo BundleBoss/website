@@ -20,7 +20,7 @@ New here? Start with **[Install &amp; your first bundle](/docs/getting-started/)
   <a class="docs-card" href="/docs/personalisation/"><h3>Personalisation <span class="pro-pill">Pro</span></h3><p>Names, messages, embroidery, logo uploads, each with optional charges, all on the pick list.</p></a>
   <a class="docs-card" href="/docs/cart-checkout-orders/"><h3>Cart, checkout &amp; orders</h3><p>One tidy line item, edit from the cart, and a warehouse pick list on every order.</p></a>
   <a class="docs-card" href="/docs/import-export/"><h3>Import, export &amp; migrate</h3><p>Move bundles between sites, and convert from Composite Products.</p></a>
-  <a class="docs-card" href="/docs/developers/"><h3>Developer reference</h3><p>Hooks, the build-changed event, template overrides and order data.</p></a>
+  <a class="docs-card" href="/docs/theming/"><h3>Colours &amp; branding</h3><p>Match the configurator to your brand by changing a few colours in the Customizer.</p></a>
 </div>
 
 ## The two halves of BundleBoss

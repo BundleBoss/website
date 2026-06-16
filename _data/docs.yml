@@ -47,13 +47,13 @@
     - title: Promotions
       url: /docs/promotions/
 
-- section: Manage &amp; extend
+- section: Customise &amp; manage
   items:
+    - title: Colours &amp; branding
+      url: /docs/theming/
     - title: Import, export &amp; migrate
       url: /docs/import-export/
     - title: Multilingual (WPML / Polylang)
       url: /docs/multilingual/
-    - title: Developer reference
-      url: /docs/developers/
     - title: Troubleshooting
       url: /docs/troubleshooting/
