@@ -38,3 +38,5 @@ This matters most for **custom attributes** (ones typed straight onto a single p
 ## Mixing swatches and text
 
 You do not have to swatch everything. Colour can show as circles while Size stays as text buttons in the same bundle. Any attribute term without a colour (and any name that cannot be resolved) simply renders as text, so nothing ever looks broken.
+
+These swatches are the colour options a customer picks. To recolour the configurator's own buttons and bars to match your brand, see [Colours &amp; branding](/docs/theming/).

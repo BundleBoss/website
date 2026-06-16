@@ -6,7 +6,7 @@ permalink: /docs/share-links/
 lede: A finished build copies to a link anyone can open and buy. Nothing is stored on your server.
 ---
 
-<div class="callout pro"><span class="callout-label">Pro feature</span><p>The Share button ships with the Builder. It works on any complete build, including fixed bundles.</p></div>
+<div class="callout pro"><span class="callout-label">Pro feature</span><p>The Share button ships with the <a href="/docs/choice-slots/">Builder</a>. It works on any complete build, including fixed bundles.</p></div>
 
 ## How it works
 
