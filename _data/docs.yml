@@ -64,6 +64,9 @@
 
 - section: Coming soon
   items:
+    - title: Conditional items (show / hide)
+      url: /docs/conditional-items/
+      pro: true
     - title: Gift mode
       url: /docs/gift-mode/
       pro: true
