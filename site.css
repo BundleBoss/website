@@ -118,6 +118,7 @@ p.section-sub { text-align: center; color: var(--muted); margin-bottom: 40px; }
 .tier .price .was { display: block; font-size: 22px; font-weight: 600; line-height: 1; margin-bottom: 3px; color: var(--muted); text-decoration: line-through; }
 .launch-note { max-width: 660px; margin: 14px auto 0; font-size: 14px; line-height: 1.5; color: var(--muted); }
 .launch-note strong { color: var(--coral); }
+.roadmap-teaser { text-align: center; font-size: 14px; color: var(--muted); margin-top: 16px; }
 .tier .per { font-size: 13px; color: var(--faint); margin-bottom: 18px; }
 .tier ul { list-style: none; margin: 0 0 22px; flex: 1; }
 .tier li { font-size: 14px; color: var(--muted); padding: 5px 0 5px 24px; position: relative; }
