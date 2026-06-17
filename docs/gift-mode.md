@@ -10,7 +10,7 @@ lede: A recipient, a message, optional wrap, a gift receipt. Turn any bundle int
 
 ## What it is
 
-Gift mode adds a "This is a gift" option to a bundle's page. When the customer ticks it, they can add a recipient name and a gift message, optionally pay for gift wrap, and ask for a gift receipt that keeps prices off the packing slip. The gift details carry through to the order and the warehouse pick list, so your team knows exactly what to do.
+Gift mode adds a "This is a gift" option to a bundle's page. When the customer ticks it, they can add a recipient name and a gift message, optionally pay for gift wrap, and request a gift receipt (a receipt without prices for the recipient). The gift details carry through to the order and the warehouse pick list, so your team knows exactly what to do.
 
 It is a Pro feature, set per bundle, and fully opt-in: a bundle with gift mode off behaves exactly as before.
 
@@ -28,7 +28,7 @@ Under the configurator, a **"This is a gift"** toggle. Ticking it reveals:
 - **Recipient name**
 - **Gift message**
 - **Add gift wrap**, with the fee shown, if you set one
-- **Include a gift receipt**, which hides prices on the packing slip
+- **Include a gift receipt** (no prices for the recipient)
 
 The gift wrap fee is added to the live total as soon as it is ticked, so there is no surprise at the cart.
 
@@ -36,7 +36,7 @@ The gift wrap fee is added to the live total as soon as it is ticked, so there i
 
 - **Cart and checkout:** the gift details show under the bundle line.
 - **Order:** the recipient, message, wrap and receipt are saved on the order and appear in admin and in the order emails.
-- **Pick list:** the gift details, and the "hide prices" receipt flag, are on the warehouse pick list, so the right note goes in the right box.
+- **Pick list:** the gift details, including the gift-receipt request, appear in a callout above the warehouse pick list, so the right note goes in the right box.
 
 ## Good to know
 
