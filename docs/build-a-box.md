@@ -33,11 +33,19 @@ The pool shows as a grid of product cards, each with a quantity stepper. As they
 
 Every pick shows in the cart and on the order, and on the warehouse pick list, like any other bundle.
 
+### Products with options
+
+If a product in the pool has options (a t-shirt in several colours and sizes, say), its card shows a **Choose an option** dropdown. The customer picks the colour and size they want, then sets the quantity, all on the same card. The card waits for an option before it counts towards the box, so a half-chosen pick cannot slip through.
+
+Each product is chosen one option at a time on its card. To offer the **same** product in several options at once (five small, five medium, five large of one shirt), use the [quantity grid](/docs/quantity-grid/) instead.
+
+This makes a box ideal for a **build your own kit**: pick a tee, a hoodie and a cap, each in its own colour and size, up to the kit size you set.
+
 ## Pricing
 
 A box uses the bundle's normal pricing. With percentage or dynamic pricing it costs the sum of what was picked (with any bundle discount). For a flat "any 6 for &pound;20" deal, set the bundle to a fixed price: the box decides **what** is in it, the fixed price decides **how much**.
 
 ## Good to know
 
-- In this first release the box pool is for simple products. Variable products in a box are planned for later.
+- The box pool can mix simple products and products with options (variations). Each product with options is chosen one option at a time on its card.
 - A box and the [quantity grid](/docs/quantity-grid/) are two different selection styles; a slot uses one or the other.
