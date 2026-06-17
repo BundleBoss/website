@@ -76,3 +76,6 @@
     - title: Frequently bought together
       url: /docs/fbt/
       pro: true
+    - title: Buy X Get Y (BOGO)
+      url: /docs/bogo/
+      pro: true

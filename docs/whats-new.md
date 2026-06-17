@@ -18,17 +18,25 @@ A screenshot or a link says more than a paragraph. Show us the thing you wish Bu
 
 These are being built now and will arrive in the Builder (Pro) in an upcoming release. They are not in the plugin yet. Want one of them sooner, or want it to work a particular way? That is exactly the kind of thing to email us about while it is still taking shape.
 
-### Gift mode &nbsp;<small>(Beta)</small>
+### [Gift mode](/docs/gift-mode/) &nbsp;<small>(In development)</small>
 
 Let a customer mark a bundle as a gift: a recipient name, a gift message, optional gift wrap for a small charge, and a gift receipt so prices stay off the packing slip. The gift details ride through to the order and the fulfilment pick list, so your team knows exactly what to do.
 
-### Build a box, mix and match &nbsp;<small>(Beta)</small>
+### [Build a box, mix and match](/docs/build-a-box/) &nbsp;<small>(In development)</small>
 
 Let customers fill a box from a pool of products, each with its own quantity, up to a total you set. Pick any 6 chocolates, a build your own 6 pack, a hamper of any 4 treats. The total updates as they go, and the box only adds to the cart once it is full. It is the pick many companion to choice slots.
 
-### Frequently bought together &nbsp;<small>(In development)</small>
+### [Frequently bought together](/docs/fbt/) &nbsp;<small>(In development)</small>
 
 A one click "add these together" block on a product page: a curated set at a bundle price, added to the cart in a single tap. A simple way to lift the average order without asking the customer to configure anything.
+
+### [Conditional items](/docs/conditional-items/) &nbsp;<small>(In development)</small>
+
+Show or hide a whole item based on an earlier choice. Reveal a matching socks slot once a shoe is picked, or hide an extra unless the premium option is chosen, so the customer only ever sees the parts that make sense for what they have chosen so far. It builds on the same rules engine as compatibility and quantity rules.
+
+### [Buy X get Y](/docs/bogo/) &nbsp;<small>(In development)</small>
+
+Discount the cheapest items the customer adds: buy one get one free, buy 2 get 1 free, any 6 for the price of 4. Because it prices what they have actually selected, it pairs with build a box and the quantity grid for proper mix and match deals.
 
 ## On the list
 
