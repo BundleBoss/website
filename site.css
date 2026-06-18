@@ -12,12 +12,27 @@
   --line: rgba(239, 237, 245, 0.12);
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
+html { background-color: var(--ink); }
 body {
   font-family: 'Inter', -apple-system, "Segoe UI", sans-serif;
-  background: var(--ink);
+  background: transparent;
   color: var(--text);
   line-height: 1.65;
 }
+/* slow, breathing aurora glow as ambient light behind the page */
+.aurora {
+  position: fixed; top: -20vh; left: 0; right: 0; height: 78vh; z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(44% 60% at 80% 38%, rgba(253, 71, 48, 0.18), transparent 70%),
+    radial-gradient(40% 56% at 16% 28%, rgba(194, 24, 143, 0.15), transparent 70%);
+  animation: aurora-drift 16s ease-in-out infinite alternate;
+}
+@keyframes aurora-drift {
+  0%   { transform: translateY(0);  opacity: 0.82; }
+  100% { transform: translateY(6%); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) { .aurora { animation: none; } }
 a { color: var(--coral2); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
@@ -36,15 +51,17 @@ a:hover { text-decoration: underline; }
 .site-nav a.active { color: var(--text); }
 
 /* layout */
-.wrap { max-width: 1060px; margin: 0 auto; padding: 0 24px; }
+/* horizontal padding only, so each section's vertical padding actually applies
+   (a plain `padding: 0 24px` here was cancelling the section rhythm) */
+.wrap { max-width: 1060px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
 .narrow { max-width: 720px; }
 section { padding: 56px 0; }
 .hero { text-align: center; padding: 72px 0 64px; }
-.hero h1 {
+.hero h1, .hero-split h1 {
   font-size: clamp(32px, 6vw, 56px); font-weight: 800;
   letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 20px;
 }
-.hero h1 em {
+.hero h1 em, .hero-split h1 em {
   font-style: normal;
   background: linear-gradient(90deg, var(--coral), var(--coral2));
   -webkit-background-clip: text; background-clip: text; color: transparent;
@@ -316,6 +333,145 @@ a.bob-link:hover { text-decoration: none; }
 }
 
 /* ============================================================
+   Home page sections (hero split, screenshots, how, showcase)
+   ============================================================ */
+
+/* two-column hero: copy + product screenshot */
+.hero-split {
+  max-width: 1060px; margin: 0 auto; padding: 56px 24px 52px;
+  display: grid; grid-template-columns: 1.04fr 0.96fr; gap: 50px;
+  align-items: center; text-align: left;
+}
+.hero-split .lede { margin: 0 0 30px; max-width: 520px; }
+.hero-split .badge { margin-bottom: 18px; }
+.hero-cta .btn-ghost { margin-left: 10px; }
+
+/* premium product screenshot: a floating card with a soft brand-coloured
+   glow behind it and a layered shadow. Only ever wrap real-data shots
+   (no placeholder/empty product images). */
+/* The shot is a light "browser window" so the light screenshot and its frame
+   read as one object on the dark page (research: match the frame to the
+   screenshot, not the brand). A soft drop shadow floats it; no competing glow. */
+.shot {
+  position: relative; width: fit-content; max-width: 100%; margin: 0 auto;
+  border-radius: 12px; overflow: hidden; background: #fff;
+  box-shadow: 0 40px 80px -24px rgba(0, 0, 0, 0.7), 0 14px 30px rgba(0, 0, 0, 0.45);
+}
+.shot .browser-bar {
+  display: flex; align-items: center; gap: 7px; height: 34px; padding: 0 14px;
+  background: linear-gradient(#faf8f4, #efe9df);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+.shot .browser-bar span { width: 11px; height: 11px; border-radius: 50%; flex: none; }
+.shot .browser-bar span:nth-child(1) { background: #ff5f57; }
+.shot .browser-bar span:nth-child(2) { background: #febc2e; }
+.shot .browser-bar span:nth-child(3) { background: #28c840; }
+.shot img { display: block; width: 100%; height: auto; }
+.shot video { display: block; width: 100%; height: auto; }
+.hero-shot { max-width: 384px; }
+
+/* credibility strip */
+.trust {
+  max-width: 1000px; margin: 0 auto; padding: 4px 24px 8px;
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 24px;
+  font-size: 13.5px; font-weight: 600; color: var(--muted);
+}
+.trust span::before { content: "\2713"; color: #2ecc71; font-weight: 700; margin-right: 7px; }
+
+/* how it works: three numbered steps */
+.how { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.how .step { background: var(--ink2); border: 1px solid var(--line); border-radius: 14px; padding: 26px 24px; }
+.how .step .n {
+  width: 34px; height: 34px; border-radius: 50%; background: var(--coral); color: #fff;
+  font-weight: 800; font-size: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px;
+}
+.how .step h3 { font-size: 16.5px; font-weight: 700; margin-bottom: 6px; }
+.how .step p { font-size: 14.5px; color: var(--muted); }
+
+/* alternating screenshot + copy showcase rows (no card: the framed,
+   glowing screenshot floats on the page, modern-SaaS style) */
+.showcase { display: flex; flex-direction: column; gap: 30px; }
+.show-row {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;
+  padding: 14px 0;
+}
+.show-row .shot { max-width: 360px; }
+.show-copy h3 { font-size: 20px; font-weight: 800; letter-spacing: -0.01em; margin-bottom: 8px; }
+.show-copy h3 .pro-tag {
+  font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em;
+  background: var(--coral); color: #fff; border-radius: 100px; padding: 2px 8px; margin-left: 8px; vertical-align: 2px;
+}
+.show-copy p { color: var(--muted); font-size: 15px; }
+.show-row:nth-child(even) .show-copy { order: 2; }
+
+@media (max-width: 860px) {
+  .hero-split { grid-template-columns: 1fr; gap: 30px; text-align: center; padding-top: 40px; }
+  .hero-split .lede { margin-left: auto; margin-right: auto; }
+  .hero-shot { order: 2; }
+}
+@media (max-width: 760px) {
+  .how { grid-template-columns: 1fr; }
+  .show-row { grid-template-columns: 1fr; gap: 22px; padding: 24px; }
+  .show-row:nth-child(even) .show-copy { order: 0; }
+}
+@media (max-width: 560px) {
+  .hero-cta .btn { display: block; max-width: 300px; margin: 10px auto 0; }
+  .hero-cta .btn-ghost { margin-left: auto; }
+}
+
+/* scroll-reveal + hero load motion (only with JS; reduced-motion safe).
+   The .js class is set in <head> before paint, so sections start hidden
+   with no flash, then the IntersectionObserver reveals them on scroll. */
+.js section, .js .trust { opacity: 0; transform: translateY(22px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.js section.in, .js .trust.in { opacity: 1; transform: none; }
+.js .hero-copy { animation: rise 0.7s ease both; }
+.js .hero-shot { animation: rise 0.7s ease 0.12s both; }
+@keyframes rise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .js section, .js .trust, .js section.in, .js .trust.in { opacity: 1; transform: none; transition: none; }
+  .js .hero-copy, .js .hero-shot { animation: none; }
+}
+
+/* from-the-maker credibility band */
+.maker {
+  display: grid; grid-template-columns: 128px 1fr; gap: 28px; align-items: center;
+  background: var(--ink2); border: 1px solid var(--line); border-radius: 18px; padding: 30px 34px;
+}
+.maker-bob { width: 128px; height: 128px; filter: drop-shadow(0 10px 22px rgba(253, 71, 48, 0.22)); }
+.maker-body h2 { font-size: 22px; font-weight: 800; letter-spacing: -0.01em; margin-bottom: 10px; }
+.maker-body p { color: var(--muted); font-size: 15.5px; }
+.maker-sign { margin-top: 12px; font-weight: 700; color: var(--text); font-size: 14.5px; }
+@media (max-width: 560px) {
+  .maker { grid-template-columns: 1fr; text-align: center; }
+  .maker-bob { margin: 0 auto; }
+}
+
+/* layout carousel: the same bundle shown in different layouts.
+   Slides are a uniform fixed height (top-cropped) so the carousel does not
+   jump between the tall and short screenshots. */
+/* tabbed layout preview: tabs engage far better than a rotating carousel
+   (most users never click past a carousel's first slide). Each tab swaps the
+   screenshot inside one fixed frame; nothing is hidden. */
+.tabs { max-width: 640px; margin: 0 auto; }
+.tab-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-bottom: 24px; }
+.tab {
+  border: 1px solid var(--line); background: var(--ink2); color: var(--muted);
+  font: inherit; font-weight: 700; font-size: 14px; padding: 9px 18px; border-radius: 999px;
+  cursor: pointer; transition: color 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+.tab:hover { color: var(--text); border-color: var(--faint); }
+.tab.is-active { background: var(--coral); color: #fff; border-color: var(--coral); }
+.tab:focus-visible { outline: 2px solid var(--coral2); outline-offset: 2px; }
+.tab-frame { width: 470px; max-width: 100%; height: 588px; margin: 0 auto; background: #faf8f4; }
+.tab-frame .tab-img { width: 100%; height: 554px; object-fit: contain; object-position: top center; background: #faf8f4; transition: opacity 200ms ease; }
+.tab-frame .tab-img.swap { opacity: 0; }
+.tab-cap { text-align: center; color: var(--muted); font-weight: 600; font-size: 14.5px; margin-top: 18px; }
+@media (max-width: 560px) {
+  .tab-frame { height: 478px; }
+  .tab-frame .tab-img { height: 444px; }
+}
+
+/* ============================================================
    Docs / wiki  (Markdown rendered through _layouts/docs.html)
    ============================================================ */
 
@@ -327,7 +483,14 @@ a.bob-link:hover { text-decoration: none; }
 }
 
 /* sidebar */
-.docs-sidebar { position: sticky; top: 22px; }
+.docs-sidebar {
+  position: sticky; top: 22px;
+  /* its own scroll when the nav is taller than the screen, so scrolling
+     over the sidebar moves the titles, not the whole page */
+  max-height: calc(100vh - 44px); overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin; scrollbar-color: var(--faint) transparent;
+}
 .docs-nav > summary { display: none; list-style: none; }
 .docs-nav summary::-webkit-details-marker { display: none; }
 .docs-sec {
@@ -456,7 +619,7 @@ a.bob-link:hover { text-decoration: none; }
 
 @media (max-width: 880px) {
   .docs-shell { grid-template-columns: 1fr; gap: 18px; }
-  .docs-sidebar { position: static; }
+  .docs-sidebar { position: static; max-height: none; overflow: visible; }
   .docs-nav {
     background: var(--ink2); border: 1px solid var(--line);
     border-radius: 12px; padding: 2px 16px;

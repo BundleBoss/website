@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js');</script>
 <title>BundleBoss | The bundle builder WooCommerce deserves</title>
 <meta name="description" content="Sell ready-made packs or let customers build their own, piece by piece. You set the rules, BundleBoss keeps every build valid and priced to the penny.">
 <link rel="icon" type="image/png" sizes="32x32" href="/brand/favicon-32.png">
@@ -15,9 +16,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/site.css?v=10">
+<link rel="stylesheet" href="/site.css?v=18">
 </head>
 <body>
+<div class="aurora" aria-hidden="true"></div>
 
 <header class="site-header">
   <a class="site-logo" href="/">
@@ -33,21 +35,94 @@
   </nav>
 </header>
 
-<div class="hero wrap">
-  <div><span class="badge">Coming soon</span></div>
-  <h1>Bundle anything.<br><em>You're in charge.</em></h1>
-  <p class="lede">
-    Sell ready-made packs or let customers build their own, piece by piece.
-    You set the rules. BundleBoss keeps every build valid, priced to the
-    penny and ready for checkout.
-  </p>
-  <a class="btn btn-primary" href="mailto:support@getbundleboss.com?subject=Early%20access">Get early access</a>
-  <a class="btn btn-ghost" href="/pricing/">See pricing</a>
+<div class="hero-split">
+  <div class="hero-copy">
+    <span class="badge">Coming soon</span>
+    <h1>Bundle anything.<br><em>You're in charge.</em></h1>
+    <p class="lede">
+      The WooCommerce bundle plugin where customers configure every piece.
+      Sell ready-made packs or let shoppers build their own, with you setting
+      the rules and BundleBoss keeping each build valid and priced to the penny.
+    </p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="mailto:support@getbundleboss.com?subject=Early%20access">Get early access</a>
+      <a class="btn btn-ghost" href="/pricing/">See pricing</a>
+    </div>
+  </div>
+  <div class="shot hero-shot">
+    <div class="browser-bar"><span></span><span></span><span></span></div>
+    <video class="hero-video" width="590" height="722" muted loop playsinline autoplay
+           poster="/brand/hero-poster.jpg?v=2"
+           aria-label="A customer building a Team Hoodies bundle: tapping colour photos and typing the sizes while the running total updates">
+      <source src="/brand/hero.mp4?v=2" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+<div class="trust">
+  <span>Free core, no subscription</span>
+  <span>Works with any theme</span>
+  <span>One cart item, one order</span>
+  <span>No lock-in, export anytime</span>
+  <span>Private by default</span>
 </div>
 
 <section class="wrap">
-  <h2 class="section-title">If it comes in parts, you can sell it as one</h2>
-  <p class="section-sub">PC builders, gift boxes, ski packages, coffee kits, team kit. One engine, any kind of store.</p>
+  <h2 class="section-title">Live in three steps</h2>
+  <p class="section-sub">It is a WooCommerce product type, not a page builder. You stay in the admin you already know.</p>
+  <div class="how">
+    <div class="step">
+      <div class="n">1</div>
+      <h3>You set it up</h3>
+      <p>Pick the products and quantities, choose a discount or a fixed price, and on Pro add the compatibility rules. It behaves like any other product.</p>
+    </div>
+    <div class="step">
+      <div class="n">2</div>
+      <h3>Customers build it</h3>
+      <p>Every unit is configured on its own, only valid combinations are offered, and the running total updates to the penny as they choose.</p>
+    </div>
+    <div class="step">
+      <div class="n">3</div>
+      <h3>You fulfil it</h3>
+      <p>It arrives as one cart line and one order, with a component pick list for the warehouse and stock kept honest at every step.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2 class="section-title">One bundle, your way</h2>
+  <p class="section-sub">The same engine, in the layout that fits your product. Pick one.</p>
+  <div class="tabs" data-tabs>
+    <div class="tab-row" role="tablist" aria-label="Bundle layouts">
+      <button class="tab is-active" type="button" role="tab" aria-selected="true"
+              data-src="/docs/img/gallery-grid-photos.png"
+              data-alt="A Team Hoodies bundle as a size-run grid with colour photo tiles"
+              data-cap="Bulk size run: pick each colour by its photo, then type the sizes">Size run</button>
+      <button class="tab" type="button" role="tab" aria-selected="false"
+              data-src="/docs/img/gallery-page-list.png"
+              data-alt="A hoodie pack as a list with colour swatches and sizes"
+              data-cap="List: each item configured one after another">List</button>
+      <button class="tab" type="button" role="tab" aria-selected="false"
+              data-src="/docs/img/gallery-page-grid.png"
+              data-alt="A hoodie pack in a grid layout, two items side by side with product photos"
+              data-cap="Grid: the items laid out side by side">Grid</button>
+      <button class="tab" type="button" role="tab" aria-selected="false"
+              data-src="/docs/img/gallery-page-step.png"
+              data-alt="A hoodie pack step by step with numbered pills and Back and Next"
+              data-cap="Step by step: one item at a time, with progress">Step by step</button>
+    </div>
+    <div class="tab-frame shot">
+      <div class="browser-bar"><span></span><span></span><span></span></div>
+      <img class="tab-img" src="/docs/img/gallery-grid-photos.png" width="1144" height="1352"
+           alt="A Team Hoodies bundle as a size-run grid with colour photo tiles">
+    </div>
+    <p class="tab-cap">Bulk size run: pick each colour by its photo, then type the sizes</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2 class="section-title">Free core, Pro Builder</h2>
+  <p class="section-sub">The free plugin is complete on its own. Pro adds the build-your-own configurator, rules and personalisation.</p>
   <div class="cards">
     <div class="card">
       <h3>Fixed bundles, done properly</h3>
@@ -72,6 +147,83 @@
     <div class="card">
       <h3>Rules that protect every sale<span class="pro-tag">Pro</span></h3>
       <p>"Only offer the pods that fit the machine they chose." Compatibility and quantity rules run on your existing tags and categories, enforced on the server, not just in the browser.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2 class="section-title">If it comes in parts, you can sell it as one</h2>
+  <p class="section-sub">One engine, any kind of store.</p>
+  <div class="cards">
+    <div class="card">
+      <h3>PC builders &amp; electronics</h3>
+      <p>Processor, board, memory, case. Rules keep the build compatible while the price stays live.</p>
+    </div>
+    <div class="card">
+      <h3>Gift boxes &amp; hampers</h3>
+      <p>Let shoppers fill a box from your pools, with optional extras and a fixed or summed price.</p>
+    </div>
+    <div class="card">
+      <h3>Team kit &amp; workwear</h3>
+      <p>A size run across colours and sizes, with names and logos added per garment.</p>
+    </div>
+    <div class="card">
+      <h3>Coffee &amp; subscription kits</h3>
+      <p>A base, a roast, the extras. One configurator, priced to the penny.</p>
+    </div>
+    <div class="card">
+      <h3>Ski &amp; sports packages</h3>
+      <p>Skis, boots and bindings that actually fit together, sold as a single item.</p>
+    </div>
+    <div class="card">
+      <h3>Meal &amp; recipe boxes</h3>
+      <p>Pick the proteins and the sides, set the quantities, ship it as one line.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap narrow">
+  <h2 class="section-title">Before you ask</h2>
+  <p class="section-sub">The questions we hear most.</p>
+  <div class="faq">
+    <details class="faq-item">
+      <summary>Is the free version actually useful?</summary>
+      <p>Yes. The free plugin is the complete fixed-bundle product: per-unit configuration, percentage or fixed pricing with quantity tiers, oversell-proof stock, the cart discount nudge, fulfilment pick lists, and full JSON export. Pro adds the Builder on top, it does not unlock the basics.</p>
+    </details>
+    <details class="faq-item">
+      <summary>What do I get in Pro?</summary>
+      <p>The Builder: choice slots, compatibility and quantity rules, the quantity-grid size runs, per-item personalisation with file upload, shareable build links, the step-by-step layout, hero slots, deal badges in the chooser, and a one-click importer for WooCommerce Composite Products.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Will it slow my store down?</summary>
+      <p>No. BundleBoss makes no external calls and builds on standard WooCommerce product, cart and order primitives. It has been profiled against a catalogue of 50,000 products.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Does it work with my theme, blocks and HPOS?</summary>
+      <p>Yes. It is theme-agnostic, supports the Cart and Checkout Blocks and block (FSE) themes, works with High-Performance Order Storage, and is translation-ready with WPML and Polylang.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can customers really configure each unit separately?</summary>
+      <p>Yes, that is the whole idea. A three t-shirt pack can be three different sizes and colours, each chosen in a guided configurator and bought as a single cart item.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Is my data locked in?</summary>
+      <p>No. Every bundle exports to one JSON file you can move between sites, and uninstalling never deletes your work unless you switch that on yourself.</p>
+    </details>
+    <details class="faq-item">
+      <summary>When can I start using it?</summary>
+      <p>Very soon. It is in final testing now. <a href="mailto:support@getbundleboss.com?subject=Early%20access">Ask for early access</a> and we will tell you the moment it is live.</p>
+    </details>
+  </div>
+</section>
+
+<section class="wrap narrow">
+  <div class="maker">
+    <img class="maker-bob" src="/brand/bob-presenting.png?v=3" alt="" width="128" height="128">
+    <div class="maker-body">
+      <h2>Built and supported by its maker, not a faceless company</h2>
+      <p>BundleBoss is made and backed directly by one person who answers your emails. The core is free with no subscription, your bundles export anytime so you are never locked in, and every feature is written up in plain English in the <a href="/docs/">documentation</a>. It is in final testing now, and if something is missing, you can tell me and I will build it.</p>
+      <p class="maker-sign">Stefanos, BundleBoss, United Kingdom</p>
     </div>
   </div>
 </section>
@@ -144,6 +296,60 @@
   </div>
   &copy; 2026 BundleBoss &middot; operated by Stefanos Konstantinou, United Kingdom
 </footer>
+
+<script>
+// Scroll-reveal: sections start hidden (via the .js CSS) and fade up as they
+// enter the viewport. Falls back to fully visible without IntersectionObserver.
+(function () {
+  var items = document.querySelectorAll('section, .trust');
+  if (!('IntersectionObserver' in window)) {
+    for (var i = 0; i < items.length; i++) { items[i].classList.add('in'); }
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+  items.forEach(function (el) { io.observe(el); });
+})();
+</script>
+
+<script>
+// Tabbed layout preview: clicking a tab crossfades its screenshot into the
+// frame. Tabs engage better than a carousel and hide nothing.
+(function () {
+  var wrap = document.querySelector('[data-tabs]');
+  if (!wrap) return;
+  var tabs = Array.prototype.slice.call(wrap.querySelectorAll('.tab'));
+  var img = wrap.querySelector('.tab-img');
+  var cap = wrap.querySelector('.tab-cap');
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      if (t.classList.contains('is-active')) return;
+      tabs.forEach(function (x) { x.classList.remove('is-active'); x.setAttribute('aria-selected', 'false'); });
+      t.classList.add('is-active'); t.setAttribute('aria-selected', 'true');
+      img.classList.add('swap');
+      var pre = new Image();
+      pre.onload = function () { img.src = t.dataset.src; img.alt = t.dataset.alt; cap.textContent = t.dataset.cap; img.classList.remove('swap'); };
+      pre.src = t.dataset.src;
+    });
+  });
+})();
+</script>
+
+<script>
+// Respect reduced-motion: hold the hero video on its poster instead of playing.
+(function () {
+  var v = document.querySelector('.hero-video');
+  if (!v) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    v.removeAttribute('autoplay');
+    v.pause();
+    v.addEventListener('loadedmetadata', function () { try { v.currentTime = 0; } catch (e) {} });
+  }
+})();
+</script>
 
 </body>
 </html>
