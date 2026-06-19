@@ -67,10 +67,10 @@
   </div>
   <div class="shot hero-shot">
     <div class="browser-bar"><span></span><span></span><span></span></div>
-    <video class="hero-video" width="590" height="722" muted loop playsinline autoplay
-           poster="/brand/hero-poster.jpg?v=2"
-           aria-label="A customer building a Team Hoodies bundle: tapping colour photos and typing the sizes while the running total updates">
-      <source src="/brand/hero.mp4?v=2" type="video/mp4">
+    <video class="hero-video" width="800" height="866" muted loop playsinline autoplay
+           poster="/brand/hero-poster.jpg?v=4"
+           aria-label="A customer building a Training Kit bundle: picking each piece's colour and size while the running total updates to the penny">
+      <source src="/brand/hero.mp4?v=4" type="video/mp4">
     </video>
   </div>
 </div>
@@ -358,7 +358,10 @@
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     v.removeAttribute('autoplay');
     v.pause();
-    v.addEventListener('loadedmetadata', function () { try { v.currentTime = 0; } catch (e) {} });
+    // Rest on the final frame (the finished bundle), matching the poster.
+    v.addEventListener('loadedmetadata', function () {
+      try { v.currentTime = (v.duration && isFinite(v.duration)) ? v.duration - 0.1 : 0; } catch (e) {}
+    });
   }
 })();
 </script>
