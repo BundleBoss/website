@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="/theme.js?v=1"></script>
+<script src="/theme.js?v=2"></script>
 <title>Pricing | BundleBoss</title>
 <meta name="description" content="A genuinely useful free plugin, and one Pro tier for the Builder. £79 a year for a single site, 14-day free trial, 30-day refunds.">
 <link rel="icon" type="image/png" sizes="32x32" href="/brand/favicon-32.png">
 <link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/site.css?v=18">
+<link rel="stylesheet" href="/site.css?v=19">
 </head>
 <body>
 
@@ -76,7 +76,7 @@
         <li>Migrate from Composite Products</li>
         <li>Priority support</li>
       </ul>
-      <a class="btn btn-primary" href="https://checkout.freemius.com/plugin/31967/plan/52435/" data-checkout="https://checkout.freemius.com/plugin/31967/plan/52435/">Start free trial</a>
+      <a class="btn btn-primary" href="https://checkout.freemius.com/plugin/31967/plan/52435/?trial=paid" data-checkout="https://checkout.freemius.com/plugin/31967/plan/52435/?trial=paid">Start free trial</a>
     </div>
     <div class="tier">
       <h3>Studio</h3>
@@ -87,7 +87,7 @@
         <li>Five site activations</li>
         <li>For studios and growing brands</li>
       </ul>
-      <a class="btn btn-ghost" style="margin-left:0" href="https://checkout.freemius.com/plugin/31967/plan/52436/" data-checkout="https://checkout.freemius.com/plugin/31967/plan/52436/">Start free trial</a>
+      <a class="btn btn-ghost" style="margin-left:0" href="https://checkout.freemius.com/plugin/31967/plan/52436/?trial=paid" data-checkout="https://checkout.freemius.com/plugin/31967/plan/52436/?trial=paid">Start free trial</a>
     </div>
     <div class="tier">
       <h3>Agency</h3>
@@ -98,7 +98,7 @@
         <li>Twenty-five site activations</li>
         <li>Build it once, sell it to every client</li>
       </ul>
-      <a class="btn btn-ghost" style="margin-left:0" href="https://checkout.freemius.com/plugin/31967/plan/52437/" data-checkout="https://checkout.freemius.com/plugin/31967/plan/52437/">Start free trial</a>
+      <a class="btn btn-ghost" style="margin-left:0" href="https://checkout.freemius.com/plugin/31967/plan/52437/?trial=paid" data-checkout="https://checkout.freemius.com/plugin/31967/plan/52437/?trial=paid">Start free trial</a>
     </div>
   </div>
   <p class="currency-note">Switch currency above. You can pay in GBP, USD or EUR at checkout.</p>
@@ -233,7 +233,10 @@
       tier.classList.add('selected');
       tier.setAttribute('aria-checked', 'true');
 
-      var price = tier.querySelector('.price').textContent.trim();
+      var priceEl = tier.querySelector('.price');
+      var amtEl = priceEl.querySelector('.amt');
+      var smallEl = priceEl.querySelector('small');
+      var price = (amtEl ? amtEl.textContent.trim() : priceEl.textContent.trim()) + (smallEl ? smallEl.textContent.trim() : '');
       var per = tier.querySelector('.per').textContent.trim();
       summary.textContent = name + ' · ' + price + ' (' + per + ')';
       var checkout = btn.getAttribute('data-checkout');

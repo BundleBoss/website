@@ -5,17 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
   document.documentElement.classList.add('js');
-  (function () {
-    if (localStorage.getItem('bb-theme') === 'light') { document.documentElement.setAttribute('data-theme', 'light'); }
-  })();
-  document.addEventListener('click', function (e) {
-    var b = e.target.closest('.theme-toggle');
-    if (!b) return;
-    var d = document.documentElement;
-    if (d.getAttribute('data-theme') === 'light') { d.removeAttribute('data-theme'); localStorage.setItem('bb-theme', 'dark'); }
-    else { d.setAttribute('data-theme', 'light'); localStorage.setItem('bb-theme', 'light'); }
-  });
+  if (localStorage.getItem('bb-theme') === 'light') { document.documentElement.setAttribute('data-theme', 'light'); }
 </script>
+<script src="/theme.js?v=2"></script>
 <title>BundleBoss | The bundle builder WooCommerce deserves</title>
 <meta name="description" content="Sell ready-made packs or let customers build their own, piece by piece. You set the rules, BundleBoss keeps every build valid and priced to the penny.">
 <link rel="icon" type="image/png" sizes="32x32" href="/brand/favicon-32.png">
@@ -28,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/site.css?v=18">
+<link rel="stylesheet" href="/site.css?v=19">
 </head>
 <body>
 <div class="aurora" aria-hidden="true"></div>
