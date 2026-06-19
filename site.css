@@ -479,8 +479,8 @@ a.bob-link:hover { text-decoration: none; }
 .tab:hover { color: var(--text); border-color: var(--faint); }
 .tab.is-active { background: var(--coral); color: #fff; border-color: var(--coral); }
 .tab:focus-visible { outline: 2px solid var(--coral2); outline-offset: 2px; }
-.tab-frame { width: 760px; max-width: 100%; margin: 0 auto; background: #f4f4f7; }
-.tab-frame .tab-img { width: 100%; aspect-ratio: 2772 / 2820; height: auto; object-fit: contain; object-position: top; display: block; background: #f4f4f7; transition: opacity 240ms ease; }
+.tab-frame { width: 430px; max-width: 100%; margin: 0 auto; background: #f4f4f7; }
+.tab-frame .tab-img { width: 100%; aspect-ratio: 1402 / 2750; height: auto; object-fit: contain; object-position: top; display: block; background: #f4f4f7; transition: opacity 240ms ease; }
 .tab-frame .tab-img.swap { opacity: 0; }
 .tab-cap { text-align: center; color: var(--muted); font-weight: 600; font-size: 14.5px; margin-top: 18px; }
 
