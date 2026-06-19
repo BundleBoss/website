@@ -7,7 +7,7 @@
   document.documentElement.classList.add('js');
   if (localStorage.getItem('bb-theme') === 'light') { document.documentElement.setAttribute('data-theme', 'light'); }
 </script>
-<script src="/theme.js?v=2"></script>
+<script src="/theme.js?v=4"></script>
 <title>BundleBoss | The bundle builder WooCommerce deserves</title>
 <meta name="description" content="Sell ready-made packs or let customers build their own, piece by piece. You set the rules, BundleBoss keeps every build valid and priced to the penny.">
 <link rel="icon" type="image/png" sizes="32x32" href="/brand/favicon-32.png">
@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/site.css?v=19">
+<link rel="stylesheet" href="/site.css?v=21">
 </head>
 <body>
 <div class="aurora" aria-hidden="true"></div>
@@ -38,8 +38,23 @@
     <a href="/support/">Support</a>
   </nav>
   <button class="theme-toggle" type="button" aria-label="Switch light or dark theme" title="Light / dark">
-    <svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
-    <svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
+    <svg class="sun-and-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24">
+      <mask class="moon" id="theme-moon-mask">
+        <rect x="0" y="0" width="100%" height="100%" fill="white"/>
+        <circle cx="24" cy="10" r="6" fill="black"/>
+      </mask>
+      <circle class="sun" cx="12" cy="12" r="6" mask="url(#theme-moon-mask)" fill="currentColor"/>
+      <g class="sun-beams" stroke="currentColor">
+        <line x1="12" y1="1" x2="12" y2="3"/>
+        <line x1="12" y1="21" x2="12" y2="23"/>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+        <line x1="1" y1="12" x2="3" y2="12"/>
+        <line x1="21" y1="12" x2="23" y2="12"/>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+      </g>
+    </svg>
   </button>
 </header>
 

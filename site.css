@@ -490,13 +490,31 @@ a.bob-link:hover { text-decoration: none; }
   transition: color 160ms ease, border-color 160ms ease;
 }
 .theme-toggle:hover { color: var(--coral); border-color: var(--coral); }
-.theme-toggle svg { display: block; }
-.theme-toggle .i-moon { display: none; }
-html[data-theme="light"] .theme-toggle .i-sun { display: none; }
-html[data-theme="light"] .theme-toggle .i-moon { display: block; }
+.theme-toggle .sun-and-moon { display: block; }
+.sun-and-moon > :is(.moon, .sun, .sun-beams) { transform-box: fill-box; transform-origin: center; }
+.sun-and-moon > .sun { transition: transform .5s cubic-bezier(.5, 1.25, .75, 1.25); }
+.sun-and-moon > .sun-beams { transition: transform .5s cubic-bezier(.5, 1.5, .75, 1.25), opacity .4s ease; }
+.sun-and-moon > .moon > circle { transition: transform .25s cubic-bezier(0, 0, 0, 1); }
+@supports (cx: 1) { .sun-and-moon > .moon > circle { transition: cx .25s cubic-bezier(0, 0, 0, 1); } }
+/* Light mode shows a crescent moon: the beams retract and the mask bites a crescent. */
+html[data-theme="light"] .sun-and-moon > .sun { transform: scale(1.75); }
+html[data-theme="light"] .sun-and-moon > .sun-beams { opacity: 0; transform: rotate(-25deg); }
+html[data-theme="light"] .sun-and-moon > .moon > circle { transform: translateX(-7px); }
+@supports (cx: 1) { html[data-theme="light"] .sun-and-moon > .moon > circle { cx: 17; transform: translateX(0); } }
+@media (prefers-reduced-motion: reduce) {
+  .sun-and-moon > .sun, .sun-and-moon > .sun-beams, .sun-and-moon > .moon > circle { transition: none; }
+}
+
+/* Ease the whole page between themes, but only while toggling (a class added
+   for ~half a second), so there is no transition on first load. The icon SVG
+   is excluded so it keeps its own morph timing. */
+html.theme-anim,
+html.theme-anim *:not(svg):not(svg *) {
+  transition: background-color .45s ease, color .45s ease, border-color .45s ease, box-shadow .45s ease, fill .45s ease !important;
+}
 
 /* One-time hint that points out the theme toggle on a first visit. */
-.theme-hint {
+.theme-tip {
   position: fixed; z-index: 60; max-width: 230px;
   background: var(--ink2); color: var(--text);
   border: 1px solid var(--line);
@@ -507,8 +525,8 @@ html[data-theme="light"] .theme-toggle .i-moon { display: block; }
   transition: opacity 280ms ease, transform 280ms ease;
   pointer-events: none; cursor: pointer;
 }
-.theme-hint.show { opacity: 1; transform: none; pointer-events: auto; }
-.theme-hint::before {
+.theme-tip.show { opacity: 1; transform: none; pointer-events: auto; }
+.theme-tip::before {
   content: ""; position: absolute; top: -6px; right: 14px;
   width: 11px; height: 11px; background: var(--ink2);
   border-left: 1px solid var(--line); border-top: 1px solid var(--line);

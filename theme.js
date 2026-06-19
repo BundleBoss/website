@@ -1,43 +1,73 @@
 // Light / dark theme, shared across pages.
 //  - Init runs immediately so there is no flash of the wrong theme.
-//  - The toggle button is injected into the header on pages that do not
-//    already ship one (the homepage ships its own markup).
-//  - Clicks are delegated.
-//  - A small one-time hint points the button out, then never shows again.
+//  - The animated sun/moon button is injected on pages that do not ship one.
+//  - A small label names the mode as you toggle, and points the button out on
+//    a first visit.
 (function () {
   if (localStorage.getItem('bb-theme') === 'light') {
     document.documentElement.setAttribute('data-theme', 'light');
   }
 })();
 
-function bbDismissHint() {
-  var h = document.querySelector('.theme-hint');
-  if (h) {
-    h.classList.remove('show');
-    setTimeout(function () { if (h.parentNode) h.parentNode.removeChild(h); }, 320);
+var BB_TOGGLE_SVG = '<svg class="sun-and-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24">'
+  + '<mask class="moon" id="theme-moon-mask"><rect x="0" y="0" width="100%" height="100%" fill="white"/>'
+  + '<circle cx="24" cy="10" r="6" fill="black"/></mask>'
+  + '<circle class="sun" cx="12" cy="12" r="6" mask="url(#theme-moon-mask)" fill="currentColor"/>'
+  + '<g class="sun-beams" stroke="currentColor">'
+  + '<line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>'
+  + '<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>'
+  + '<line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>'
+  + '<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>'
+  + '</g></svg>';
+
+function bbPositionTip(el, btn) {
+  var r = btn.getBoundingClientRect();
+  el.style.top = (r.bottom + 10) + 'px';
+  el.style.right = Math.max(8, window.innerWidth - r.right) + 'px';
+}
+
+function bbShowTip(text, dur) {
+  var btn = document.querySelector('.theme-toggle');
+  if (!btn) return;
+  var tip = document.querySelector('.theme-tip');
+  if (!tip) {
+    tip = document.createElement('div');
+    tip.className = 'theme-tip';
+    tip.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(tip);
   }
-  try { localStorage.setItem('bb-theme-hint', '1'); } catch (e) {}
+  tip.textContent = text;
+  bbPositionTip(tip, btn);
+  tip.classList.remove('show');
+  void tip.offsetWidth;            // restart the reveal transition
+  tip.classList.add('show');
+  clearTimeout(tip._t);
+  tip._t = setTimeout(function () { tip.classList.remove('show'); }, dur);
 }
 
 document.addEventListener('click', function (e) {
   var b = e.target.closest('.theme-toggle');
   if (!b) return;
   var d = document.documentElement;
-  if (d.getAttribute('data-theme') === 'light') {
-    d.removeAttribute('data-theme');
-    localStorage.setItem('bb-theme', 'dark');
-  } else {
-    d.setAttribute('data-theme', 'light');
-    localStorage.setItem('bb-theme', 'light');
+  var toLight = d.getAttribute('data-theme') !== 'light';
+  // Ease the page colours across the switch (skipped for reduced-motion).
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce) {
+    d.classList.add('theme-anim');
+    clearTimeout(window.__bbAnimT);
+    window.__bbAnimT = setTimeout(function () { d.classList.remove('theme-anim'); }, 520);
   }
-  bbDismissHint();
+  if (toLight) { d.setAttribute('data-theme', 'light'); localStorage.setItem('bb-theme', 'light'); }
+  else { d.removeAttribute('data-theme'); localStorage.setItem('bb-theme', 'dark'); }
+  try { localStorage.setItem('bb-theme-hint', '1'); } catch (e2) {}
+  bbShowTip(toLight ? 'Light mode' : 'Dark mode', 1300);
 });
 
-function bbPositionHint(hint, btn) {
-  var r = btn.getBoundingClientRect();
-  hint.style.top = (r.bottom + 10) + 'px';
-  hint.style.right = Math.max(8, window.innerWidth - r.right) + 'px';
-}
+window.addEventListener('resize', function () {
+  var tip = document.querySelector('.theme-tip');
+  var btn = document.querySelector('.theme-toggle');
+  if (tip && btn) bbPositionTip(tip, btn);
+});
 
 document.addEventListener('DOMContentLoaded', function () {
   var nav = document.querySelector('.site-nav');
@@ -48,26 +78,21 @@ document.addEventListener('DOMContentLoaded', function () {
     btn.type = 'button';
     btn.setAttribute('aria-label', 'Switch light or dark theme');
     btn.setAttribute('title', 'Light / dark');
-    btn.innerHTML = '<svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg><svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>';
+    btn.innerHTML = BB_TOGGLE_SVG;
     nav.parentNode.insertBefore(btn, nav.nextSibling);
   }
   if (!btn) return;
 
-  // One-time hint so first-time visitors notice the button.
+  // First-visit nudge so people notice the button, shown once.
   var seen = '1';
   try { seen = localStorage.getItem('bb-theme-hint'); } catch (e) {}
   if (seen) return;
-
-  var hint = document.createElement('div');
-  hint.className = 'theme-hint';
-  hint.setAttribute('role', 'status');
-  hint.innerHTML = '<span>Light or dark, your call.</span>';
-  document.body.appendChild(hint);
-  bbPositionHint(hint, btn);
-  window.addEventListener('resize', function () { bbPositionHint(hint, btn); });
-
-  setTimeout(function () { hint.classList.add('show'); }, 900);
-  var auto = setTimeout(bbDismissHint, 6500);
-  hint.addEventListener('click', function () { clearTimeout(auto); bbDismissHint(); });
-  window.addEventListener('scroll', function () { clearTimeout(auto); bbDismissHint(); }, { once: true, passive: true });
+  setTimeout(function () {
+    bbShowTip('Light or dark, your call.', 6000);
+    try { localStorage.setItem('bb-theme-hint', '1'); } catch (e) {}
+    window.addEventListener('scroll', function () {
+      var tip = document.querySelector('.theme-tip');
+      if (tip) tip.classList.remove('show');
+    }, { once: true, passive: true });
+  }, 900);
 });
