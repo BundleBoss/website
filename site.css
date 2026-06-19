@@ -11,6 +11,19 @@
   --magenta: #c2188f;
   --line: rgba(239, 237, 245, 0.12);
 }
+/* Light theme: toggled via [data-theme="light"] on <html>; default stays dark. */
+html[data-theme="light"] {
+  --ink: #f6f5f9;
+  --ink2: #ffffff;
+  --surface: #ffffff;
+  --text: #1c1530;
+  --muted: #5d5570;
+  --faint: #8b8398;
+  --line: rgba(28, 21, 48, 0.12);
+  --coral2: #d4381f;
+}
+html[data-theme="light"] .aurora { opacity: 0.3; }
+html[data-theme="light"] .shot { border-color: rgba(28, 21, 48, 0.08); box-shadow: 0 24px 50px -28px rgba(28, 21, 48, 0.28), 0 6px 18px rgba(28, 21, 48, 0.10); }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { background-color: var(--ink); }
 body {
@@ -355,7 +368,8 @@ a.bob-link:hover { text-decoration: none; }
 .shot {
   position: relative; width: fit-content; max-width: 100%; margin: 0 auto;
   border-radius: 12px; overflow: hidden; background: #fff;
-  box-shadow: 0 40px 80px -24px rgba(0, 0, 0, 0.7), 0 14px 30px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(239, 237, 245, 0.10);
+  box-shadow: 0 40px 80px -24px rgba(0, 0, 0, 0.7), 0 14px 30px rgba(0, 0, 0, 0.45), 0 0 64px -8px rgba(253, 71, 48, 0.25);
 }
 .shot .browser-bar {
   display: flex; align-items: center; gap: 7px; height: 34px; padding: 0 14px;
@@ -466,6 +480,20 @@ a.bob-link:hover { text-decoration: none; }
 .tab-frame .tab-img { width: 100%; height: auto; display: block; background: #f5f6f8; transition: opacity 200ms ease; }
 .tab-frame .tab-img.swap { opacity: 0; }
 .tab-cap { text-align: center; color: var(--muted); font-weight: 600; font-size: 14.5px; margin-top: 18px; }
+
+/* Light / dark toggle button in the header */
+.theme-toggle {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; margin-left: 14px; flex: none;
+  border: 1px solid var(--line); border-radius: 999px;
+  background: var(--ink2); color: var(--text); cursor: pointer;
+  transition: color 160ms ease, border-color 160ms ease;
+}
+.theme-toggle:hover { color: var(--coral); border-color: var(--coral); }
+.theme-toggle svg { display: block; }
+.theme-toggle .i-moon { display: none; }
+html[data-theme="light"] .theme-toggle .i-sun { display: none; }
+html[data-theme="light"] .theme-toggle .i-moon { display: block; }
 
 /* ============================================================
    Docs / wiki  (Markdown rendered through _layouts/docs.html)

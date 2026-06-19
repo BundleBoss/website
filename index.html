@@ -3,7 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>document.documentElement.classList.add('js');</script>
+<script>
+  document.documentElement.classList.add('js');
+  (function () {
+    if (localStorage.getItem('bb-theme') === 'light') { document.documentElement.setAttribute('data-theme', 'light'); }
+  })();
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('.theme-toggle');
+    if (!b) return;
+    var d = document.documentElement;
+    if (d.getAttribute('data-theme') === 'light') { d.removeAttribute('data-theme'); localStorage.setItem('bb-theme', 'dark'); }
+    else { d.setAttribute('data-theme', 'light'); localStorage.setItem('bb-theme', 'light'); }
+  });
+</script>
 <title>BundleBoss | The bundle builder WooCommerce deserves</title>
 <meta name="description" content="Sell ready-made packs or let customers build their own, piece by piece. You set the rules, BundleBoss keeps every build valid and priced to the penny.">
 <link rel="icon" type="image/png" sizes="32x32" href="/brand/favicon-32.png">
@@ -33,6 +45,10 @@
     <a href="/bob/">Bob</a>
     <a href="/support/">Support</a>
   </nav>
+  <button class="theme-toggle" type="button" aria-label="Switch light or dark theme" title="Light / dark">
+    <svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+    <svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
+  </button>
 </header>
 
 <div class="hero-split">
@@ -109,7 +125,7 @@
     </div>
     <div class="tab-frame shot">
       <div class="browser-bar"><span></span><span></span><span></span></div>
-      <img class="tab-img" src="/docs/img/gallery-page-list.png" width="2484" height="2536"
+      <img class="tab-img" src="/docs/img/gallery-page-list.png" width="2772" height="2820"
            alt="A Training Kit bundle as a list, each item configured one after another">
     </div>
     <p class="tab-cap">List: each item configured one after another</p>
