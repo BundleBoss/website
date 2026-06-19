@@ -355,7 +355,7 @@ a.bob-link:hover { text-decoration: none; }
 /* two-column hero: copy + product screenshot */
 .hero-split {
   max-width: 1060px; margin: 0 auto; padding: 56px 24px 52px;
-  display: grid; grid-template-columns: 1.04fr 0.96fr; gap: 50px;
+  display: grid; grid-template-columns: 0.96fr 1.04fr; gap: 50px;
   align-items: center; text-align: left;
 }
 .hero-split .lede { margin: 0 0 30px; max-width: 520px; }
@@ -385,7 +385,7 @@ a.bob-link:hover { text-decoration: none; }
 .shot .browser-bar span:nth-child(3) { background: #28c840; }
 .shot img { display: block; width: 100%; height: auto; }
 .shot video { display: block; width: 100%; height: auto; }
-.hero-shot { max-width: 384px; }
+.hero-shot { max-width: 500px; }
 
 /* credibility strip */
 .trust {
