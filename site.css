@@ -462,14 +462,10 @@ a.bob-link:hover { text-decoration: none; }
 .tab:hover { color: var(--text); border-color: var(--faint); }
 .tab.is-active { background: var(--coral); color: #fff; border-color: var(--coral); }
 .tab:focus-visible { outline: 2px solid var(--coral2); outline-offset: 2px; }
-.tab-frame { width: 470px; max-width: 100%; height: 588px; margin: 0 auto; background: #faf8f4; }
-.tab-frame .tab-img { width: 100%; height: 554px; object-fit: contain; object-position: top center; background: #faf8f4; transition: opacity 200ms ease; }
+.tab-frame { width: 760px; max-width: 100%; margin: 0 auto; background: #f5f6f8; }
+.tab-frame .tab-img { width: 100%; height: auto; display: block; background: #f5f6f8; transition: opacity 200ms ease; }
 .tab-frame .tab-img.swap { opacity: 0; }
 .tab-cap { text-align: center; color: var(--muted); font-weight: 600; font-size: 14.5px; margin-top: 18px; }
-@media (max-width: 560px) {
-  .tab-frame { height: 478px; }
-  .tab-frame .tab-img { height: 444px; }
-}
 
 /* ============================================================
    Docs / wiki  (Markdown rendered through _layouts/docs.html)
