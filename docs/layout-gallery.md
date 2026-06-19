@@ -29,7 +29,7 @@ When you edit a bundle, the controls sit at the top of the **Bundle Items** tab:
 **To get this:** set **Layout** to **List**.
 
 <figure>
-  <img src="/docs/img/gallery-page-list.png" alt="A bundle in the List layout, items stacked down the page">
+  <img src="/docs/img/gallery-page-list.webp" alt="A bundle in the List layout, items stacked down the page">
   <figcaption>Items stacked top to bottom. The default, and the right choice for most bundles.</figcaption>
 </figure>
 
@@ -38,7 +38,7 @@ When you edit a bundle, the controls sit at the top of the **Bundle Items** tab:
 **To get this:** set **Layout** to **Grid**.
 
 <figure>
-  <img src="/docs/img/gallery-page-grid.png" alt="A bundle in the Grid layout, items shown as cards side by side">
+  <img src="/docs/img/gallery-page-grid.webp" alt="A bundle in the Grid layout, items shown as cards side by side">
   <figcaption>Items as cards side by side. Good when a bundle has several items to scan as a set.</figcaption>
 </figure>
 
@@ -47,7 +47,7 @@ When you edit a bundle, the controls sit at the top of the **Bundle Items** tab:
 **To get this:** set **Layout** to **Step by step**.
 
 <figure>
-  <img src="/docs/img/gallery-page-step.png" alt="A bundle in the Step by step layout, one item in focus with Back and Next">
+  <img src="/docs/img/gallery-page-step.webp" alt="A bundle in the Step by step layout, one item in focus with Back and Next">
   <figcaption>One item at a time, with numbered steps and Back / Next. Best for long or involved builds.</figcaption>
 </figure>
 
