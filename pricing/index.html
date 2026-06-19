@@ -182,6 +182,8 @@
   if (!toggle) return;
   var fields = document.querySelectorAll('[data-gbp]');
   function set(cur) {
+    // Record the chosen currency so the checkout links can open in it.
+    document.documentElement.setAttribute('data-currency', cur);
     fields.forEach(function (el) {
       var amt = el.getAttribute('data-' + cur);
       if (!amt) return;
@@ -246,6 +248,11 @@
       summary.textContent = name + ' · ' + price + ' (' + per + ')';
       var checkout = LAUNCHED ? btn.getAttribute('data-checkout') : null;
       if (checkout) {
+        // Open the Freemius checkout in the currency the customer is viewing.
+        if (checkout.indexOf('checkout.freemius.com') !== -1) {
+          var cur = document.documentElement.getAttribute('data-currency') || 'gbp';
+          checkout += (checkout.indexOf('?') === -1 ? '?' : '&') + 'currency=' + cur;
+        }
         cta.textContent = (name === 'Free') ? 'Get it free on WordPress.org' : 'Start free trial';
         cta.href = checkout;
         copy.hidden = true;
