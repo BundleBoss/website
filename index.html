@@ -343,15 +343,20 @@
   var tabs = Array.prototype.slice.call(wrap.querySelectorAll('.tab'));
   var img = wrap.querySelector('.tab-img');
   var cap = wrap.querySelector('.tab-cap');
+  // Preload every layout up front so switching is instant, with no flash of a
+  // half-loaded image.
+  tabs.forEach(function (t) { var i = new Image(); i.src = t.dataset.src; });
+  var FADE = 240;
   tabs.forEach(function (t) {
     t.addEventListener('click', function () {
       if (t.classList.contains('is-active')) return;
       tabs.forEach(function (x) { x.classList.remove('is-active'); x.setAttribute('aria-selected', 'false'); });
       t.classList.add('is-active'); t.setAttribute('aria-selected', 'true');
-      img.classList.add('swap');
-      var pre = new Image();
-      pre.onload = function () { img.src = t.dataset.src; img.alt = t.dataset.alt; cap.textContent = t.dataset.cap; img.classList.remove('swap'); };
-      pre.src = t.dataset.src;
+      img.classList.add('swap');                       // fade fully out
+      setTimeout(function () {
+        img.src = t.dataset.src; img.alt = t.dataset.alt; cap.textContent = t.dataset.cap;
+        img.classList.remove('swap');                  // then fade the new one in
+      }, FADE);
     });
   });
 })();
