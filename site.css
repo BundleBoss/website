@@ -618,6 +618,10 @@ html.theme-anim *:not(svg):not(svg *) {
 .docs-content thead th { color: var(--text); font-weight: 700; border-bottom-color: var(--faint); }
 .docs-content td { color: var(--muted); }
 .docs-content tbody tr:hover { background: rgba(255, 255, 255, 0.02); }
+/* Light mode: inline code text and the table hover need readable values on
+   the white surface (the dark-mode peach and white overlay vanish there). */
+html[data-theme="light"] .docs-content code { color: var(--coral2); }
+html[data-theme="light"] .docs-content tbody tr:hover { background: rgba(28, 21, 48, 0.04); }
 
 /* callouts (blockquote + explicit classes) */
 .docs-content blockquote, .callout {
