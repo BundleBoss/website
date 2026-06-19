@@ -24,6 +24,10 @@ html[data-theme="light"] {
 }
 html[data-theme="light"] .aurora { opacity: 0.3; }
 html[data-theme="light"] .shot { border-color: rgba(28, 21, 48, 0.08); box-shadow: 0 24px 50px -28px rgba(28, 21, 48, 0.28), 0 6px 18px rgba(28, 21, 48, 0.10); }
+/* Screenshots are bright white UI; on the light page they glare. Sit them on a soft
+   grey mat and dim a touch so they're easier on the eye. Dark mode keeps them bright. */
+html[data-theme="light"] .shot, html[data-theme="light"] .tab-frame, html[data-theme="light"] .tab-frame .tab-img { background: #e6e4ed; }
+html[data-theme="light"] .shot img, html[data-theme="light"] .shot video, html[data-theme="light"] .docs-content img { filter: brightness(0.955); }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { background-color: var(--ink); scrollbar-gutter: stable; }
 body {
