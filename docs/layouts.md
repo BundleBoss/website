@@ -8,7 +8,7 @@ lede: Two settings control how a bundle looks. This page explains both, then rec
 
 There are two separate choices, both at the top of the **Bundle Items** tab:
 
-1. **Layout** is the whole-page layout: **List**, **Grid**, or **Step by step**.
+1. **Layout** is the whole-page layout: **List**, **Grid**, **Step by step**, or **Configurator**.
 2. **Multiple items** is how the units of a single multi-quantity item are arranged: **Stacked**, **Compact cards**, **Table**, or the **Quantity grid**.
 
 They are independent, so you can mix them, for example a List page with a Quantity grid inside one item.
@@ -28,6 +28,12 @@ The same cards arranged side by side in a responsive grid. Good when a bundle ha
 ### Step by step <span class="pro-pill">Pro</span>
 
 One item in focus at a time, with numbered steps, green ticks, Back and Next buttons and free jumping between steps. The running total stays visible throughout, and the customer lands on the first incomplete step (handy for edit-from-cart and shared links). Best for long or involved builds like a PC configurator, where showing everything at once would overwhelm. Without the Builder, Step by step falls back to List.
+
+### Configurator <span class="pro-pill">Pro</span> <small>(In development)</small>
+
+<div class="callout tip"><span class="callout-label">Coming soon</span><p>The Configurator layout is in development and lands in an upcoming release. Here is how it will work.</p></div>
+
+A full-page, two-pane builder: the choices on one side, a live summary and running total that stay in view on the other. Rich option cards show each choice with its picture and the price difference it makes, so a customer building something involved always sees where they are and what it costs. Best for premium, considered purchases, a PC build, a bike, a made-to-order package, where the build itself is part of the experience. Like Step by step, it falls back to List without the Builder.
 
 ## Multiple items: displaying a product bought in quantity
 
@@ -61,6 +67,7 @@ The customer taps a colour and types **how many of each size**, building a bulk 
 | A small fixed pack (2 to 3 items) | List | Stacked |
 | A bundle with many items to scan | Grid | Stacked |
 | A long or complex configurator | Step by step <span class="pro-pill">Pro</span> | Stacked or Compact cards |
+| A premium, considered build (PC, bike, made-to-order) | Configurator <span class="pro-pill">Pro</span> | Stacked or Compact cards |
 | Personalised team kit (names per unit) | List or Grid | Compact cards |
 | A bulk size run (workwear, 10+ split across sizes) | List | Quantity grid <span class="pro-pill">Pro</span> |
 | Fast spreadsheet-style entry | List | Table |

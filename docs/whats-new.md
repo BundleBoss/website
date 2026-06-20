@@ -38,6 +38,10 @@ Show or hide a whole item based on an earlier choice. Reveal a matching socks sl
 
 Discount the cheapest items the customer adds: buy one get one free, buy 2 get 1 free, any 6 for the price of 4. Because it prices what they have actually selected, it pairs with build a box and the quantity grid for proper mix and match deals.
 
+### [Configurator layout](/docs/layouts/) &nbsp;<small>(In development)</small>
+
+A full-page, two-pane builder for premium, considered purchases: the choices on one side, a live summary and running total on the other, with rich option cards that show each choice's picture and the price it adds. A fourth page layout alongside List, Grid and Step by step, for builds where the configuring is part of the experience: a PC, a bike, a made-to-order package.
+
 ## On the list
 
 The roadmap is genuinely steered by what lands in the inbox. If there is something you need, the fastest way to get it built is to tell us about it.

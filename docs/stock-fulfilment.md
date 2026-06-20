@@ -22,7 +22,7 @@ If the same variation is picked in more than one unit and the combined demand is
 
 ## Bundle stock cap
 
-Separately from component stock, you can cap how many of the **bundle itself** can sell, on the [Bundle Pricing](/docs/pricing/) tab. That uses WooCommerce's native stock counter, including its low-stock email threshold.
+Separately from component stock, you can cap how many of the **bundle itself** can sell, on the **Inventory** tab. That uses WooCommerce's native stock counter, including its low-stock email threshold. See [Pricing &amp; discounts](/docs/pricing/) for the cap and the other selling options.
 
 ## Shipping weight
 

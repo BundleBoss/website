@@ -17,7 +17,11 @@ The whole bundle (every slot, unit and variation) is **one cart line**, with the
 
 ### Edit from the cart
 
-An **Edit** link takes the customer back to the product page with everything pre-filled. Submitting the updated form **replaces** the existing cart line in place, rather than adding a second one.
+An **Edit** link takes the customer back to the product page with everything pre-filled. Submitting the updated form **replaces** the existing cart line in place, rather than adding a second one. The Edit link is there on the classic cart, the mini-cart and the block cart.
+
+### Order again
+
+When a customer reorders a past bundle from My Account, the whole configuration is rebuilt, every slot, unit and option, so they get exactly what they bought before without setting it up again.
 
 ### Tiers and the discount nudge
 
@@ -25,7 +29,7 @@ When several copies of the same bundle are in the cart, the highest matching [qu
 
 ## At checkout
 
-Component stock is re-checked **again at checkout**, in case it changed while the customer was deciding. If something has sold out, checkout is blocked with a clear "not enough stock, edit the bundle" message, so an order can never be placed that you cannot fulfil.
+Stock is re-checked **on the cart and again at checkout**, in case it changed while the customer was deciding, covering both the products inside the bundle and the bundle's own stock limit. If something has sold out or run short (someone else bought the last one), the shopper is told with a clear "not enough stock, reduce the quantity" message, and checkout is blocked, so an order can never be placed that you cannot fulfil.
 
 ## On the order
 

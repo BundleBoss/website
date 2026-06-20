@@ -3,7 +3,7 @@ layout: docs
 title: Pricing & discounts
 description: Choose percentage or fixed bundle pricing, add quantity discount tiers, and cap how many bundles can sell.
 permalink: /docs/pricing/
-lede: Two pricing modes, optional quantity tiers, and a stock cap. All on the Bundle Pricing tab.
+lede: Two pricing modes and optional quantity tiers on the Bundle Pricing tab, plus a stock cap on Inventory.
 ---
 
 ## Pricing modes
@@ -20,7 +20,7 @@ The bundle **always costs exactly the price you set**, whatever the customer pic
 
 <figure>
   <img src="/docs/img/pricing-panel.png" alt="The Bundle Pricing tab with mode, discount and quantity tiers">
-  <figcaption>Pick a pricing mode, then optionally add quantity tiers and a stock cap.</figcaption>
+  <figcaption>Pick a pricing mode, then optionally add quantity tiers.</figcaption>
 </figure>
 
 ## Quantity discount tiers
@@ -43,10 +43,21 @@ The highest matching tier replaces the base discount automatically, and it appli
 
 ## Bundle stock cap
 
-Tick **Limit total bundles available** and set a quantity to cap how many of this bundle can sell. This uses WooCommerce's own stock counter, so it decrements on purchase and restores on cancellation or refund. Set a **low stock threshold** to get WooCommerce's low-stock email when it is nearly sold out.
+On the **Inventory** tab, tick **Limit total bundles available** and set a quantity to cap how many of this bundle can sell. This uses WooCommerce's own stock counter, so it decrements on purchase and restores on cancellation or refund. Set a **low stock threshold** to get WooCommerce's low-stock email when it is nearly sold out.
 
 This is separate from component stock, which BundleBoss always tracks. See [Stock &amp; fulfilment](/docs/stock-fulfilment/).
 
 ## How discounts combine
 
 The base discount, a matching quantity tier and any active [sale countdown](/docs/promotions/) resolve to one clear price. The highest matching tier wins over the base; in fixed-price mode the base discount is ignored (the fixed price is the price). The live total on the product page always matches what the customer pays at checkout, to the penny.
+
+## Tax, virtual and selling options
+
+A bundle is a real WooCommerce product, so the everyday selling settings are all there and behave natively:
+
+- **Tax status and tax class** on the **Bundle Pricing** tab. A bundle can be taxable at the standard rate (the default), use a reduced or zero rate, or be tax exempt.
+- **Virtual** on the **Shipping** tab, for digital or service bundles that ship nothing. A bundle made entirely of virtual items is virtual anyway.
+- **Sold individually** on the **Inventory** tab, to limit a bundle to one per order.
+- **Upsells and cross-sells** on the **Linked Products** tab, the same as any product.
+
+The bundle is taxed, shipped and refunded as a single line, so none of these behave differently from a normal product.
