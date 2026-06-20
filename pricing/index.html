@@ -109,6 +109,7 @@
 <div class="plan-bar" id="plan-bar" hidden>
   <span class="plan-bar-summary" id="plan-summary"></span>
   <a class="btn btn-primary" id="plan-cta" href="https://wordpress.org/plugins/bundle-boss/">Get BundleBoss</a>
+  <a class="btn btn-ghost" id="plan-buy" hidden href="https://checkout.freemius.com/plugin/31967/plan/52435/">Buy now, no trial</a>
   <button type="button" class="btn btn-ghost" id="plan-copy">Copy our email</button>
 </div>
 
@@ -143,7 +144,9 @@
       <p>Every Pro plan starts with a 14-day free trial that does not
       ask for a payment method. With the
       <a href="/refunds.html">30-day money-back guarantee</a> on top,
-      you get about six weeks to decide with nothing at risk.</p>
+      you get about six weeks to decide with nothing at risk. Already
+      sure? Pick a plan and choose Buy now to purchase straight away,
+      still covered by the 30-day guarantee.</p>
     </details>
     <details class="faq-item">
       <summary>What happens if I cancel?</summary>
@@ -247,18 +250,29 @@
       var per = tier.querySelector('.per').textContent.trim();
       summary.textContent = name + ' · ' + price + ' (' + per + ')';
       var checkout = LAUNCHED ? btn.getAttribute('data-checkout') : null;
+      var buy = document.getElementById('plan-buy');
       if (checkout) {
         // Open the Freemius checkout in the currency the customer is viewing.
-        if (checkout.indexOf('checkout.freemius.com') !== -1) {
-          var cur = document.documentElement.getAttribute('data-currency') || 'gbp';
-          checkout += (checkout.indexOf('?') === -1 ? '?' : '&') + 'currency=' + cur;
-        }
+        var cur = document.documentElement.getAttribute('data-currency') || 'gbp';
+        var inCurrency = function (url) {
+          if (url.indexOf('checkout.freemius.com') === -1) { return url; }
+          return url + (url.indexOf('?') === -1 ? '?' : '&') + 'currency=' + cur;
+        };
         cta.textContent = (name === 'Free') ? 'Get it free on WordPress.org' : 'Start free trial';
-        cta.href = checkout;
+        cta.href = inCurrency(checkout);
+        // Buy now sends a ready buyer straight to payment: the same plan
+        // without the trial. Only the paid Freemius plans show it.
+        if (name !== 'Free' && checkout.indexOf('checkout.freemius.com') !== -1) {
+          buy.href = inCurrency(checkout.split('?')[0]);
+          buy.hidden = false;
+        } else {
+          buy.hidden = true;
+        }
         copy.hidden = true;
       } else {
         cta.textContent = 'Email us and get notified at launch';
         cta.href = 'mailto:support@getbundleboss.com?subject=' + encodeURIComponent('Tell me when it launches');
+        buy.hidden = true;
         copy.hidden = false;
       }
       bar.hidden = false;
