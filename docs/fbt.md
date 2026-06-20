@@ -22,6 +22,8 @@ On any simple product, open the **Frequently bought together** tab in the produc
 - Pick the **companion products** (two to four work best), using the same product search you know from anywhere in WooCommerce.
 - Set an optional **discount**, a percentage off the companions when they are added through the block. Leave it at 0 for no discount.
 
+<div class="callout tip"><span class="callout-label">Cannot see the tab?</span><p>The <strong>Frequently bought together</strong> tab only appears when the product's type is <strong>Simple product</strong>. If the Product data dropdown is set to Variable or Bundle, switch it to Simple and the tab returns. Variable-product support is on the roadmap.</p></div>
+
 ## What the customer sees
 
 Below Add to Cart, a row of the product and its companions joined by a plus sign, each with a tick box. The companions are ticked by default, and the customer can untick any they do not want. A running **"Total price"** updates as they tick, and one **"Add selected to cart"** button adds the whole set. If you set a discount, the companions show their saving.
