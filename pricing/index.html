@@ -30,7 +30,7 @@
 </header>
 
 <div class="hero wrap" style="padding-bottom:30px">
-  <div><span class="badge">Launching soon</span></div>
+  <div><span class="badge">Live now</span></div>
   <h1>Honest, simple <em>pricing</em></h1>
   <p class="lede">Every Pro plan starts with a 14-day free trial and carries a 30-day money-back guarantee. Annual billing, cancel any time.</p>
   <p class="launch-note"><strong>Launch pricing.</strong> The prices below are introductory rates for early customers. Get in early and you keep your rate for the life of your subscription, even after the regular prices take over.</p>
@@ -58,7 +58,7 @@
         <li class="no">Build-your-own choice slots</li>
         <li class="no">Compatibility and quantity rules</li>
       </ul>
-      <a class="btn btn-ghost" style="margin-left:0" href="mailto:support@getbundleboss.com?subject=Tell%20me%20when%20it%20launches">Notify me</a>
+      <a class="btn btn-ghost" style="margin-left:0" href="https://wordpress.org/plugins/bundle-boss/" data-checkout="https://wordpress.org/plugins/bundle-boss/">Get it free on WordPress.org</a>
     </div>
     <div class="tier featured">
       <h3>Solo</h3>
@@ -77,7 +77,7 @@
         <li>Migrate from Composite Products</li>
         <li>Priority support</li>
       </ul>
-      <a class="btn btn-primary" href="mailto:support@getbundleboss.com?subject=Tell%20me%20when%20it%20launches" data-checkout="https://checkout.freemius.com/plugin/31967/plan/52435/?trial=free">Notify me at launch</a>
+      <a class="btn btn-primary" href="https://checkout.freemius.com/plugin/31967/plan/52435/?trial=free" data-checkout="https://checkout.freemius.com/plugin/31967/plan/52435/?trial=free">Start free trial</a>
     </div>
     <div class="tier">
       <h3>Studio</h3>
@@ -88,7 +88,7 @@
         <li>Five site activations</li>
         <li>For studios and growing brands</li>
       </ul>
-      <a class="btn btn-ghost" style="margin-left:0" href="mailto:support@getbundleboss.com?subject=Tell%20me%20when%20it%20launches" data-checkout="https://checkout.freemius.com/plugin/31967/plan/52436/?trial=free">Notify me at launch</a>
+      <a class="btn btn-ghost" style="margin-left:0" href="https://checkout.freemius.com/plugin/31967/plan/52436/?trial=free" data-checkout="https://checkout.freemius.com/plugin/31967/plan/52436/?trial=free">Start free trial</a>
     </div>
     <div class="tier">
       <h3>Agency</h3>
@@ -99,7 +99,7 @@
         <li>Twenty-five site activations</li>
         <li>Build it once, sell it to every client</li>
       </ul>
-      <a class="btn btn-ghost" style="margin-left:0" href="mailto:support@getbundleboss.com?subject=Tell%20me%20when%20it%20launches" data-checkout="https://checkout.freemius.com/plugin/31967/plan/52437/?trial=free">Notify me at launch</a>
+      <a class="btn btn-ghost" style="margin-left:0" href="https://checkout.freemius.com/plugin/31967/plan/52437/?trial=free" data-checkout="https://checkout.freemius.com/plugin/31967/plan/52437/?trial=free">Start free trial</a>
     </div>
   </div>
   <p class="currency-note">Switch currency above. You can pay in GBP, USD or EUR at checkout.</p>
@@ -108,7 +108,7 @@
 
 <div class="plan-bar" id="plan-bar" hidden>
   <span class="plan-bar-summary" id="plan-summary"></span>
-  <a class="btn btn-primary" id="plan-cta" href="mailto:support@getbundleboss.com">Email us for early access</a>
+  <a class="btn btn-primary" id="plan-cta" href="https://wordpress.org/plugins/bundle-boss/">Get BundleBoss</a>
   <button type="button" class="btn btn-ghost" id="plan-copy">Copy our email</button>
 </div>
 
@@ -182,6 +182,8 @@
   if (!toggle) return;
   var fields = document.querySelectorAll('[data-gbp]');
   function set(cur) {
+    // Record the chosen currency so the checkout links can open in it.
+    document.documentElement.setAttribute('data-currency', cur);
     fields.forEach(function (el) {
       var amt = el.getAttribute('data-' + cur);
       if (!amt) return;
@@ -209,10 +211,9 @@
 // lives behind one clearly-labelled button in the action bar.
 // Without JS the cards keep their direct links.
 (function () {
-  // Pre-launch the whole site is "coming soon", so plan buttons collect
-  // interest instead of charging. On launch day flip this to true and the
-  // wired Freemius checkout links (data-checkout) go live in one step.
-  var LAUNCHED = false;
+  // LIVE since 2026-06-19: the wired Freemius checkout links (data-checkout)
+  // are active. The Free tier's data-checkout points at the wordpress.org page.
+  var LAUNCHED = true;
   var tiers = Array.prototype.slice.call(document.querySelectorAll('.tier'));
   var bar = document.getElementById('plan-bar');
   if (!tiers.length || !bar) return;
@@ -247,7 +248,12 @@
       summary.textContent = name + ' · ' + price + ' (' + per + ')';
       var checkout = LAUNCHED ? btn.getAttribute('data-checkout') : null;
       if (checkout) {
-        cta.textContent = 'Start free trial';
+        // Open the Freemius checkout in the currency the customer is viewing.
+        if (checkout.indexOf('checkout.freemius.com') !== -1) {
+          var cur = document.documentElement.getAttribute('data-currency') || 'gbp';
+          checkout += (checkout.indexOf('?') === -1 ? '?' : '&') + 'currency=' + cur;
+        }
+        cta.textContent = (name === 'Free') ? 'Get it free on WordPress.org' : 'Start free trial';
         cta.href = checkout;
         copy.hidden = true;
       } else {
