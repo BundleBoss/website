@@ -104,6 +104,10 @@ section { padding: 56px 0; }
 .btn:focus-visible, a:focus-visible {
   outline: 2px solid var(--coral2); outline-offset: 3px; border-radius: 10px;
 }
+/* The HTML hidden attribute must always win, even over component rules like
+   .btn (which sets display:inline-block). Without this a hidden button in the
+   plan bar, e.g. "Buy now, no trial" on the Free tier, re-appears. */
+[hidden] { display: none !important; }
 
 h2.section-title { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; text-align: center; margin-bottom: 10px; }
 p.section-sub { text-align: center; color: var(--muted); margin-bottom: 40px; }
