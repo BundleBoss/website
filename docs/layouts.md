@@ -29,9 +29,7 @@ The same cards arranged side by side in a responsive grid. Good when a bundle ha
 
 One item in focus at a time, with numbered steps, green ticks, Back and Next buttons and free jumping between steps. The running total stays visible throughout, and the customer lands on the first incomplete step (handy for edit-from-cart and shared links). Best for long or involved builds like a PC configurator, where showing everything at once would overwhelm. Without the Builder, Step by step falls back to List.
 
-### Configurator <span class="pro-pill">Pro</span> <small>(In development)</small>
-
-<div class="callout tip"><span class="callout-label">Coming soon</span><p>The Configurator layout is in development and lands in an upcoming release. Here is how it will work.</p></div>
+### Configurator <span class="pro-pill">Pro</span>
 
 A full-page, two-pane builder: the choices on one side, a live summary and running total that stay in view on the other. Rich option cards show each choice with its picture and the price difference it makes, so a customer building something involved always sees where they are and what it costs. Best for premium, considered purchases, a PC build, a bike, a made-to-order package, where the build itself is part of the experience. Like Step by step, it falls back to List without the Builder.
 

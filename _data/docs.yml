@@ -62,7 +62,7 @@
     - title: Troubleshooting
       url: /docs/troubleshooting/
 
-- section: Coming soon
+- section: New in 4.5.0
   items:
     - title: Conditional items (show / hide)
       url: /docs/conditional-items/

@@ -6,7 +6,6 @@ permalink: /docs/build-a-box/
 lede: Pick any 6 chocolates, build your own 6-pack, choose any 4 sauces. The customer fills a box to a total you set.
 ---
 
-<div class="callout tip"><span class="callout-label">Coming soon</span><p>Build a box is in development and lands in the next release. Here is how it will work. <a href="/docs/whats-new/">See what else is coming</a>, and tell us about the box you want to sell.</p></div>
 
 ## What it is
 

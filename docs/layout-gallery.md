@@ -51,13 +51,13 @@ When you edit a bundle, the controls sit at the top of the **Bundle Items** tab:
   <figcaption>One item at a time, with numbered steps and Back / Next. Best for long or involved builds.</figcaption>
 </figure>
 
-### Configurator <span class="pro-pill">Pro</span> <small>(In development)</small>
+### Configurator <span class="pro-pill">Pro</span>
 
 **To get this:** set **Layout** to **Configurator**.
 
 <figure>
   <img src="/docs/img/storefront-configurator.png" alt="A bundle in the Configurator layout, a two-pane builder with choices on the left and a live summary on the right">
-  <figcaption>A full-page, two-pane builder with a live summary that stays in view. In development; arriving in an upcoming release.</figcaption>
+  <figcaption>A full-page, two-pane builder with a live summary that stays in view.</figcaption>
 </figure>
 
 ## How a multi-quantity item shows

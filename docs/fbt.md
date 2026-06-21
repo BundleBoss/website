@@ -6,7 +6,6 @@ permalink: /docs/fbt/
 lede: An Amazon-style "buy these together" block. Pair products that go well together and lift the average order.
 ---
 
-<div class="callout tip"><span class="callout-label">Coming soon</span><p>Frequently bought together is in development and lands in the next release. Here is how it will work. <a href="/docs/whats-new/">See what else is coming</a>, and tell us which pairings you would sell.</p></div>
 
 ## What it is
 

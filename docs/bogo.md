@@ -6,7 +6,6 @@ permalink: /docs/bogo/
 lede: Buy one get one free, buy 2 get 1 free, any 6 for the price of 4. The cheapest items in the bundle are discounted, automatically.
 ---
 
-<div class="callout tip"><span class="callout-label">Coming soon</span><p>Buy X Get Y is in development and lands in an upcoming release. Here is how it will work. <a href="/docs/whats-new/">See what else is coming</a>, and tell us about the deal you want to run.</p></div>
 
 ## What it is
 

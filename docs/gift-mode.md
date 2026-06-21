@@ -6,7 +6,6 @@ permalink: /docs/gift-mode/
 lede: A recipient, a message, optional wrap, a gift receipt. Turn any bundle into a giftable one.
 ---
 
-<div class="callout tip"><span class="callout-label">Coming soon</span><p>Gift mode is in development and lands in the next release. Here is how it will work. <a href="/docs/whats-new/">See what else is coming</a>, and tell us what you would want from it.</p></div>
 
 ## What it is
 

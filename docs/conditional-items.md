@@ -6,7 +6,6 @@ permalink: /docs/conditional-items/
 lede: Reveal or hide a whole item based on an earlier choice. Show the matching-socks slot once a shoe is picked; hide an extra unless the premium option is chosen.
 ---
 
-<div class="callout tip"><span class="callout-label">Coming soon</span><p>Conditional items are in development and land in the next release. Here is how they will work. <a href="/docs/whats-new/">See what else is coming</a>, and tell us which combinations you want to sell.</p></div>
 
 ## What it is
 
