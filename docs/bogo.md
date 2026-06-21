@@ -16,7 +16,7 @@ Because it prices what the customer actually selects, it is a perfect match for 
 
 ## Turn it on
 
-On a bundle, open the **Pricing** tab and find the **Buy X Get Y (BOGO)** section:
+On a bundle, open the **Bundle Promotions** tab and find the **Buy X Get Y (BOGO)** section:
 
 - Tick **Enable Buy X Get Y**.
 - Set **Buy (X)**, how many items the customer pays for in each group.
