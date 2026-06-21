@@ -25,7 +25,7 @@ The bundle **always costs exactly the price you set**, whatever the customer pic
 
 ## Quantity discount tiers
 
-Reward customers who buy several of the **same bundle**. Click **+ Add Tier** and set "buy N or more for X% off":
+Reward customers who buy several of the **same bundle**. Under **More pricing options** on the Bundle Pricing tab (the same fold that holds [Buy X Get Y](/docs/bogo/)), click **+ Add Tier** and set "buy N or more for X% off":
 
 | In the cart | Discount |
 |---|---|
