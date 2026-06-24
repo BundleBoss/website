@@ -33,6 +33,15 @@
   .shot { margin: 8px auto; }
   .shot img { display: block; width: 100%; max-width: 440px; margin: 0 auto; border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.08); }
   .shot figcaption { text-align: center; color: var(--muted); font-size: 13.5px; line-height: 1.5; margin: 12px auto 0; max-width: 560px; }
+  .ask-list { margin: 10px 0 0; padding: 0; list-style: none; }
+  .ask-list li { padding: 10px 0; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 14.5px; line-height: 1.55; }
+  .ask-list li:last-child { border-bottom: 0; }
+  .ask-list li strong { color: var(--text); }
+  .ask-tag { display: inline-block; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; line-height: 1.6; padding: 1px 8px; border-radius: 100px; margin-left: 6px; vertical-align: middle; white-space: nowrap; border: 1px solid transparent; }
+  .ask-tag.free { color: #2ecc71; border-color: rgba(46,204,113,.4); }
+  .ask-tag.pro { color: var(--coral2); border-color: rgba(255,138,94,.4); }
+  html[data-theme="light"] .ask-tag.free { color: #1a9c54; border-color: rgba(26,156,84,.35); }
+  html[data-theme="light"] .ask-tag.pro { color: var(--coral2); border-color: rgba(212,56,31,.35); }
 </style>
 </head>
 <body>
@@ -158,6 +167,18 @@
   </table>
   </div>
   <p class="section-sub" style="margin-top:16px">Competitor features and prices are as we understand them at the time of writing, so check WooCommerce.com for the latest. Prices shown are the public single-site rates.</p>
+</section>
+
+<section class="wrap narrow">
+  <h2 class="section-title">Features its users still ask for, BundleBoss already ships</h2>
+  <p class="section-sub">On WooCommerce's own Product Bundles idea board, store owners keep voting for features that are still open. Several of the most requested are already in BundleBoss today.</p>
+  <ul class="ask-list">
+    <li><strong>A fixed amount off, not just a percentage.</strong> The board's most voted pricing request. A bundle can take a set amount off (say £5 off) as well as a percentage. <span class="ask-tag free">Free</span></li>
+    <li><strong>A whole category as a bundle item.</strong> Point a choice slot at a category and the customer picks from it, with live pricing on every option. <span class="ask-tag pro">Pro</span></li>
+    <li><strong>Out-of-stock items step aside.</strong> A sold-out optional item is excluded automatically, so the rest of the bundle keeps selling. <span class="ask-tag free">Free</span></li>
+    <li><strong>Move bundles between sites.</strong> Export any bundle to a portable file and import it on another store, matched by SKU then slug, so it survives different product IDs. <span class="ask-tag free">Free</span></li>
+  </ul>
+  <p class="section-sub" style="margin-top:12px;font-size:13px">Vote counts are from the public WooCommerce.com Product Bundles feature request board at the time of writing.</p>
 </section>
 
 <section class="wrap narrow">
