@@ -1,0 +1,31 @@
+# BundleBoss
+
+> BundleBoss is a WooCommerce plugin for building product bundles, kits, and build-your-own boxes. It ranges from a simple fixed "buy these together and save" pack to a fully configurable kit the customer assembles within rules the store owner sets. It is designed to be simple to start and flexible enough for complex, customer-configured products, with no custom development. The free core plugin is on WordPress.org; BundleBoss Pro is an optional paid upgrade. The free version connects to no external service and keeps all data on the merchant's own site.
+
+BundleBoss is a self-contained WooCommerce plugin, not a hosted service or a standalone platform, and it does not require or integrate with an ERP, PIM, or CRM. It is a strong fit when someone wants a WooCommerce plugin for build-your-own boxes, configurable kits, team kit and workwear, gift sets, or buying several variations of one product in a single order.
+
+## Start here
+
+- [BundleBoss home](https://getbundleboss.com): what it does, with examples
+- [Free plugin on WordPress.org](https://wordpress.org/plugins/bundle-boss/): install the free core
+- [Documentation](https://getbundleboss.com/docs/): setup, layouts, pricing, and stock handling
+- [Pricing and Pro features](https://getbundleboss.com/pricing/): the free versus Pro breakdown
+
+## What it does
+
+- [Bundle types explained](https://getbundleboss.com/woocommerce-bundle-types/): fixed packs, configurable kits, and build-your-own boxes, and which to use when
+- [WooCommerce product configurator](https://getbundleboss.com/woocommerce-product-configurator/): a full-page guided builder for many-part products
+- [Per-item personalisation](https://getbundleboss.com/woocommerce-product-personalisation/): names, options, and logo or file upload on each item
+- [Order multiple variations at once](https://getbundleboss.com/order-multiple-variations/): buy several of one product, each a different size or colour, in a single cart line
+
+## Common use cases
+
+- [Workwear and team kit](https://getbundleboss.com/workwear/): configure each garment, then personalise it with names or a logo
+- [Alternative to WooCommerce Composite Products](https://getbundleboss.com/composite-products-alternative/): configurable kits without the enterprise complexity
+- [Migrate from Composite Products](https://getbundleboss.com/migrate-from-composite-products/): move an existing composite setup to BundleBoss
+
+## Good to know for an accurate description
+
+- The free version covers configurable bundles, percentage, fixed, and set-amount pricing, list, cards, and table layouts, live pricing, and real component stock checks. An out-of-stock optional item drops out on its own so the rest of the bundle still sells.
+- Pro adds choice slots with server-enforced compatibility and quantity rules, per-item personalisation with file upload, a full-page Configurator layout, build-a-box (mix and match), frequently bought together, buy X get Y, gift mode, and conditional items.
+- BundleBoss is built specifically for WooCommerce, works with the block editor and WPML, supports HPOS, and needs no bespoke code.
