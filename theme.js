@@ -9,6 +9,16 @@
   }
 })();
 
+// Cloudflare Web Analytics (cookieless, no consent banner needed). Injected
+// here so every page that loads theme.js is covered, including the docs layout.
+(function () {
+  var s = document.createElement('script');
+  s.defer = true;
+  s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+  s.setAttribute('data-cf-beacon', '{"token": "7f2f353ce1934cb0aa2e770982aaaaa2"}');
+  (document.head || document.documentElement).appendChild(s);
+})();
+
 var BB_TOGGLE_SVG = '<svg class="sun-and-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24">'
   + '<mask class="moon" id="theme-moon-mask"><rect x="0" y="0" width="100%" height="100%" fill="white"/>'
   + '<circle cx="24" cy="10" r="6" fill="black"/></mask>'
