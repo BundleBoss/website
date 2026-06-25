@@ -7,7 +7,7 @@
   document.documentElement.classList.add('js');
   if (localStorage.getItem('bb-theme') === 'light') { document.documentElement.setAttribute('data-theme', 'light'); }
 </script>
-<script src="/theme.js?v=4"></script>
+<script src="/theme.js?v=4" defer></script>
 <title>BundleBoss - Product Bundles, Kits & Build-Your-Own for WooCommerce</title>
 <link rel="canonical" href="https://getbundleboss.com/">
 <meta name="description" content="Sell ready-made packs or let customers build their own, piece by piece. You set the rules, BundleBoss keeps every build valid and priced to the penny.">
@@ -28,7 +28,7 @@
 
 <header class="site-header">
   <a class="site-logo" href="/">
-    <img src="/brand/bundleboss-mark.png" alt="">
+    <img src="/brand/bundleboss-mark.png" alt="" width="160" height="160">
     <span>Bundle<b>Boss</b></span>
   </a>
   <nav class="site-nav">
@@ -76,7 +76,7 @@
   </div>
   <div class="shot hero-shot">
     <div class="browser-bar"><span></span><span></span><span></span></div>
-    <video class="hero-video" width="752" height="720" muted loop playsinline autoplay
+    <video class="hero-video" width="752" height="720" muted loop playsinline preload="none"
            poster="/brand/hero-poster.jpg?v=5"
            aria-label="A customer building a Training Kit bundle: picking each piece's colour and size while the running total updates to the penny">
       <source src="/brand/hero.mp4?v=5" type="video/mp4">
@@ -371,17 +371,16 @@
 </script>
 
 <script>
-// Respect reduced-motion: hold the hero video on its poster instead of playing.
+// Hero video: play only on larger screens with motion allowed; otherwise rest on
+// the poster (no video download on mobile means faster first paint and less data).
 (function () {
   var v = document.querySelector('.hero-video');
-  if (!v) return;
-  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    v.removeAttribute('autoplay');
-    v.pause();
-    // Rest on the final frame (the finished bundle), matching the poster.
-    v.addEventListener('loadedmetadata', function () {
-      try { v.currentTime = (v.duration && isFinite(v.duration)) ? v.duration - 0.1 : 0; } catch (e) {}
-    });
+  if (!v || !window.matchMedia) return;
+  var play = !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    && window.matchMedia('(min-width: 761px)').matches;
+  if (play) {
+    v.preload = 'auto';
+    v.play().catch(function () {});
   }
 })();
 </script>
