@@ -6,7 +6,7 @@
       url: /docs/
     - title: Install &amp; your first bundle
       url: /docs/getting-started/
-    - title: What's new &amp; coming
+    - title: What's new
       url: /docs/whats-new/
 
 - section: Build your bundle
@@ -35,8 +35,14 @@
     - title: Quantity grid (size runs)
       url: /docs/quantity-grid/
       pro: true
+    - title: Build a box (mix and match)
+      url: /docs/build-a-box/
+      pro: true
     - title: Per-item personalisation
       url: /docs/personalisation/
+      pro: true
+    - title: Conditional items (show / hide)
+      url: /docs/conditional-items/
       pro: true
     - title: Shareable build links
       url: /docs/share-links/
@@ -50,6 +56,15 @@
       url: /docs/stock-fulfilment/
     - title: Promotions
       url: /docs/promotions/
+    - title: Frequently bought together
+      url: /docs/fbt/
+      pro: true
+    - title: Buy X Get Y (BOGO)
+      url: /docs/bogo/
+      pro: true
+    - title: Gift mode
+      url: /docs/gift-mode/
+      pro: true
 
 - section: Customise &amp; manage
   items:
@@ -61,21 +76,3 @@
       url: /docs/multilingual/
     - title: Troubleshooting
       url: /docs/troubleshooting/
-
-- section: New in 4.5.0
-  items:
-    - title: Conditional items (show / hide)
-      url: /docs/conditional-items/
-      pro: true
-    - title: Gift mode
-      url: /docs/gift-mode/
-      pro: true
-    - title: Build a box (mix and match)
-      url: /docs/build-a-box/
-      pro: true
-    - title: Frequently bought together
-      url: /docs/fbt/
-      pro: true
-    - title: Buy X Get Y (BOGO)
-      url: /docs/bogo/
-      pro: true
