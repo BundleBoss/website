@@ -8,12 +8,13 @@ lede: Component stock stays honest from the configurator to the order, with no o
 
 ## Component stock
 
-When a bundle sells, the stock of **every component variation inside it** is reduced automatically, and restored if the order is cancelled or refunded. There is no double counting and no overselling through the components' own product pages.
+When a bundle sells, the stock of **every component variation inside it** is reduced by the exact quantity ordered (a size run of ten reduces those variations by ten, not by one), and restored if the order is cancelled or refunded. There is no double counting and no overselling through the components' own product pages.
 
 Stock is checked at three points:
 
 - **While configuring:** low-stock badges (like "Only 3 left") appear per unit, and out-of-stock options are blocked.
 - **At add to cart.**
+- **On the cart:** if a component runs low while the bundle is sitting in the cart, the shopper is warned right there (classic and block cart), not only stopped later.
 - **Again at checkout**, in case stock changed in the meantime.
 
 ### Cross-unit stock conflicts

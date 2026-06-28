@@ -41,6 +41,11 @@ For a variable product, you can narrow what the customer may choose. Open the at
 
 Per item, you can show variation options as **pill buttons** (tap to select) or as a **dropdown**. Pills suit a handful of options; dropdowns suit long lists. Colour options can show as [swatches](/docs/swatches/) instead of text.
 
+## Item and bundle images
+
+- **Hide an item's image** on its row if a slot reads better without a thumbnail.
+- The bundle's own **Main image** can be shown, hidden, or set to follow the customer's chosen colour, so the main product photo updates as they configure.
+
 ## Want customers to pick the product, not just the colour?
 
 The slots above are ones where you, the shop owner, choose the product. To let the *customer* choose the product from a pool you define (a PC builder, a gift hamper, a ski package), use a [choice slot](/docs/choice-slots/) <span class="pro-pill">Pro</span> instead.

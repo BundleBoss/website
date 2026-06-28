@@ -1,9 +1,9 @@
 ---
 layout: docs
 title: Pricing & discounts
-description: Choose percentage or fixed bundle pricing, add quantity discount tiers, and cap how many bundles can sell.
+description: Choose percentage, set-amount or fixed bundle pricing, add quantity discount tiers, and cap how many bundles can sell.
 permalink: /docs/pricing/
-lede: Two pricing modes and optional quantity tiers on the Bundle Pricing tab, plus a stock cap on Inventory.
+lede: Three pricing modes and optional quantity tiers on the Bundle Pricing tab, plus a stock cap on Inventory.
 ---
 
 ## Pricing modes
@@ -13,6 +13,10 @@ Open the **Bundle Pricing** tab and pick one mode for the bundle.
 ### Percentage discount
 
 The bundle costs the **sum of the chosen items**, minus a percentage you set. Enter `10` for 10% off, or `0` for no discount. Customers see the original total struck through with a "You save &pound;X (Y%)" line. Because the total follows the items, the shop shows a "From &pound;X" price.
+
+### Set amount off
+
+The bundle costs the **sum of the chosen items, minus a flat amount** you set (for example &pound;5 off). Like the percentage, the price follows what the customer picks, so they see a "You save" line and the shop shows a "From &pound;X" price.
 
 ### Fixed bundle price
 
@@ -37,7 +41,7 @@ The highest matching tier replaces the base discount automatically, and it appli
 
 ## How the price displays
 
-- **From &pound;X** in percentage mode, because the final price depends on what the customer chooses.
+- **From &pound;X** in percentage or set-amount mode, because the final price depends on what the customer chooses.
 - **An exact price** in fixed mode.
 - The figure **recalculates automatically** when a component product's price changes and the bundle (or that product) is next saved.
 

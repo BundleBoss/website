@@ -38,7 +38,7 @@ Swatch colours come from your [swatch settings](/docs/swatches/), or are filled 
 ## How customers use it
 
 - The first attribute (usually colour) shows as **tiles**. Tapping one expands its sizes inline, with a count badge on the tile.
-- They **type a quantity** into each size they want. A live "N of M chosen" and a running subtotal keep the target clear, and each cell shows its own stock.
+- They **type a quantity** into each size they want, or tap the **plus and minus steppers** on a cell to nudge it up and down. A live "N of M chosen" and a running subtotal keep the target clear, and each cell shows its own stock.
 - The grid **auto-shapes** to the product: many colours become tiles; a single-attribute item becomes a flat row of cells.
 - On a phone it **reflows to a stacked list**, so there is never a sideways scroll.
 

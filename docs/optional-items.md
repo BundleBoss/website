@@ -8,13 +8,14 @@ lede: Mark a slot optional and the customer decides whether it is in or out.
 
 ## Making an item optional
 
-On the **Bundle Items** tab, tick **Optional** on any slot. On the storefront that item gains an **"Include this item"** toggle. Everything else about the slot (quantity, variations, layout) works exactly as before.
+On the **Bundle Items** tab, tick **Optional** on any slot. On the storefront that item gains a toggle that reads **"Add"** when it is off and **"Included"** when it is on, so its state is always clear. Everything else about the slot (quantity, variations, layout) works exactly as before.
 
 ## What it changes
 
 - **Skipped:** the item is left out of the live total and out of the order entirely. Its stock is not touched.
 - **Included:** the item is priced and ordered like any other slot.
 - **The shop price:** optional items are excluded from the "From &pound;X" figure, so the headline price is the true minimum a customer could pay.
+- **Out of stock:** if an optional item runs out, it drops out of the bundle on its own, so the rest of the bundle still sells instead of the whole thing being blocked.
 
 The toggle is fully keyboard operable, and the running total updates the moment it is flicked.
 

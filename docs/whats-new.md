@@ -1,9 +1,9 @@
 ---
 layout: docs
-title: What's new and coming
-description: What we are building next for BundleBoss, and how to tell us what you need. We read every message.
+title: What's new
+description: The latest BundleBoss updates, and how to tell us what to build next. We read every message.
 permalink: /docs/whats-new/
-lede: BundleBoss is built with shop owners, not just for them. Here is what is coming next, and how to shape it.
+lede: BundleBoss is built with shop owners, not just for them. Here is what we have shipped lately, and how to shape what comes next.
 ---
 
 We build the next feature from what you tell us. If something would make your store easier to run, or you have seen it done well somewhere else, we want to hear it.
@@ -12,34 +12,30 @@ We build the next feature from what you tell us. If something would make your st
 <p><strong>Tell us what to build.</strong> Email <a href="mailto:support@getbundleboss.com">support@getbundleboss.com</a> with the features you want, the stores and tools you admire, or a screenshot of a checkout you love. There is no form to fill in and no wrong idea. A real person reads every message, and the person who reads it is the person who builds the plugin.</p>
 </div>
 
-A screenshot or a link says more than a paragraph. Show us the thing you wish BundleBoss did and we will tell you honestly whether it fits, and when.
+## Recently shipped
 
-## New in 4.5.0
+A few of the latest improvements. The full per-release list is in the changelog on the [WordPress.org page](https://wordpress.org/plugins/bundle-boss/).
 
-These all shipped in BundleBoss 4.5.0, in the Builder (Pro). Want one of them to work a particular way, or have an idea for the next batch? That is exactly the kind of thing to email us about.
+- **Brand colour, in one click.** Pick a single [brand colour](/docs/theming/) under Appearance and the builder's buttons, highlights and links match your shop, on the product page and in the cart. No code.
+- **Quantity grid steppers.** The [size-run grid](/docs/quantity-grid/) now has plus and minus steppers on each cell, so a customer can adjust a run by tapping, not only typing.
+- **Frequently bought together, in the cart.** The [FBT](/docs/fbt/) offer now also appears as a "Complete your order" strip in the cart, classic and block, not just on the product page.
+- **A third pricing mode.** Alongside a percentage and a fixed price, you can now take a [set amount off](/docs/pricing/) the items (for example &pound;5 off).
+- **Bigger boxes, bigger savings.** [Build a box](/docs/build-a-box/) gained quantity breaks ("add 1 more for 10% off") and a "max different products" limit.
+- **Clearer savings everywhere.** A consistent "You save" line on the product page and in the cart, and identical items in the cart now combine into one line with a count.
 
-### [Gift mode](/docs/gift-mode/)
-Let a customer mark a bundle as a gift: a recipient name, a gift message, optional gift wrap for a small charge, and a gift receipt so prices stay off the packing slip. The gift details ride through to the order and the fulfilment pick list, so your team knows exactly what to do.
+## The Builder's power features
 
-### [Build a box, mix and match](/docs/build-a-box/)
-Let customers fill a box from a pool of products, each with its own quantity, up to a total you set. Pick any 6 chocolates, a build your own 6 pack, a hamper of any 4 treats. The total updates as they go, and the box only adds to the cart once it is full. It is the pick many companion to choice slots.
+The Builder (Pro) turns a bundle into a full configurator. These are the headline tools:
 
-### [Frequently bought together](/docs/fbt/)
-A one click "add these together" block on a product page: a curated set at a bundle price, added to the cart in a single tap. A simple way to lift the average order without asking the customer to configure anything.
+- [Choice slots](/docs/choice-slots/), pick each part from pools you define
+- [Build a box](/docs/build-a-box/), mix-and-match to a size you set
+- [Configurator layout](/docs/layouts/), a full-page two-pane builder
+- [Personalisation](/docs/personalisation/), names, options and logo upload per item
+- [Frequently bought together](/docs/fbt/) and [Buy X Get Y](/docs/bogo/), upsells and offers
+- [Gift mode](/docs/gift-mode/) and [conditional items](/docs/conditional-items/)
 
-### [Conditional items](/docs/conditional-items/)
-Show or hide a whole item based on an earlier choice. Reveal a matching socks slot once a shoe is picked, or hide an extra unless the premium option is chosen, so the customer only ever sees the parts that make sense for what they have chosen so far. It builds on the same rules engine as compatibility and quantity rules.
+See the [pricing page](/pricing/) for the full free-versus-Pro breakdown.
 
-### [Buy X get Y](/docs/bogo/)
-Discount the cheapest items the customer adds: buy one get one free, buy 2 get 1 free, any 6 for the price of 4. Because it prices what they have actually selected, it pairs with build a box and the quantity grid for proper mix and match deals.
+## Tell us what's next
 
-### [Configurator layout](/docs/layouts/)
-A full-page, two-pane builder for premium, considered purchases: the choices on one side, a live summary and running total on the other, with rich option cards that show each choice's picture and the price it adds. A fourth page layout alongside List, Grid and Step by step, for builds where the configuring is part of the experience: a PC, a bike, a made-to-order package.
-
-## On the list
-
-The roadmap is genuinely steered by what lands in the inbox. If there is something you need, the fastest way to get it built is to tell us about it.
-
-<div class="callout pro">
-<p><strong>Have a feature in mind?</strong> The quickest way onto this page is to <a href="mailto:support@getbundleboss.com">send us a note</a>. We would rather build the thing you actually need than guess.</p>
-</div>
+The roadmap is genuinely steered by what lands in the inbox. If there is something you need, the fastest way to get it built is to <a href="mailto:support@getbundleboss.com">tell us about it</a>. We would rather build the thing you actually need than guess.

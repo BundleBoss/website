@@ -1,16 +1,22 @@
 ---
 layout: docs
 title: Colours & branding
-description: Match the BundleBoss configurator to your brand by changing a few colours in the WordPress Customizer.
+description: Match the BundleBoss builder to your brand with the one-click Brand colour picker, or fine-tune every colour with a little CSS.
 permalink: /docs/theming/
-lede: Match the configurator to your shop's brand by changing a few colours. No theme files to touch.
+lede: Match the builder to your brand in one click with the Brand colour picker, or fine-tune every colour with a little CSS. No theme files to touch.
 ---
 
 ## Make it yours
 
-The bundle configurator is built from a small set of named colours, so you can re-tint it to match your shop without editing any files. You set these in WordPress's own Customizer, and the change flows through every layout: the Add to Cart button, the selected options, the running total and the highlights.
+The bundle builder is built from a small set of named colours, so you can re-tint it to match your shop without editing any files: pick one Brand colour for the quick win, or set individual colours in CSS for a fuller match. Either way the change flows through every layout: the Add to Cart button, the selected options, the running total and the highlights.
 
-## Change the main colour
+## The quick way: pick a Brand colour
+
+Most shops only need this. Go to **WooCommerce &rarr; BundleBoss** and, under **Appearance**, set a **Brand colour**. Pick one colour and the builder's buttons, highlights and links match your shop, on the product page and in the cart, with no code at all. Leave it empty for the default, theme-friendly look.
+
+That single colour is about ninety percent of the effect. If you want to fine-tune individual elements, the CSS below gives you full control.
+
+## Fine-tune with CSS (advanced)
 
 Go to **Appearance &rarr; Customize &rarr; Additional CSS** and paste this, swapping the colour for your brand's:
 

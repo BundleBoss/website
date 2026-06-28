@@ -24,7 +24,18 @@ Got an idea for a feature, or something you wish BundleBoss did? We build from w
   <a class="docs-card" href="/docs/personalisation/"><h3>Personalisation <span class="pro-pill">Pro</span></h3><p>Names, messages, embroidery, logo uploads, each with optional charges, all on the pick list.</p></a>
   <a class="docs-card" href="/docs/cart-checkout-orders/"><h3>Cart, checkout &amp; orders</h3><p>One tidy line item, edit from the cart, and a warehouse pick list on every order.</p></a>
   <a class="docs-card" href="/docs/import-export/"><h3>Import, export &amp; migrate</h3><p>Move bundles between sites, and convert from Composite Products.</p></a>
-  <a class="docs-card" href="/docs/theming/"><h3>Colours &amp; branding</h3><p>Match the configurator to your brand by changing a few colours in the Customizer.</p></a>
+  <a class="docs-card" href="/docs/theming/"><h3>Colours &amp; branding</h3><p>Match the builder to your brand with a one-click Brand colour, or fine-tune in CSS.</p></a>
+  <a class="docs-card" href="/docs/build-a-box/"><h3>Build a box <span class="pro-pill">Pro</span></h3><p>Mix and match: customers fill a box with any number from a pool, up to a size you set.</p></a>
+  <a class="docs-card" href="/docs/optional-items/"><h3>Optional items</h3><p>Let customers add or drop an item; an out-of-stock optional bows out so the rest still sells.</p></a>
+  <a class="docs-card" href="/docs/promotions/"><h3>Promotions &amp; offers</h3><p>Sale countdowns, quantity breaks and Buy X Get Y, the ways to push a deal.</p></a>
+  <a class="docs-card" href="/docs/bogo/"><h3>Buy X Get Y <span class="pro-pill">Pro</span></h3><p>Buy one get one free, any 6 for the price of 4: the cheapest items discounted automatically.</p></a>
+  <a class="docs-card" href="/docs/fbt/"><h3>Frequently bought together <span class="pro-pill">Pro</span></h3><p>An "add these together" block on the product page and in the cart.</p></a>
+  <a class="docs-card" href="/docs/gift-mode/"><h3>Gift mode <span class="pro-pill">Pro</span></h3><p>A recipient, message, optional wrap and a no-prices gift receipt, through to the order.</p></a>
+  <a class="docs-card" href="/docs/conditional-items/"><h3>Conditional items <span class="pro-pill">Pro</span></h3><p>Show or hide a whole item based on what the customer has already chosen.</p></a>
+  <a class="docs-card" href="/docs/stock-fulfilment/"><h3>Stock &amp; fulfilment</h3><p>Component-level stock, oversell protection, and a warehouse pick list.</p></a>
+  <a class="docs-card" href="/docs/share-links/"><h3>Share links</h3><p>Customers copy a finished build to a link anyone can open and buy.</p></a>
+  <a class="docs-card" href="/docs/multilingual/"><h3>Multilingual</h3><p>WPML and Polylang supported out of the box.</p></a>
+  <a class="docs-card" href="/docs/troubleshooting/"><h3>Troubleshooting</h3><p>Common questions and quick fixes when something is not behaving.</p></a>
 </div>
 
 ## The two halves of BundleBoss

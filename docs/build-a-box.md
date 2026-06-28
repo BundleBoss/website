@@ -20,6 +20,7 @@ A box is a choice slot in box mode. Add a choice slot to your bundle, then:
 - Set **How many can they choose?** to **Build a box**.
 - The **Min** and **Max** become the **box size** (the total number of items). For "pick any 6" set both to 6; for a range set, say, Min 4 and Max 8.
 - Optionally set **Max per product**, the most a customer can take of any one item (for example up to 3 of each). Leave it at 0 for no per-product limit.
+- Optionally set **Max different products**, the most *distinct* items a box can hold (for "pick any 6, up to 3 flavours"). Leave it at 0 for no limit.
 - Choose the **products** the box can be filled from, the same way you build any choice slot's pool: hand-pick products and, or, pull in a whole category.
 
 ## What the customer sees
@@ -42,7 +43,9 @@ This makes a box ideal for a **build your own kit**: pick a tee, a hoodie and a 
 
 ## Pricing
 
-A box uses the bundle's normal pricing. With percentage or dynamic pricing it costs the sum of what was picked (with any bundle discount). For a flat "any 6 for &pound;20" deal, set the bundle to a fixed price: the box decides **what** is in it, the fixed price decides **how much**.
+A box uses the bundle's normal pricing. With percentage or set-amount pricing it costs the sum of what was picked (with any bundle discount). For a flat "any 6 for &pound;20" deal, set the bundle to a fixed price: the box decides **what** is in it, the fixed price decides **how much**.
+
+**Quantity breaks** reward bigger boxes: set tiers so the more the customer adds, the bigger the discount, with a live "add 1 more for 10% off" nudge as they near the next tier. These use the bundle's [quantity tiers](/docs/pricing/).
 
 ## Good to know
 

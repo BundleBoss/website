@@ -54,13 +54,14 @@ Open the **Bundle Items** tab and add a slot for each product in the pack:
 
 ### 4. Choose how it looks
 
-At the top of the Bundle Items panel, **Layout** sets the page layout (**List**, **Grid**, or **Step by step**), and **Multiple items** sets how the units of a single multi-quantity item are shown (Stacked, Compact cards, Table, or the Pro Quantity grid). The defaults are fine to start. The [Layouts guide](/docs/layouts/) explains which combination suits which kind of store.
+At the top of the Bundle Items panel, **Layout** sets the page layout (**List**, **Grid**, **Step by step**, or **Configurator**), and **Multiple items** sets how the units of a single multi-quantity item are shown (Stacked, Compact cards, Table, or the Pro Quantity grid). The defaults are fine to start. The [Layouts guide](/docs/layouts/) explains which combination suits which kind of store.
 
 ### 5. Decide the price
 
 On the **Bundle Pricing** tab, choose a pricing mode:
 
 - **Percentage discount:** the total is the sum of the chosen items minus your discount (enter `0` for none).
+- **Set amount off:** a flat amount off the items (for example &pound;5 off).
 - **Fixed bundle price:** the bundle always costs exactly what you set, and customers see how much they save versus buying separately.
 
 You can also add **quantity discount tiers** (buy 2 or more for 15% off) and a **bundle stock cap**. See [Pricing &amp; discounts](/docs/pricing/) for the detail.

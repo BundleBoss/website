@@ -27,7 +27,11 @@ On any simple product, open the **Frequently bought together** tab in the produc
 
 Below Add to Cart, a row of the product and its companions joined by a plus sign, each with a tick box. The companions are ticked by default, and the customer can untick any they do not want. A running **"Total price"** updates as they tick, and one **"Add selected to cart"** button adds the whole set. If you set a discount, the companions show their saving.
 
+## Also in the cart
+
+The same offer can resurface in the cart, not only on the product page. A **"Complete your order"** strip shows the companion products with one-click add and the same discount, on both the classic cart and the WooCommerce Cart block, a second chance to lift the order right before checkout.
+
 ## Good to know
 
-- This first release offers the block on simple products with simple companions. Variable products and a version on bundle pages are being considered, and feedback will steer it.
+- The block works on simple products with simple companions. Variable-product support is still on the roadmap, and feedback will steer it.
 - The discount applies to the companions added through the block; the main product is added at its normal price.
