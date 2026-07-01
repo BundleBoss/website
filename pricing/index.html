@@ -12,6 +12,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/site.css?v=28">
+<style>
+  .tier-more { margin: 10px 0 0; font-size: 13px; }
+  .tier-more a { color: var(--muted); text-decoration: underline; }
+  .pro-detail { margin: 26px auto 0; max-width: 860px; border: 1px solid var(--line); border-radius: 14px; padding: 20px 24px; }
+  .pro-detail h3 { margin: 0 0 4px; font-size: 15.5px; }
+  .pro-detail p { color: var(--muted); font-size: 13.5px; margin: 0 0 12px; }
+  .pro-detail ul { margin: 0; padding: 0; list-style: none; columns: 2; column-gap: 32px; }
+  .pro-detail li { color: var(--muted); font-size: 13.5px; line-height: 1.55; padding: 3px 0 3px 18px; break-inside: avoid; position: relative; }
+  .pro-detail li::before { content: "✓"; position: absolute; left: 0; color: #2ecc71; font-weight: 700; }
+  @media (max-width: 640px) { .pro-detail ul { columns: 1; } }
+</style>
 </head>
 <body>
 
@@ -66,23 +77,14 @@
       <div class="per">1 site</div>
       <ul>
         <li>Everything in Free</li>
-        <li>Build-your-own choice slots</li>
-        <li>Bulk size-run grid for variations</li>
-        <li>Per-item personalisation (names, options, fees)</li>
-        <li>Logo and file upload on items</li>
-        <li>Compatibility and quantity rules</li>
-        <li>Shareable build links</li>
-        <li>Chosen item becomes the main image, plus deal badges</li>
-        <li>Step-by-step layout</li>
-        <li>Full-page Configurator layout</li>
-        <li>Build-a-box (mix and match)</li>
-        <li>Gift mode with gift receipt</li>
-        <li>Frequently bought together</li>
-        <li>Buy X get Y offers</li>
-        <li>Conditional items</li>
-        <li>Migrate from Composite Products</li>
-        <li>Priority support</li>
+        <li>Choice slots with compatibility and quantity rules</li>
+        <li>Full-page Configurator and step-by-step layouts</li>
+        <li>Build-a-box, gift mode and the size-run grid</li>
+        <li>Per-item personalisation with logo and file upload</li>
+        <li>Frequently bought together, Buy X get Y, conditional items</li>
+        <li>Shareable builds, Composite importer, priority support</li>
       </ul>
+      <p class="tier-more"><a href="#pro-detail">See everything in Pro</a></p>
       <a class="btn btn-primary" href="https://checkout.freemius.com/plugin/31967/plan/52435/?trial=free" data-checkout="https://checkout.freemius.com/plugin/31967/plan/52435/?trial=free">Start free trial</a>
     </div>
     <div class="tier">
@@ -109,6 +111,28 @@
     </div>
   </div>
   <p class="currency-note">Switch currency above. You can pay in GBP, USD or EUR at checkout.</p>
+  <div class="pro-detail" id="pro-detail">
+    <h3>Everything in Pro, in detail</h3>
+    <p>Every paid plan has the full Pro feature set. The plans differ only in how many sites you can activate.</p>
+    <ul>
+      <li>Build-your-own choice slots</li>
+      <li>Compatibility and quantity rules</li>
+      <li>Bulk size-run grid for variations</li>
+      <li>Per-item personalisation (names, options, fees)</li>
+      <li>Logo and file upload on items</li>
+      <li>Shareable build links</li>
+      <li>Chosen item becomes the main image, plus deal badges</li>
+      <li>Step-by-step layout</li>
+      <li>Full-page Configurator layout</li>
+      <li>Build-a-box (mix and match)</li>
+      <li>Gift mode with gift receipt</li>
+      <li>Frequently bought together</li>
+      <li>Buy X get Y offers</li>
+      <li>Conditional items</li>
+      <li>Migrate from Composite Products</li>
+      <li>Priority support</li>
+    </ul>
+  </div>
   <p class="roadmap-teaser">We ship often, and the roadmap is driven by what shop owners ask for. <a href="/docs/whats-new/">See what is new</a>.</p>
 </section>
 
