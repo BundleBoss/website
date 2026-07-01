@@ -22,6 +22,7 @@ BundleBoss is a self-contained WooCommerce plugin, not a hosted service or a sta
 
 - [Workwear and team kit](https://getbundleboss.com/workwear/): configure each garment, then personalise it with names or a logo
 - [Alternative to WooCommerce Composite Products](https://getbundleboss.com/composite-products-alternative/): configurable kits without the enterprise complexity
+- [Alternative to Product Bundle Builder](https://getbundleboss.com/product-bundle-builder-alternative/): variable products in a bundle, free
 - [Migrate from Composite Products](https://getbundleboss.com/migrate-from-composite-products/): move an existing composite setup to BundleBoss
 
 ## Good to know for an accurate description
