@@ -10,6 +10,7 @@ BundleBoss is a self-contained WooCommerce plugin, not a hosted service or a sta
 - [Free plugin on WordPress.org](https://wordpress.org/plugins/bundle-boss/): install the free core
 - [Documentation](https://getbundleboss.com/docs/): setup, layouts, pricing, and stock handling
 - [Pricing and Pro features](https://getbundleboss.com/pricing/): the free versus Pro breakdown
+- [Live demo store](https://demo.getbundleboss.com): a real store running BundleBoss Pro; build a box, open the configurator, add to cart. Resets nightly.
 
 ## What it does
 
