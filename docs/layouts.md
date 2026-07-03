@@ -53,6 +53,10 @@ One compact row per unit, attributes as columns. A spreadsheet-style view for pe
 
 The customer taps a colour and types **how many of each size**, building a bulk run like five small navy plus five large red in one grid, instead of configuring ten units one at a time. Ideal for workwear, team kit and any size run. See [Quantity grid](/docs/quantity-grid/).
 
+## Linking items to their product pages
+
+Tick **Link items to their product pages** in the bundle's Display options and a small arrow appears beside each item's name. It opens the product's own page in a new tab, so customers can check ingredients, size guides or reviews without losing the bundle they are building. Names stay plain text, so nobody navigates away by accident, and choice cards are never links (clicking those selects). Off by default.
+
 ## Two helpers for multi-unit items
 
 - **All the same:** copies the first unit's selections to every other unit in one tap, for customers buying many identical items.

@@ -45,7 +45,7 @@ This makes a box ideal for a **build your own kit**: pick a tee, a hoodie and a 
 
 A box uses the bundle's normal pricing. With percentage or set-amount pricing it costs the sum of what was picked (with any bundle discount). For a flat "any 6 for &pound;20" deal, set the bundle to a fixed price: the box decides **what** is in it, the fixed price decides **how much**.
 
-**Quantity breaks** reward bigger boxes: set tiers so the more the customer adds, the bigger the discount, with a live "add 1 more for 10% off" nudge as they near the next tier. These use the bundle's [quantity tiers](/docs/pricing/).
+**Quantity breaks** reward bigger boxes: set tiers so the more the customer adds, the bigger the discount. The box sells the deal itself: the whole ladder is shown above the products ("3+ items: 10% off &middot; 6+ items: 15% off &middot; 10+ items: 20% off"), the nudge appears before the first pick ("add 3 more for 10% off"), and once a tier is reached the note shows the active discount alongside the next rung ("10% off &middot; add 3 more for 15% off"). These use the bundle's [quantity tiers](/docs/pricing/).
 
 ## Good to know
 
