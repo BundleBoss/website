@@ -6,7 +6,7 @@ permalink: /docs/
 lede: Sell ready-made packs or let customers build their own, piece by piece. These guides cover every feature, step by step, plus which combinations work best for which kind of store.
 ---
 
-New here? Start with **[Install &amp; your first bundle](/docs/getting-started/)**, then dip into whatever you need. Anything marked <span class="pro-pill">Pro</span> is part of the Builder; everything else ships in the free plugin.
+New here? Start with **[Install &amp; your first bundle](/docs/getting-started/)**, then dip into whatever you need. Prefer to see it before reading? **[Try the live demo](https://demo.getbundleboss.com)**, a full store running Pro that resets nightly. Anything marked <span class="pro-pill">Pro</span> is part of the Builder; everything else ships in the free plugin.
 
 Got an idea for a feature, or something you wish BundleBoss did? We build from what shop owners tell us. See **[What's new &amp; coming](/docs/whats-new/)** and send us a note.
 
