@@ -76,3 +76,12 @@
       url: /docs/multilingual/
     - title: Troubleshooting
       url: /docs/troubleshooting/
+
+- section: In development
+  items:
+    - title: Subscriptions
+      url: /docs/subscriptions/
+      pro: true
+    - title: Bundle Analytics
+      url: /docs/analytics/
+      pro: true
