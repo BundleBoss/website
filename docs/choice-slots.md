@@ -29,6 +29,14 @@ A normal slot is a product you picked. A **choice slot** is a labelled slot ("Mo
   <figcaption>A choice slot: a label, a pool of candidate products (hand-picked and/or a category), and an optional slot discount.</figcaption>
 </figure>
 
+## A pool that maintains itself
+
+A pool can be a hand-picked list, a whole **product category**, or both together. A category pool is **live**: it always offers whatever is currently published in that category, so when you add a new product to the category later, it appears in the slot on its own, with no edit to the bundle. Point a "Pick a treat" slot at your *Treats* category once, and every treat you add from then on is offered automatically. Ideal for a rotating range or a large, changing catalogue.
+
+<div class="callout tip">
+<p>Hand-picked products and a category combine: the hand-picked ones show first, then the category fills in the rest. The server re-derives the pool on every submit, so a self-updating category never opens a hole in your validation.</p>
+</div>
+
 ## What customers see
 
 The slot shows **candidate cards** with each product's image, price and stock. Pools larger than eight get a search box, and long pools are paged. Choosing a product shows a green **chosen bar** with a **Change** button and drops the product's normal configuration UI (quantity, variations, swatches) straight in.

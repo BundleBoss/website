@@ -21,7 +21,7 @@ A box is a choice slot in box mode. Add a choice slot to your bundle, then:
 - The **Min** and **Max** become the **box size** (the total number of items). For "pick any 6" set both to 6; for a range set, say, Min 4 and Max 8.
 - Optionally set **Max per product**, the most a customer can take of any one item (for example up to 3 of each). Leave it at 0 for no per-product limit.
 - Optionally set **Max different products**, the most *distinct* items a box can hold (for "pick any 6, up to 3 flavours"). Leave it at 0 for no limit.
-- Choose the **products** the box can be filled from, the same way you build any choice slot's pool: hand-pick products and, or, pull in a whole category.
+- Choose the **products** the box can be filled from, the same way you build any choice slot's pool: hand-pick products, pull in a whole **category**, or both. A category pool **keeps itself current**: add a product to that category later and customers can pick it from the box automatically, with no edit to the bundle.
 
 ## What the customer sees
 
