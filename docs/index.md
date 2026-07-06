@@ -12,6 +12,7 @@ Got an idea for a feature, or something you wish BundleBoss did? We build from w
 
 <div class="docs-cards">
   <a class="docs-card" href="/docs/getting-started/"><h3>Install &amp; your first bundle</h3><p>From an empty product to a published bundle in eight steps.</p></a>
+  <a class="docs-card" href="/docs/wizard/"><h3>Create a bundle with the wizard</h3><p>Pick what you are making, add products, preview, and publish. The guided way to your first bundle.</p></a>
   <a class="docs-card" href="/docs/whats-new/"><h3>What's new &amp; coming</h3><p>What we are building next, and how to tell us what you need. We read every message.</p></a>
   <a class="docs-card" href="/docs/bundle-items/"><h3>Bundle items &amp; quantities</h3><p>Add slots, set fixed or adjustable quantities, restrict which variations are offered.</p></a>
   <a class="docs-card" href="/docs/pricing/"><h3>Pricing &amp; discounts</h3><p>Percentage or fixed pricing, quantity tiers, and a bundle stock cap.</p></a>

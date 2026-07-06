@@ -59,8 +59,7 @@ Tick **Link items to their product pages** in the bundle's Display options and a
 
 ## Two helpers for multi-unit items
 
-- **All the same:** copies the first unit's selections to every other unit in one tap, for customers buying many identical items.
-- **Apply to the rest:** set up the first unit, click the link, and its colour and size (plus any drop-down personalisation such as branding or position) copy to the other units. Unique fields like names are left blank, so for a team order you set one up, apply, then just type each name. Unlike "All the same", the other units stay editable.
+- **All the same:** configure the first unit, and every other unit follows it: colour, size, and any drop-down or tick-box personalisation such as branding or position. Unique fields like names stay per unit, so for a team order you set one up, then just type each name. Switch the toggle off afterwards and the copied selections stay in place, ready for you to adjust a single unit.
 
 ## Which combination to use
 

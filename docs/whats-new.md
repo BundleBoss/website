@@ -16,6 +16,8 @@ We build the next feature from what you tell us. If something would make your st
 
 A few of the latest improvements. The full per-release list is in the changelog on the [WordPress.org page](https://wordpress.org/plugins/bundle-boss/).
 
+- **A guided creation wizard.** [Create a bundle with the wizard](/docs/wizard/): pick what you are making, add your products, see a live preview, and publish or save as a draft. The fastest way to your first bundle, and it writes an ordinary bundle you can still edit by hand.
+- **One "All the same" control.** The separate per-unit "Apply to the rest" button is gone. The [All the same](/docs/layouts/) toggle now does it all, copying menu and tick-box personalisation too, and switching it off leaves the picks in place so you can tweak a single unit.
 - **Brand colour, in one click.** Pick a single [brand colour](/docs/theming/) under Appearance and the builder's buttons, highlights and links match your shop, on the product page and in the cart. No code.
 - **Quantity grid steppers.** The [size-run grid](/docs/quantity-grid/) now has plus and minus steppers on each cell, so a customer can adjust a run by tapping, not only typing.
 - **Frequently bought together, in the cart.** The [FBT](/docs/fbt/) offer now also appears as a "Complete your order" strip in the cart, classic and block, not just on the product page.

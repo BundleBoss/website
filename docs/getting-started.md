@@ -8,6 +8,10 @@ lede: Install the plugin, then build and publish a working bundle in eight short
 
 > **See it working first:** [demo.getbundleboss.com](https://demo.getbundleboss.com) is a live store running BundleBoss Pro. Build a box, open the configurator, add things to the cart. It resets nightly.
 
+<div class="callout tip">
+<p><strong>In a hurry? Use the wizard.</strong> <a href="/docs/wizard/">Create a bundle with the wizard</a> walks you through it: pick what you are making, add products, preview, publish. The steps below are the full manual route, and the wizard writes exactly the same kind of bundle.</p>
+</div>
+
 ## Before you start
 
 BundleBoss needs **WooCommerce 8.0 or newer**, **WordPress 6.4+** and **PHP 8.0+**. WooCommerce must be active first; if it is not, BundleBoss shows a notice and waits.

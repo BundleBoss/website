@@ -6,6 +6,8 @@
       url: /docs/
     - title: Install &amp; your first bundle
       url: /docs/getting-started/
+    - title: Create a bundle with the wizard
+      url: /docs/wizard/
     - title: What's new
       url: /docs/whats-new/
 
