@@ -33,7 +33,7 @@ Add the products the bundle contains.
 - **Always included** items are in every order.
 - A **customer's choice** slot <span class="pro-pill">Pro</span> lets the shopper pick one from options you set.
 - Products with variations are labelled **"has options"** in the search, so you know when a customer will be choosing a size or colour.
-- The **Build-a-box** recipe reshapes this step into "how many can they pick, and from which products".
+- The **Build-your-own box** recipe reshapes this step into which products they choose from and how many they pick &mdash; with **One size** (a single count, "pick any 10") or **Different sizes**, a set of packs each at one flat price (a 1.7kg bucket that holds 10, a 3kg that holds 20, a 4kg that holds 30).
 
 ### 3. Review and create
 

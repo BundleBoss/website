@@ -17,7 +17,7 @@ A normal slot is a product you picked. A **choice slot** is a labelled slot ("Mo
 <ol class="steps">
 <li>On the <strong>Bundle Items</strong> tab click <strong>+ Add Choice Slot</strong> (the violet row).</li>
 <li>Give it a <strong>slot name</strong> customers will see, like "Pick a treat".</li>
-<li>Fill the <strong>pool</strong>: hand-pick products in the search box, or pull in a whole <strong>category</strong>, or both (they combine).</li>
+<li>Fill the <strong>pool</strong>: hand-pick products in the search box, or pull in <strong>one or more categories</strong>, or both (they combine).</li>
 <li>Optionally set a <strong>slot discount</strong>, a percentage off whichever product they choose.</li>
 <li>Set <strong>Min</strong> and <strong>Max</strong> like any slot. Leave Max empty for "choose one or more" with no ceiling.</li>
 <li>Optionally set a <strong>slot image</strong> (shown before a product is picked), or tick <strong>"Chosen product sets the main image"</strong> so the customer's pick takes over the page's main image.</li>
@@ -26,12 +26,12 @@ A normal slot is a product you picked. A **choice slot** is a labelled slot ("Mo
 
 <figure>
   <img src="/docs/img/choice-slot-admin.png" alt="A choice slot row in the admin with a pool of products and a slot discount">
-  <figcaption>A choice slot: a label, a pool of candidate products (hand-picked and/or a category), and an optional slot discount.</figcaption>
+  <figcaption>A choice slot: a label, a pool of candidate products (hand-picked and/or categories), and an optional slot discount.</figcaption>
 </figure>
 
 ## A pool that maintains itself
 
-A pool can be a hand-picked list, a whole **product category**, or both together. A category pool is **live**: it always offers whatever is currently published in that category, so when you add a new product to the category later, it appears in the slot on its own, with no edit to the bundle. Point a "Pick a treat" slot at your *Treats* category once, and every treat you add from then on is offered automatically. Ideal for a rotating range or a large, changing catalogue.
+A pool can be a hand-picked list, **one or more product categories**, or both together. A category pool is **live**: it always offers whatever is currently published in that category, so when you add a new product to the category later, it appears in the slot on its own, with no edit to the bundle. Point a "Pick a treat" slot at your *Treats* category once, and every treat you add from then on is offered automatically. Ideal for a rotating range or a large, changing catalogue.
 
 <div class="callout tip">
 <p>Hand-picked products and a category combine: the hand-picked ones show first, then the category fills in the rest. The server re-derives the pool on every submit, so a self-updating category never opens a hole in your validation.</p>

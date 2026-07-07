@@ -16,6 +16,8 @@ We build the next feature from what you tell us. If something would make your st
 
 A few of the latest improvements. The full per-release list is in the changelog on the [WordPress.org page](https://wordpress.org/plugins/bundle-boss/).
 
+- **Pick-and-mix by pack size.** [Build a box](/docs/build-a-box/) can now offer set sizes &mdash; a 1.7kg bucket that holds 10, a 3kg that holds 20 &mdash; each at one flat price. The customer picks a size, then fills it, with the best value size badged. Made for buckets, hampers, coffee bags and meat boxes; set it up in the [wizard](/docs/wizard/) with One size or Different sizes.
+- **Choice pools from several categories.** A [choice slot or box](/docs/choice-slots/) can now draw its pool from more than one product category at once, not just one, and each category pool keeps itself current.
 - **A guided creation wizard.** [Create a bundle with the wizard](/docs/wizard/): pick what you are making, add your products, see a live preview, and publish or save as a draft. The fastest way to your first bundle, and it writes an ordinary bundle you can still edit by hand.
 - **One "All the same" control.** The separate per-unit "Apply to the rest" button is gone. The [All the same](/docs/layouts/) toggle now does it all, copying menu and tick-box personalisation too, and switching it off leaves the picks in place so you can tweak a single unit.
 - **Brand colour, in one click.** Pick a single [brand colour](/docs/theming/) under Appearance and the builder's buttons, highlights and links match your shop, on the product page and in the cart. No code.

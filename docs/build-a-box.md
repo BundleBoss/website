@@ -1,9 +1,9 @@
 ---
 layout: docs
 title: Build a box (mix and match)
-description: Let customers fill a box with several different products from a pool you define, each with a quantity, up to a set total. Pick any 6, build your own 6-pack, choose any 4.
+description: Let customers fill a box with several different products from a pool you define, each with a quantity, up to a set total. Pick any 6, build your own 6-pack, choose any 4, or a pick-and-mix bucket priced by pack size (1.7kg, 3kg, 4kg).
 permalink: /docs/build-a-box/
-lede: Pick any 6 chocolates, build your own 6-pack, choose any 4 sauces. The customer fills a box to a total you set.
+lede: Pick any 6 chocolates, build your own 6-pack, choose any 4 sauces, or a 3kg pick-and-mix bucket. The customer fills a box to a size you set, or picks a pack size then fills it.
 ---
 
 
@@ -22,6 +22,16 @@ A box is a choice slot in box mode. Add a choice slot to your bundle, then:
 - Optionally set **Max per product**, the most a customer can take of any one item (for example up to 3 of each). Leave it at 0 for no per-product limit.
 - Optionally set **Max different products**, the most *distinct* items a box can hold (for "pick any 6, up to 3 flavours"). Leave it at 0 for no limit.
 - Choose the **products** the box can be filled from, the same way you build any choice slot's pool: hand-pick products, pull in a whole **category**, or both. A category pool **keeps itself current**: add a product to that category later and customers can pick it from the box automatically, with no edit to the bundle.
+
+## Sizes and pack options
+
+Instead of one fixed box size, you can offer **set sizes or packs**, each a **flat price for an exact number of items**: a 1.7kg bucket that holds 10, a 3kg bucket that holds 20, a 4kg bucket that holds 30. The customer picks a size first, then fills it.
+
+Add them on the choice slot under **Sizes / pack options**, giving each a label, a price and the number of items it holds. The storefront shows the sizes as tappable tiles with the **best value** size badged automatically, then the fill grid below.
+
+When sizes set the price they take over: per-item prices, quantity breaks and the slot discount no longer apply, because each size is one flat price. Leave sizes empty for ordinary per-item pricing (with optional quantity breaks, below).
+
+Sizes suit **pick-and-mix buckets, hampers, coffee bags, chocolate boxes and meat boxes** &mdash; anything "pick a pack, then fill it". Set them up fastest in the [creation wizard](/docs/wizard/): choose Build-your-own box, then **Different sizes**.
 
 ## What the customer sees
 
