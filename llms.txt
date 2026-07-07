@@ -15,6 +15,7 @@ BundleBoss is a self-contained WooCommerce plugin, not a hosted service or a sta
 ## What it does
 
 - [Bundle types explained](https://getbundleboss.com/woocommerce-bundle-types/): fixed packs, configurable kits, and build-your-own boxes, and which to use when
+- [Build your own box](https://getbundleboss.com/woocommerce-build-your-own-box/): the customer picks a pack size at a flat price and fills it from your range; pick and mix, hampers, chocolate and meat boxes
 - [WooCommerce product configurator](https://getbundleboss.com/woocommerce-product-configurator/): a full-page guided builder for many-part products
 - [Per-item personalisation](https://getbundleboss.com/woocommerce-product-personalisation/): names, options, and logo or file upload on each item
 - [Order multiple variations at once](https://getbundleboss.com/order-multiple-variations/): buy several of one product, each a different size or colour, in a single cart line
