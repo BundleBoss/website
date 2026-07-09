@@ -16,6 +16,10 @@ We build the next feature from what you tell us. If something would make your st
 
 A few of the latest improvements. The full per-release list is in the changelog on the [WordPress.org page](https://wordpress.org/plugins/bundle-boss/).
 
+- **Edit a bundle in the wizard, not just create one.** Open any bundle in the [wizard](/docs/wizard/), change its products, layout, pricing, name and description, then save. Anything the wizard does not show is kept exactly as it was, so editing never strips a feature you set by hand.
+- **Customer choices can be "pick several".** A [choice slot](/docs/choice-slots/) can now let shoppers pick more than one, for example "pick any 3 of these", alongside the usual pick-one choice.
+- **The edit preview shows the whole product page.** When you edit a bundle in the wizard, the preview renders the entire product page with your unsaved changes, so you see exactly what the customer gets before you save.
+- **Plainer wording in the wizard.** The Products step now speaks in plain shop-owner language, so a first-timer knows what each part does at a glance.
 - **Pick-and-mix by pack size.** [Build a box](/docs/build-a-box/) can now offer set sizes &mdash; a 1.7kg bucket that holds 10, a 3kg that holds 20 &mdash; each at one flat price. The customer picks a size, then fills it, with the best value size badged. Made for buckets, hampers, coffee bags and meat boxes; set it up in the [wizard](/docs/wizard/) with One size or Different sizes.
 - **Choice pools from several categories.** A [choice slot or box](/docs/choice-slots/) can now draw its pool from more than one product category at once, not just one, and each category pool keeps itself current.
 - **A guided creation wizard.** [Create a bundle with the wizard](/docs/wizard/): pick what you are making, add your products, see a live preview, and publish or save as a draft. The fastest way to your first bundle, and it writes an ordinary bundle you can still edit by hand.
