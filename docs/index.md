@@ -35,7 +35,7 @@ Got an idea for a feature, or something you wish BundleBoss did? We build from w
   <a class="docs-card" href="/docs/conditional-items/"><h3>Conditional items <span class="pro-pill">Pro</span></h3><p>Show or hide a whole item based on what the customer has already chosen.</p></a>
   <a class="docs-card" href="/docs/stock-fulfilment/"><h3>Stock &amp; fulfilment</h3><p>Component-level stock, oversell protection, and a warehouse pick list.</p></a>
   <a class="docs-card" href="/docs/share-links/"><h3>Share links</h3><p>Customers copy a finished build to a link anyone can open and buy.</p></a>
-  <a class="docs-card" href="/docs/multilingual/"><h3>Multilingual</h3><p>WPML and Polylang supported out of the box.</p></a>
+  <a class="docs-card" href="/docs/multilingual/"><h3>Multilingual &amp; translations</h3><p>WPML and Polylang supported out of the box, and the plugin speaks your customers' language.</p></a>
   <a class="docs-card" href="/docs/troubleshooting/"><h3>Troubleshooting</h3><p>Common questions and quick fixes when something is not behaving.</p></a>
 </div>
 
