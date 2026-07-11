@@ -39,6 +39,13 @@ Reward customers who buy several of the **same bundle**. Under **More pricing op
 
 The highest matching tier replaces the base discount automatically, and it applies to every copy in the cart. Tiers work in both pricing modes. Remove a tier with **Remove**.
 
+On the product page the tiers are not just advertised, they are actionable. Before the first add, a "How many?" stepper prices the whole line live at the right tier. After adding, the order panel takes over: it lists the bundles in the basket with their own quantity controls, shows a progress bar toward the next tier ("Add 1 more to unlock 15% off"), flips to "unlocked" when a tier is reached, and restates the saving. Identical copies of a fixed bundle merge into one quantity line automatically, so the tier maths always reads from one place.
+
+<figure>
+  <img src="/docs/img/order-panel.webp" alt="The order panel showing the boxes in the basket, the tier progress bar and the saving">
+  <figcaption>After adding: the order panel with quantity controls, tier progress and the live saving.</figcaption>
+</figure>
+
 ## How the price displays
 
 - **From &pound;X** in percentage or set-amount mode, because the final price depends on what the customer chooses.

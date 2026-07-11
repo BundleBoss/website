@@ -16,6 +16,10 @@ Most shops only need this. Go to **WooCommerce &rarr; BundleBoss** and, under **
 
 That single colour is about ninety percent of the effect. If you want to fine-tune individual elements, the CSS below gives you full control.
 
+## The Bundle word
+
+On the same **Appearance** panel you can pick the word your shoppers see for a bundle: "box", "kit", "hamper", "case", whatever fits your shop (singular, then plural). It shapes the storefront wording everywhere it appears: the pricing pills ("2+ boxes: 10% off"), the order panel ("Box added to your basket", "3 boxes in your basket") and the buttons ("Build a new box"). Leave both fields empty for the automatic choice: "box" for build-a-box bundles, "bundle" for everything else.
+
 ## Fine-tune with CSS (advanced)
 
 Go to **Appearance &rarr; Customize &rarr; Additional CSS** and paste this, swapping the colour for your brand's:

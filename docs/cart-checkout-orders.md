@@ -19,6 +19,15 @@ The whole bundle (every slot, unit and variation) is **one cart line**, with the
 
 An **Edit** link takes the customer back to the product page with everything pre-filled. Submitting the updated form **replaces** the existing cart line in place, rather than adding a second one. The Edit link is there on the classic cart, the mini-cart and the block cart.
 
+Editing also works without leaving the product page: the order panel lists every bundle in the basket, and each one carries its own **Edit**, quantity and remove controls. The one being edited is badged "Editing" while the builder above holds its configuration, and updating confirms in place.
+
+A bundle with nothing to configure (fixed items, no options) shows no Edit link anywhere, because there is nothing to change; repeat purchases of it merge into a single line with a quantity instead of stacking duplicates.
+
+<figure>
+  <img src="/docs/img/order-panel-edit.webp" alt="The order panel after updating a bundle, with the edited box badged">
+  <figcaption>Updating from the panel: the edited bundle is badged, and the change lands on the same basket line.</figcaption>
+</figure>
+
 ### Order again
 
 When a customer reorders a past bundle from My Account, the whole configuration is rebuilt, every slot, unit and option, so they get exactly what they bought before without setting it up again.

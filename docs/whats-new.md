@@ -16,6 +16,8 @@ We build the next feature from what you tell us. If something would make your st
 
 A few of the latest improvements. The full per-release list is in the changelog on the [WordPress.org page](https://wordpress.org/plugins/bundle-boss/).
 
+- **The order panel: your bundles, editable on the product page.** After adding, the page shows the bundles in your basket as a running order: edit, change quantity or remove each one right there, watch the quantity-tier progress bar fill, and check out when done. Fixed bundles merge repeat adds into one tidy line. On phones a slim bar keeps the total and the next action pinned while you scroll.
+- **Pick the word your shop uses.** Call bundles "boxes", "kits" or "hampers" in one setting and the storefront wording follows, from the pricing pills to the buttons. See [Theming](/docs/theming/).
 - **Edit a bundle in the wizard, not just create one.** Open any bundle in the [wizard](/docs/wizard/), change its products, layout, pricing, name and description, then save. Anything the wizard does not show is kept exactly as it was, so editing never strips a feature you set by hand.
 - **Customer choices can be "pick several".** A [choice slot](/docs/choice-slots/) can now let shoppers pick more than one, for example "pick any 3 of these", alongside the usual pick-one choice.
 - **The edit preview shows the whole product page.** When you edit a bundle in the wizard, the preview renders the entire product page with your unsaved changes, so you see exactly what the customer gets before you save.
