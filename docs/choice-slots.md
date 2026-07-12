@@ -12,6 +12,15 @@ lede: A choice slot lets the customer pick the product, not just the colour. Thi
 
 A normal slot is a product you picked. A **choice slot** is a labelled slot ("Motherboard", "Pick a treat") with a **pool of candidate products**; the customer chooses one, then configures its quantity and variations exactly like any other item. Several choice slots together make a full configurator.
 
+## Pick one, or pick several
+
+Every choice slot has a mode:
+
+- **Pick one** is the classic choice: the customer chooses a single product from the pool, then how many of it. A "Motherboard" slot is pick-one.
+- **Build a box** turns the same slot into a "pick any N": the customer fills the slot with **several different products** from the pool, up to the count you set. Set Qty and Max to 6 and the slot reads "pick any 6"; a higher Max lets them choose how many. You can also cap how many *different* products they mix in ("up to 3 kinds") under More options.
+
+In the [wizard](/docs/wizard/) this is the "one or several" question when you add a customer choice. A pick-several slot sits happily next to fixed items and pick-one slots in the same bundle, so "a hamper base, a cheese of your choice, and any 4 crackers" is one bundle with three kinds of row.
+
 ## Add a choice slot
 
 <ol class="steps">

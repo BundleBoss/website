@@ -10,6 +10,11 @@ lede: Pick what you are making, add your products, see a live preview, and publi
 >
 > **New in 4.8.0.** The wizard now **edits** an existing bundle too, not only creates one. Open a bundle, change its products, layout, pricing, name and more, and save. Anything the wizard does not show is kept exactly as it was, so editing never strips a feature you set in the editor.
 
+<figure>
+  <img src="/docs/img/wizard-recipes.png" alt="The wizard's first step: six recipe cards asking what you are creating">
+  <figcaption>Step 1. Pick a starting point and the wizard sets the layout, pricing and structure up for you.</figcaption>
+</figure>
+
 ## Where to find it
 
 You can open the wizard three ways:
@@ -43,6 +48,16 @@ Add the products the bundle contains.
 - Add an optional **short description**, a **main image** and a **gallery**.
 - Adjust the **layout** and **price** inline, with a **live preview** beside them so you see the result before you commit.
 - Choose **Publish** to put it live, or **Save as draft** to keep working later.
+
+<figure>
+  <img src="/docs/img/wizard-controls.png" alt="The Review step's one-decision rows: layout, price, quantity breaks, gift options and offer">
+  <figcaption>Review is one decision per row: layout, price, optional quantity breaks, gift options and an offer.</figcaption>
+</figure>
+
+<figure>
+  <img src="/docs/img/wizard-preview.png" alt="The live preview under the Review controls, with the Publish bundle button">
+  <figcaption>The live preview renders the real bundle as you tweak, so you see what the customer gets before you publish.</figcaption>
+</figure>
 
 <div class="callout tip">
 <p><strong>Not sure yet?</strong> At any point after adding a product, <strong>Finish in the editor instead</strong> saves what you have as a draft and opens the full product editor. You lose nothing.</p>
