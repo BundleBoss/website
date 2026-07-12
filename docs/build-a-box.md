@@ -31,7 +31,7 @@ Add them on the choice slot under **Sizes / pack options**, giving each a label,
 
 When sizes set the price they take over: per-item prices, quantity breaks and the slot discount no longer apply, because each size is one flat price. Leave sizes empty for ordinary per-item pricing (with optional quantity breaks, below).
 
-Sizes suit **pick-and-mix buckets, hampers, coffee bags, chocolate boxes and meat boxes** &mdash; anything "pick a pack, then fill it". Set them up fastest in the [creation wizard](/docs/wizard/): choose Build-your-own box, then **Different sizes**.
+Sizes suit **pick-and-mix buckets, hampers, coffee bags, chocolate boxes and meat boxes**: anything "pick a pack, then fill it". Set them up fastest in the [creation wizard](/docs/wizard/): choose Build-your-own box, then **Different sizes**.
 
 ## What the customer sees
 
@@ -49,7 +49,29 @@ If a product in the pool has options (a t-shirt in several colours and sizes, sa
 
 Each product is chosen one option at a time on its card. To offer the **same** product in several options at once (five small, five medium, five large of one shirt), use the [quantity grid](/docs/quantity-grid/) instead.
 
-This makes a box ideal for a **build your own kit**: pick a tee, a hoodie and a cap, each in its own colour and size, up to the kit size you set.
+This makes a box ideal for a **build your own kit**: pick a tee, a hoodie and a cap, each in its own colour and size, up to the kit size you set. And when the choice is noise rather than the point, take it off the customer's plate with a **Default size**, below.
+
+## One size for the whole box
+
+Sometimes the option dropdowns are the point (a kit in your colour and size). And sometimes they are in the way: a sweet shop selling 100g bags does not want every card opening a size chooser.
+
+**Default size** appears on the slot as soon as its pool holds a product with options, and decides what fills the box:
+
+- **Customer picks**: every card keeps its dropdown, exactly as before.
+- **Smallest of each** or **Largest of each**: every product goes in at its own smallest or largest option.
+- **A specific size**: name the size, say 100g, and every product is offered at that size only. A product that does not come in that size uses its own smallest instead, so nothing drops out of the pool.
+
+When the rule leaves a product exactly one option there is nothing left to choose, so its card drops the dropdown entirely and becomes tap to add.
+
+**Size overrides** handle the exception. The pool follows the default size while a product you name uses its own: everything at 100g, one bag at 125g. The picker offers exactly the pool's products, category pools included, so an override can never point at something outside the box.
+
+Two behaviours worth knowing. A set size that is **sold out** shows its product as sold out rather than quietly offering a different size at a different price. And a product with **several option types** (colour and size, say) keeps its full dropdown for now, since one value cannot decide two options; per-type rules are on the way.
+
+The wizard's Build-your-own box step carries the same controls: a Default size choice, a size pick on each product chip, and the Item prices switch below.
+
+## Item prices
+
+Every box slot has an **Item prices** switch. **Hide** removes the small price under each product card and keeps per-line prices out of the "What's inside" readback in the order panel, for a cleaner "just pick what you like" box. The box total and the From price still show, so the customer always sees exactly what they will pay.
 
 ## Pricing
 

@@ -40,7 +40,8 @@ Add the products the bundle contains.
 - The products you add are **in every bundle** by default. The step speaks in plain terms, so a first-timer knows what each part does.
 - A **customer choice** <span class="pro-pill">Pro</span> lets the shopper pick from options you set, **one or several** (for example "pick any 3 of these").
 - Products with variations are labelled **"has options"** in the search, so you know when a customer will be choosing a size or colour.
-- The **Build-your-own box** recipe reshapes this step into which products they choose from and how many they pick &mdash; with **One size** (a single count, "pick any 10") or **Different sizes**, a set of packs each at one flat price (a 1.7kg bucket that holds 10, a 3kg that holds 20, a 4kg that holds 30).
+- The **Build-your-own box** recipe reshapes this step into which products they choose from and how many they pick, with **One size** (a single count, "pick any 10") or **Different sizes**, a set of packs each at one flat price (a 1.7kg bucket that holds 10, a 3kg that holds 20, a 4kg that holds 30).
+- A box pool with option products also gets a **Default size** (offer everything at 100g, or the smallest or largest of each), a **size pick on each product chip** for the exceptions, and an **Item prices** Show or Hide switch. The same controls as [the editor's](/docs/build-a-box/), sized for the wizard.
 
 ### 3. Review and create
 
