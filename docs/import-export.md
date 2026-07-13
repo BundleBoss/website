@@ -10,13 +10,13 @@ Everything here lives on the tools page at **WooCommerce &rarr; BundleBoss**.
 
 ## Export
 
-**Export** downloads every bundle as a single JSON file: items, choice pools, rules, pricing and promotions. Each product reference carries its **id, SKU, slug and name**, so the file still makes sense on a different site where the database ids differ. Take an export before any big change; it is a clean backup of your bundle setup.
+**Export** downloads every bundle as a single JSON file, and the file carries everything: items, choice pools, rules, pricing, box setup with its sizes and per-type rules, Buy X get Y, gift mode, personalisation kits and layout choices. Each product reference carries its **id, SKU, slug and name**, so the file still makes sense on a different site where the database ids differ, and main, gallery and slot images travel as references. Take an export before any big change; it is a clean backup of your bundle setup, and restoring it on the same site brings back exactly what you had.
 
 ## Import
 
 **Import** reads an export back in. Existing bundles are matched by their web address (slug) and updated; new ones are created. Products are matched by **SKU first**, then by name, so it works across sites where the internal IDs differ. Any tags or categories the bundles use that are missing on the new site are created for you.
 
-Anything that cannot be matched is **listed, never guessed**. If an item could not be imported, any rules that depended on it are dropped and reported rather than wired up wrongly. Product images do not travel in the file.
+Anything that cannot be matched is **listed, never guessed**. If an item could not be imported, any rules that depended on it are dropped and reported rather than wired up wrongly. Images are **re-linked** when the same file exists in the media library, which is always true when restoring on the same site; files are never downloaded, and an image that cannot be found is reported and skipped.
 
 <div class="callout"><p>Export and import are part of the free plugin, on purpose. Your data is yours, and you can move it or back it up without a licence.</p></div>
 

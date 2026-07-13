@@ -65,7 +65,7 @@ When the rule leaves a product exactly one option there is nothing left to choos
 
 **Size overrides** handle the exception. The pool follows the default size while a product you name uses its own: everything at 100g, one bag at 125g. The picker offers exactly the pool's products, category pools included, so an override can never point at something outside the box.
 
-Two behaviours worth knowing. A set size that is **sold out** shows its product as sold out rather than quietly offering a different size at a different price. And a product with **several option types** (colour and size, say) keeps its full dropdown for now, since one value cannot decide two options; per-type rules are on the way.
+Two behaviours worth knowing. A set size that is **sold out** shows its product as sold out rather than quietly offering a different size at a different price. And a pool whose products carry **several option types** (a weight and a flavour, say) takes **one rule per option type**: pin each type to a value, or leave a type open for the customer to choose. Per-product overrides carry the same per-type values, so one product can differ on just one type while following the rest.
 
 The wizard's Build-your-own box step carries the same controls: a Default size choice, a size pick on each product chip, and the Item prices switch below.
 

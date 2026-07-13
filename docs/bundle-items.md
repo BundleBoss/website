@@ -8,7 +8,7 @@ lede: A bundle is a set of slots. Each slot is one product, with its own quantit
 
 ## Adding a slot
 
-On the **Bundle Items** tab, click **+ Add Product**, type at least two characters, and choose a product from the search results. Simple and variable products are both supported, including virtual and downloadable ones. Repeat for each product in the pack.
+On the **Bundle Items** tab, click **+ Add Product**, type at least two characters, and choose a product from the search results. Search matches product **names, IDs and SKUs**, so pasting a SKU from your stock sheet finds the product straight away. Simple and variable products are both supported, including virtual and downloadable ones. Repeat for each product in the pack.
 
 Drag the handle on the left of a row to reorder slots. The order here is the order customers see on the product page.
 

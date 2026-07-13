@@ -26,7 +26,7 @@ In the [wizard](/docs/wizard/) this is the "one or several" question when you ad
 <ol class="steps">
 <li>On the <strong>Bundle Items</strong> tab click <strong>+ Add Choice Slot</strong> (the violet row).</li>
 <li>Give it a <strong>slot name</strong> customers will see, like "Pick a treat".</li>
-<li>Fill the <strong>pool</strong>: hand-pick products in the search box, or pull in <strong>one or more categories</strong>, or both (they combine).</li>
+<li>Fill the <strong>pool</strong>: hand-pick products in the search box (names, IDs and SKUs all match), or pull in <strong>one or more categories</strong>, or both (they combine).</li>
 <li>Optionally set a <strong>slot discount</strong>, a percentage off whichever product they choose.</li>
 <li>Set <strong>Min</strong> and <strong>Max</strong> like any slot. Leave Max empty for "choose one or more" with no ceiling.</li>
 <li>Optionally set a <strong>slot image</strong> (shown before a product is picked), or tick <strong>"Chosen product sets the main image"</strong> so the customer's pick takes over the page's main image.</li>

@@ -17,6 +17,8 @@ Stock is checked at three points:
 - **On the cart:** if a component runs low while the bundle is sitting in the cart, the shopper is warned right there (classic and block cart), not only stopped later.
 - **Again at checkout**, in case stock changed in the meantime.
 
+The shop owner is told, too: when bundle sales drain a component past its **low-stock threshold** (or to zero), WooCommerce sends its normal low-stock or out-of-stock email, exactly as if the product had sold on its own product page. And every order lists its component stock movements in the **order notes**, so the change is visible on the order even where email is switched off.
+
 ### Cross-unit stock conflicts
 
 If the same variation is picked in more than one unit and the combined demand is more than the stock available, the configurator says so and keeps Add to Cart disabled until the customer changes a selection. Two units cannot quietly claim the same last item.
