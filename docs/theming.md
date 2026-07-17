@@ -20,6 +20,12 @@ That single colour is about ninety percent of the effect. If you want to fine-tu
 
 On the same **Appearance** panel you can pick the word your shoppers see for a bundle: "box", "kit", "hamper", "case", whatever fits your shop (singular, then plural). It shapes the storefront wording everywhere it appears: the pricing pills ("2+ boxes: 10% off"), the order panel ("Box added to your basket", "3 boxes in your basket") and the buttons ("Build a new box"). Leave both fields empty for the automatic choice: "box" for build-a-box bundles, "bundle" for everything else.
 
+## Corner style
+
+<div class="callout note"><span class="callout-label">Coming soon</span><p>This control is in final testing and is not in the released plugin yet. Below is how it will work.</p></div>
+
+Also on the **Appearance** panel, **Corner style** sets how round the builder's cards, buttons and chips are. **Rounded** is the friendly default, **Square** is sharp and technical, and **Soft** sits between the two. It matches the builder's feel to your shop with no code, the same way the Brand colour matches its colour. Your colour swatches stay round whatever you pick, because a colour swatch reads as a dot.
+
 ## Fine-tune with CSS (advanced)
 
 Go to **Appearance &rarr; Customize &rarr; Additional CSS** and paste this, swapping the colour for your brand's:
