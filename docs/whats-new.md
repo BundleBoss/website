@@ -37,6 +37,12 @@ A few of the latest improvements. The full per-release list is in the changelog 
 - **Bigger boxes, bigger savings.** [Build a box](/docs/build-a-box/) gained quantity breaks ("add 1 more for 10% off") and a "max different products" limit.
 - **Clearer savings everywhere.** A consistent "You save" line on the product page and in the cart, and identical items in the cart now combine into one line with a count.
 
+## In development
+
+In final testing now. Have a use for one of these, or want it to work a certain way? <a href="mailto:support@getbundleboss.com">Tell us</a> and help shape it before it ships.
+
+- **Options without variations.** Give a simple product colours, sizes or any options, and shoppers pick them in a bundle with the same swatches and pills a variable product shows, without generating a single variation. For shops with big colour and size ranges, and anyone moving off an add-ons plugin. See [how it will work](/docs/option-sets/).
+
 ## The Builder's power features
 
 The Builder (Pro) turns a bundle into a full configurator. These are the headline tools:
