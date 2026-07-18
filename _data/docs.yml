@@ -28,6 +28,9 @@
 
 - section: Power features
   items:
+    - title: Product options (no variations)
+      url: /docs/product-options/
+      pro: true
     - title: Choice slots
       url: /docs/choice-slots/
       pro: true
