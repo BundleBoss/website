@@ -29,7 +29,7 @@ The bundle **always costs exactly the price you set**, whatever the customer pic
 
 ## Quantity discount tiers
 
-Reward customers who buy several of the **same bundle**. Under **More pricing options** on the Bundle Pricing tab (the same fold that holds [Buy X Get Y](/docs/bogo/)), click **+ Add Tier** and set "buy N or more for X% off":
+Reward customers who buy several of the **same bundle**. Under **Bulk discounts** on the Bundle Pricing tab, click **+ Add a bulk discount** and set "from N items, X% off":
 
 | In the cart | Discount |
 |---|---|
@@ -45,6 +45,10 @@ On the product page the tiers are not just advertised, they are actionable. Befo
   <img src="/docs/img/order-panel.webp" alt="The order panel showing the boxes in the basket, the tier progress bar and the saving">
   <figcaption>After adding: the order panel with quantity controls, tier progress and the live saving.</figcaption>
 </figure>
+
+## Sale price
+
+To put a bundle on sale, use the **Sale countdown timer** row on the [Bundle Promotions](/docs/promotions/) tab: its Edit holds the sale price and the start and end dates, and the bundle charges the sale figure for exactly that window. The Bundle Pricing tab points you there when the mode is fixed. Quantity tiers stack on the sale price, so a tier's percentage comes off the sale figure, not the normal one.
 
 ## How the price displays
 

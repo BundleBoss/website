@@ -15,14 +15,11 @@ It is a Pro feature, set per bundle, and fully opt-in: a bundle with gift mode o
 
 ## Turn it on
 
-On a bundle, open the **Gift** tab in the product data panel:
-
-- Tick **Gift mode** to show the "This is a gift" option on the bundle's page.
-- Set an optional **gift wrap fee**, a flat charge added when the customer chooses wrapping. Leave it at 0 to offer no wrap at all.
+On a bundle, open the **Bundle Promotions** tab and switch on the **Gift options** row. Click **Edit** to set an optional **gift wrap fee**, a flat charge added when the customer chooses wrapping; leave it at 0 to offer no wrap at all.
 
 ## What the customer sees
 
-Under the configurator, a **"This is a gift"** toggle. Ticking it reveals:
+A **"This is a gift"** toggle sits in the order summary, just above the total, so it is the last thing a customer settles before adding to the cart. Ticking it reveals:
 
 - **Recipient name**
 - **Gift message**
@@ -40,4 +37,5 @@ The gift wrap fee is added to the live total as soon as it is ticked, so there i
 ## Good to know
 
 - Gift mode is captured once per bundle, not per item.
+- Editing a bundle from the cart brings the gift details back filled in, so a change of size never loses the message.
 - It works alongside everything else: per-item personalisation, choice slots and the quantity grid.

@@ -10,11 +10,11 @@ lede: A bundle is a set of slots. Each slot is one product, with its own quantit
 
 On the **Bundle Items** tab, click **+ Add Product**, type at least two characters, and choose a product from the search results. Search matches product **names, IDs and SKUs**, so pasting a SKU from your stock sheet finds the product straight away. Simple and variable products are both supported, including virtual and downloadable ones. Repeat for each product in the pack.
 
-Drag the handle on the left of a row to reorder slots. The order here is the order customers see on the product page.
+Drag the handle on the left of a row to reorder slots. The order here is the order customers see on the product page. Each row shows its product with a thumbnail and a quantity chip; **More options** opens the row's full settings, and **Expand all / Collapse all** folds the whole panel so a big bundle stays scannable.
 
 <figure>
-  <img src="/docs/img/bundle-items-panel.png" alt="The Bundle Items panel showing two product slots with quantity fields">
-  <figcaption>Each row is one slot: a product, its quantity, an optional toggle, and (for variable products) which variations are allowed.</figcaption>
+  <img src="/docs/img/bundle-items-panel.png" alt="The Bundle Items panel: a product row with its thumbnail, quantity chip and More options">
+  <figcaption>Each row is one slot: a product, its quantity chip, and More options for everything else.</figcaption>
 </figure>
 
 ## Quantity: fixed or adjustable
@@ -33,7 +33,7 @@ Tick **Optional** on a slot to let the customer include or skip it. Skipped item
 
 ## Restricting which variations are offered
 
-For a variable product, you can narrow what the customer may choose. Open the attribute pickers on the slot and tick only the values you want to offer, for example only Black and Grey from a hoodie that also comes in white and red. The badge shows how many you picked, like "Colour (2)". Leave everything unticked to offer all variations.
+For a variable product, you can narrow what the customer may choose. Each attribute gets one quiet line, "Colour &middot; All 15 offered"; click **Change**, tick only the values this bundle sells, and the line reads "2 of 15 offered". A searchable checklist appears for long lists, and **Offer all** puts everything back. The same lines appear for [option sets](/docs/product-options/) on a simple product.
 
 <div class="callout tip"><span class="callout-label">Tip</span><p>Restricting variations is per slot, so the same hoodie can be offered in different colours in two different bundles without changing the product itself.</p></div>
 

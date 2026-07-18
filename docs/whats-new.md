@@ -16,6 +16,13 @@ We build the next feature from what you tell us. If something would make your st
 
 A few of the latest improvements. The full per-release list is in the changelog on the [WordPress.org page](https://wordpress.org/plugins/bundle-boss/).
 
+- **Product options, no variations needed.** Define colours, sizes or weights once as a set, attach it to any simple product, and shoppers pick from swatches and pills exactly as they would on a variable product, on the product's own page and inside every bundle. Options can carry their own extra charges. See [Product options](/docs/product-options/).
+- **A redesigned bundle editor.** The bundle's settings now live on five clear tabs: Bundle Items, Pricing, Promotions, Display and Help. Every extra (gift, sharing, offers, whole-order personalisation) is one row with a switch and an Edit, so what is on and what exists are both always visible, and item rows collapse to one line each.
+- **Personalisation for the whole order.** Fields asked once for the entire bundle, a shared logo, a delivery note, a setup charge, alongside the per-item kind. See [Personalisation](/docs/personalisation/).
+- **A proper sale, with a countdown.** The Sale countdown timer row holds a sale price and its dates; the bundle charges the sale figure for the window and shows a live countdown. Quantity tiers stack on the sale price. See [Promotions](/docs/promotions/).
+- **Every price in your shop's tax basis.** The headline, the running total, the "was" and the "You save" all follow WooCommerce's "Display prices in the shop" setting, on shops that enter prices including tax and display them excluding it too. What you charge is unchanged.
+- **Hide item prices where you sell the pack.** Choice slots and boxes can hide per-item prices on the page and in the cart, so a fixed-price hamper reads as one price, not a sum to second-guess.
+- **Refunds restock components.** Refunding a bundle puts its component stock back when "restock refunded items" is ticked, so inventory stops drifting.
 - **One rule per option type in the box.** A [build-a-box](/docs/build-a-box/) pool whose products carry several option types, say a weight and a flavour, now takes one pin per type, with per-product overrides. "Everything at 100g, any flavour" is one rule; the flavour stays the customer's choice.
 - **Exports carry everything now.** A bundle export travels the whole setup, box sizes and rules, promotions, gift mode and personalisation kits included, and re-links your images when the files exist on the destination site. Restoring an export on the same site brings back exactly what you had. See [Import &amp; export](/docs/import-export/).
 - **Components tell you when they run low.** When bundle sales drain a component past its low-stock threshold, you get WooCommerce's normal low-stock email, exactly as if it had sold on its own page, and every order notes its component stock movements. See [Stock &amp; fulfilment](/docs/stock-fulfilment/).
@@ -29,24 +36,18 @@ A few of the latest improvements. The full per-release list is in the changelog 
 - **Pick-and-mix by pack size.** [Build a box](/docs/build-a-box/) can now offer set sizes &mdash; a 1.7kg bucket that holds 10, a 3kg that holds 20 &mdash; each at one flat price. The customer picks a size, then fills it, with the best value size badged. Made for buckets, hampers, coffee bags and meat boxes; set it up in the [wizard](/docs/wizard/) with One size or Different sizes.
 - **Choice pools from several categories.** A [choice slot or box](/docs/choice-slots/) can now draw its pool from more than one product category at once, not just one, and each category pool keeps itself current.
 - **A guided creation wizard.** [Create a bundle with the wizard](/docs/wizard/): pick what you are making, add your products, see a live preview, and publish or save as a draft. The fastest way to your first bundle, and it writes an ordinary bundle you can still edit by hand.
-- **One "All the same" control.** The separate per-unit "Apply to the rest" button is gone. The [All the same](/docs/layouts/) toggle now does it all, copying menu and tick-box personalisation too, and switching it off leaves the picks in place so you can tweak a single unit.
-- **Brand colour, in one click.** Pick a single [brand colour](/docs/theming/) under Appearance and the builder's buttons, highlights and links match your shop, on the product page and in the cart. No code.
-- **Quantity grid steppers.** The [size-run grid](/docs/quantity-grid/) now has plus and minus steppers on each cell, so a customer can adjust a run by tapping, not only typing.
-- **Frequently bought together, in the cart.** The [FBT](/docs/fbt/) offer now also appears as a "Complete your order" strip in the cart, classic and block, not just on the product page.
-- **A third pricing mode.** Alongside a percentage and a fixed price, you can now take a [set amount off](/docs/pricing/) the items (for example &pound;5 off).
-- **Bigger boxes, bigger savings.** [Build a box](/docs/build-a-box/) gained quantity breaks ("add 1 more for 10% off") and a "max different products" limit.
-- **Clearer savings everywhere.** A consistent "You save" line on the product page and in the cart, and identical items in the cart now combine into one line with a count.
-
 ## In development
 
-In final testing now. Have a use for one of these, or want it to work a certain way? <a href="mailto:support@getbundleboss.com">Tell us</a> and help shape it before it ships.
+Being built now. Have a use for one of these, or want it to work a certain way? <a href="mailto:support@getbundleboss.com">Tell us</a> and help shape it before it ships.
 
-- **Options without variations.** Give a simple product colours, sizes or any options, and shoppers pick them in a bundle with the same swatches and pills a variable product shows, without generating a single variation. For shops with big colour and size ranges, and anyone moving off an add-ons plugin. See [how it will work](/docs/option-sets/).
+- **Subscriptions.** Bundles on a repeating schedule, from a weekly coffee box to a monthly kit. See [where it stands](/docs/subscriptions/).
+- **Bundle analytics.** Which bundles and which configurations actually sell. See [the plan](/docs/analytics/).
 
 ## The Builder's power features
 
 The Builder (Pro) turns a bundle into a full configurator. These are the headline tools:
 
+- [Product options](/docs/product-options/), colours and sizes on any simple product, no variations
 - [Choice slots](/docs/choice-slots/), pick each part from pools you define
 - [Build a box](/docs/build-a-box/), mix-and-match to a size you set
 - [Configurator layout](/docs/layouts/), a full-page two-pane builder

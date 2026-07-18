@@ -17,7 +17,7 @@ Got an idea for a feature, or something you wish BundleBoss did? We build from w
   <a class="docs-card" href="/docs/bundle-items/"><h3>Bundle items &amp; quantities</h3><p>Add slots, set fixed or adjustable quantities, restrict which variations are offered.</p></a>
   <a class="docs-card" href="/docs/pricing/"><h3>Pricing &amp; discounts</h3><p>Percentage or fixed pricing, quantity tiers, and a bundle stock cap.</p></a>
   <a class="docs-card" href="/docs/swatches/"><h3>Colour swatches</h3><p>Show colour circles instead of text, set once or filled in from the colour name.</p></a>
-  <a class="docs-card" href="/docs/option-sets/"><h3>Options without variations <span class="pro-pill">Pro</span></h3><p>Give a simple product colours and sizes shoppers pick like variations, with none of the 200-variation admin. In development.</p></a>
+  <a class="docs-card" href="/docs/product-options/"><h3>Product options (no variations) <span class="pro-pill">Pro</span></h3><p>Give a simple product colours and sizes shoppers pick like variations, with none of the variation admin.</p></a>
   <a class="docs-card" href="/docs/layouts/"><h3>Layouts &amp; which to use</h3><p>List, Grid, Step by step, and how to display a multi-unit item. Which combination fits your store.</p></a>
   <a class="docs-card" href="/docs/layout-gallery/"><h3>Layouts in pictures</h3><p>See every layout option with a screenshot and the exact setting that makes it.</p></a>
   <a class="docs-card" href="/docs/choice-slots/"><h3>Choice slots <span class="pro-pill">Pro</span></h3><p>Let customers pick each part from pools you define: PC builder, gift hamper, ski package.</p></a>

@@ -34,9 +34,15 @@ In the [wizard](/docs/wizard/) this is the "one or several" question when you ad
 </ol>
 
 <figure>
-  <img src="/docs/img/choice-slot-admin.png" alt="A choice slot row in the admin with a pool of products and a slot discount">
-  <figcaption>A choice slot: a label, a pool of candidate products (hand-picked and/or categories), and an optional slot discount.</figcaption>
+  <img src="/docs/img/choice-slot-admin.png" alt="A choice slot row in the admin with a pool of products, offered-options lines and page controls">
+  <figcaption>A choice slot: a label, a pool of candidates, a slot discount, and one quiet line per option the pool offers.</figcaption>
 </figure>
+
+## Narrow what the slot offers
+
+Under **Options customers can pick**, every attribute and [option set](/docs/product-options/) the pool carries gets one line, "All 12 offered", with a **Change** that opens a searchable checklist. Offer a subset ("this bundle sells three of the twelve colours"), or switch a set off for this bundle only. The server enforces the narrowed list, so a hidden option can never be submitted.
+
+Two page controls sit with the slot too: **Item prices** shows or hides the per-product prices on the slot's cards (hide them where the bundle price is the story), and **Shoppers can skip this whole list** makes the slot optional.
 
 ## A pool that maintains itself
 

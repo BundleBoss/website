@@ -15,9 +15,8 @@ Because it prices what the customer actually selects, it is a perfect match for 
 
 ## Turn it on
 
-On a bundle, open the **Bundle Pricing** tab, expand **More pricing options**, and find the **Buy X Get Y (BOGO)** section:
+On a bundle, open the **Bundle Promotions** tab, switch on the **Buy X, get Y** row and click **Edit**:
 
-- Tick **Enable Buy X Get Y**.
 - Set **Buy (X)**, how many items the customer pays for in each group.
 - Set **Get (Y)**, how many of the cheapest items are discounted in each group.
 - Set the **Discount (%)** applied to those Get items. 100 is free, 50 is half price.

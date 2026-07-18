@@ -55,7 +55,7 @@ The customer taps a colour and types **how many of each size**, building a bulk 
 
 ## Linking items to their product pages
 
-Tick **Link items to their product pages** in the bundle's Display options and a small arrow appears beside each item's name. It opens the product's own page in a new tab, so customers can check ingredients, size guides or reviews without losing the bundle they are building. Names stay plain text, so nobody navigates away by accident, and choice cards are never links (clicking those selects). Off by default.
+Tick **Link items to their product pages** on the **Bundle Display** tab and a small arrow appears beside each item's name. It opens the product's own page in a new tab, so customers can check ingredients, size guides or reviews without losing the bundle they are building. Names stay plain text, so nobody navigates away by accident, and choice cards are never links (clicking those selects). Off by default.
 
 ## Two helpers for multi-unit items
 
