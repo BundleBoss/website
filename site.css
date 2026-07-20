@@ -602,6 +602,7 @@ html.theme-anim *:not(svg):not(svg *) {
   font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
   color: #fff; background: var(--coral); border: 1px solid var(--coral);
   border-radius: 100px; padding: 1px 6px; line-height: 1.5;
+  vertical-align: middle; white-space: nowrap;
 }
 
 /* content column */
