@@ -31,7 +31,7 @@ Most shops only ever need the first. The rest of this guide covers both.
 ## Create a set
 
 <ol class="steps">
-<li>Go to <strong>Bundles &rarr; Option sets</strong> and click <strong>New set</strong>, or start from a ready-made one (garment colours, sizes S to 4XL, UK shoe sizes, paper sizes, bag weights). A ready-made set imports as your own copy, free to rename, prune or reorder.</li>
+<li>Go to <strong>BundleBoss &rarr; Option sets</strong> and click <strong>New set</strong>, or start from a ready-made one (garment colours, sizes S to 4XL, UK shoe sizes, paper and board sizes, bag weights). A ready-made set imports as your own copy, free to rename, prune or reorder.</li>
 <li>Leave <strong>This set is</strong> on <em>a list of choices</em>. Add your options. Each has a name and, for colours, a swatch. Leave the swatch blank and BundleBoss fills it in from the name for common colours, the same way <a href="/docs/swatches/">swatches</a> work everywhere else.</li>
 <li>Give any option a price where it costs more, say <strong>+2.00</strong> for 4XL. Blank means the same as the rest.</li>
 </ol>

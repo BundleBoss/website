@@ -6,7 +6,7 @@ permalink: /docs/import-export/
 lede: Take your bundles with you. Export to one JSON file, import on another site, or convert existing Composite products.
 ---
 
-Everything here lives on the tools page at **WooCommerce &rarr; BundleBoss**.
+Everything here lives on the tools page at **BundleBoss &rarr; Tools**.
 
 ## Export
 

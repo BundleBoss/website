@@ -19,7 +19,7 @@ lede: Pick what you are making, add your products, see a live preview, and publi
 
 You can open the wizard three ways:
 
-- **Products &rarr; Create a bundle** in the admin menu. A "New" badge marks it while it is fresh.
+- **BundleBoss &rarr; Create a bundle** in the admin menu. A "New" badge marks it while it is fresh.
 - When you add a product and set the type to **Bundle**, a one-time popup offers the wizard. Dismiss it and it stays dismissed.
 - A quiet **"Prefer a guided setup?"** link in the Bundle panel while you are creating a new product.
 

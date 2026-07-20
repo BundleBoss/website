@@ -12,7 +12,7 @@ The bundle builder is built from a small set of named colours, so you can re-tin
 
 ## The quick way: pick a Brand colour
 
-Most shops only need this. Go to **WooCommerce &rarr; BundleBoss** and, under **Appearance**, set a **Brand colour**. Pick one colour and the builder's buttons, highlights and links match your shop, on the product page and in the cart, with no code at all. Leave it empty for the default, theme-friendly look.
+Most shops only need this. Go to **BundleBoss &rarr; Tools** and, under **Appearance**, set a **Brand colour**. Pick one colour and the builder's buttons, highlights and links match your shop, on the product page and in the cart, with no code at all. Leave it empty for the default, theme-friendly look.
 
 That single colour is about ninety percent of the effect. If you want to fine-tune individual elements, the CSS below gives you full control.
 
