@@ -56,7 +56,7 @@
         <p class="docs-sec">{{ sec.section }}</p>
         <ul>
           {% for item in sec.items %}
-          <li><a href="{{ item.url }}"{% if page.url == item.url %} class="active" aria-current="page"{% endif %}>{{ item.title }}{% if item.pro %} <span class="pro-dot" title="Pro feature">Pro</span>{% endif %}</a></li>
+          <li><a href="{{ item.url }}"{% if page.url == item.url %} class="active" aria-current="page"{% endif %}>{{ item.title }}{% if item.pro %} <span class="pro-dot" title="Pro feature">Pro</span>{% endif %}{% if item.new %} <span class="new-dot" title="New feature">New</span>{% endif %}</a></li>
           {% endfor %}
         </ul>
         {% endfor %}
