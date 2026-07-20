@@ -72,7 +72,7 @@ On a **fixed-price** bundle you decide what charges do, with one setting on the 
 
 ## Give your options a photo
 
-An option can carry its own photo, so a colour chip shows the garment in that colour, and picking it swaps the product's main image the way a variation would. You do not have to set them one by one. **Suggest photos**, on the Product options tab, reads the product's gallery and your media library, matches an image to each option by file name, and even recognises the colour codes suppliers put in file names (a photo called RX500-BLK-FRONT lands on your Black option). It shows every proposed match with its reason, and nothing changes until you apply and save.
+An option can carry its own photo, so a colour chip shows the garment in that colour, and picking it swaps the product's main image the way a variation would. You do not have to set them one by one. **Suggest photos**, on the Product options tab, reads the product's gallery and your media library and matches a photo to each option by name. A file called black.jpg, or even an image you have simply titled Black, lands on your Black option, and it works the same for sizes and finishes, not only colours. It also knows the trade codes suppliers put in file names, so a photo called RX500-BLK-FRONT finds Black too. Every proposal shows its reason, and nothing changes until you apply and save.
 
 ## Sell by measured size
 
