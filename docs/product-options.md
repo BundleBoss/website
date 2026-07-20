@@ -70,6 +70,10 @@ The price a shopper sees is the **product's price plus the choices**. So set the
 
 On a **fixed-price** bundle you decide what charges do, with one setting on the Bundle Pricing tab, **Option extra charges**: keep the total steady whatever the customer picks, or add a dearer option on top like a surcharge.
 
+## Give your options a photo
+
+An option can carry its own photo, so a colour chip shows the garment in that colour, and picking it swaps the product's main image the way a variation would. You do not have to set them one by one. **Suggest photos**, on the Product options tab, reads the product's gallery and your media library, matches an image to each option by file name, and even recognises the colour codes suppliers put in file names (a photo called RX500-BLK-FRONT lands on your Black option). It shows every proposed match with its reason, and nothing changes until you apply and save.
+
 ## Sell by measured size
 
 Choose **a measured size** for the set kind when the price follows a measurement rather than a fixed list.
