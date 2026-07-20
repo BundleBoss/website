@@ -91,9 +91,9 @@ The **live example** shows what a sample size costs as you type, so you can sani
   <figcaption>A cut-to-size set: width and height, a rate per square metre, and a live worked example.</figcaption>
 </figure>
 
-## Show one set only when another is chosen
+## Make a set available only when another is chosen
 
-A set can stay hidden until an earlier set has a certain value, so the page reveals depth only as the shopper asks for it. Set the reveal on the later set: it shows a "when" condition naming the set and value that unlock it (say a **Backing** set that appears only once **Material** is Canvas). A hidden set is inert, so nothing it holds is ever charged or required until it is on screen.
+A set can wait, shown but locked, until an earlier set has a certain value, so a shopper reads the whole page yet only fills in what applies to them. Set the rule on the later set. On the storefront it sits in place under a plain reason line, like **Available when Material is Canvas**, and its choices unlock the moment that value is picked. A locked set is inert, so nothing it holds is charged or required, and anything already chosen in it clears, until it unlocks. The same rule can gate the artwork upload.
 
 ## Collect artwork on the product
 
