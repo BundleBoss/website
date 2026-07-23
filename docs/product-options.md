@@ -62,6 +62,14 @@ That is all the product needs: it now offers the choices on its own page, and ev
   <figcaption>Attach sets on the product once. Its page and every bundle do the rest.</figcaption>
 </figure>
 
+## Order the whole range at once
+
+When a product carries a colour and a size, you can turn on a **quantity grid** on its own page under **How customers order this**, so a customer sets a quantity for every colour and size and adds the whole run to the basket in one go, instead of one at a time. A further set like printing or a finish is then offered once for the whole order. See the [quantity grid](/docs/quantity-grid/) for the full picture.
+
+## Add fields customers fill in
+
+Beyond a set of choices, a product can take **fields**: a name to print, a message, a number, a tick box, a dropdown, or a file and logo upload, each optional or required and each able to carry a charge, so an engraving line or a rush fee prices itself right on the page. They sit on the same **Product options** tab and flow to the order with the rest. See [personalisation on a product page](/docs/personalisation/#on-a-simple-products-own-page).
+
 ## How the price shows
 
 Each choice states its own price right on its chip, so a shopper reads "4XL is £26", never a surcharge aimed at them. Sizes that cost the same all show the same price, so no single choice is singled out; a set that is all one price (your colours) shows no prices at all. The running total updates with every pick, and the picked options land on the cart line, the order, the confirmation email and the <a href="/docs/stock-fulfilment/">warehouse pick list</a>, named the way the shopper chose them ("Navy / 4XL").

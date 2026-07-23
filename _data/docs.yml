@@ -38,9 +38,10 @@
     - title: Compatibility &amp; quantity rules
       url: /docs/rules/
       pro: true
-    - title: Quantity grid (size runs)
+    - title: Quantity grid (order the whole range)
       url: /docs/quantity-grid/
       pro: true
+      new: true
     - title: Build a box (mix and match)
       url: /docs/build-a-box/
       pro: true

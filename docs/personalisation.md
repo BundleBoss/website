@@ -57,4 +57,15 @@ The section carries your own title on the page ("Add your branding", or whatever
   <figcaption>Whole-order fields live with the other bundle extras, asked once for the order.</figcaption>
 </figure>
 
+## On a simple product's own page
+
+The same fields work directly on a **simple product**, with no bundle involved, for an engraving line, a monogram, a rush note or a logo to print. On the product's **Product options** tab, click **Add a field**:
+
+- Choose a **name or text line**, a **message**, a **number**, a **tick box**, a **dropdown**, a **file or logo upload**, or a display-only **section label** or **info block**.
+- Make each **optional** or **required**, and give it a **charge** where it costs more: **once**, **per letter**, or **per unit**. So an engraving line prices itself as the customer types, and a rush fee is added once.
+- A field can **reveal itself on a choice**, "Available only when Gift wrap is Yes", the same rule the [option sets](/docs/product-options/) follow. A hidden field is inert: never charged, never required, until it applies.
+- Drag fields and sets into a **group** to fold them into a tidy collapsible section.
+
+Everything the customer fills in, and every charge, flows to the cart, the order, the confirmation email and the [pick list](/docs/stock-fulfilment/), exactly as it does inside a bundle. On a product set to the [quantity grid](/docs/quantity-grid/), the fields apply to the **whole order** and price across the quantity.
+
 <div class="callout tip"><span class="callout-label">Best layout for it</span><p>Use the <a href="/docs/layouts/">Compact cards</a> display for personalised multi-unit items: each unit gets its own tidy card with room for its fields. Per-unit personalisation and the <a href="/docs/quantity-grid/">quantity grid</a> are mutually exclusive (the grid has no addressable units to name), but a single shared logo sits happily alongside a grid order.</p></div>
